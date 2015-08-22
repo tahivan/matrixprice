@@ -1,0 +1,33 @@
+<script type="text/javascript">
+	
+	function successMessage(message,message1,message2,message3)
+		{
+		    jQuery('body').append('<div class="alert"><div class="alert-inner"></div></div>');
+		    var $alert = jQuery('.alert');
+		    var $alertInner = jQuery('.alert-inner');
+		    $alert.fadeIn(400);
+                    $alertInner.html(message).append('<button class="close"><i class="fa fa-times"></i></button><div class="alertcontent"><a class="close cart" href="<?php echo $this->getUrl('checkout/cart') ?>"><?php echo $this->__('Go to Cart') ?></a><a class="close continue"><?php echo $this->__('Continue Shopping') ?></a></div>');
+		    jQuery('.close').click(function () {
+			$alert.fadeOut(400);
+		    });
+		    $alert.fadeIn('400', function () {
+			setTimeout(function () {
+			    $alert.fadeOut('400', function () {
+				jQuery(this).fadeOut(400, function(){ jQuery(this).detach(); })
+			    });
+			}, 10000)
+		    });
+		}
+</script>
+
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="<?php echo $this->getSkinUrl('ie/respond.min.js'); ?>"></script>
+<![endif]-->
+
+
+
+<script type="text/javascript">
+	var settings = {
+		<?php echo Mage::helper("ExtraConfig")->zoomSetting(); ?>   
+	}
+</script>

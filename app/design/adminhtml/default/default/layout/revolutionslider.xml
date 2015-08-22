@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <revolutionslider_adminhtml_revolutionslider_edit>
+        <reference name="head">
+            <action method="addJs"><script>jquery/jquery.js</script></action>
+            <action method="addJs"><script>jquery/noconflict.js</script></action>
+            <action method="addJs"><script>jquery/jquery.fancybox-1.3.4.js</script></action>
+        </reference>
+    </revolutionslider_adminhtml_revolutionslider_edit>
+    <revolutionslider_adminhtml_revolutionslider_index>
+        <reference name="content">
+            <block type="revolutionslider/adminhtml_revolutionslider" name="revolutionslider" />
+        </reference>
+    </revolutionslider_adminhtml_revolutionslider_index>
+</layout>

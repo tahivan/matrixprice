@@ -1,0 +1,522 @@
+<?xml version="1.0"?>
+<config>
+	<!--<tabs>
+		<peerforest translate="label">
+			<label>PEER SYSTEM</label>
+			<sort_order>3</sort_order>
+		</peerforest>
+	</tabs>-->
+	<sections>
+		<revolutionslider translate="label" module="revolutionslider">
+			<label>Revolution Slider</label>
+			<tab>mycustom_tab</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>5</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				
+				
+				<setting translate="label">
+				<label>Revolution Slider Settings</label>
+				<frontend_type>text</frontend_type>
+				<sort_order>2</sort_order>
+				<show_in_default>1</show_in_default>
+				<show_in_website>1</show_in_website>
+				<show_in_store>1</show_in_store>
+					<fields>
+					
+						<show_description translate="label, comment">
+							<label>Show description</label>
+							<comment><![CDATA[show description in front of image]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</show_description>
+						
+						<delay translate="label, comment">
+							<label>Delay</label>
+							<comment><![CDATA[The time one slide stays on the screen in Milliseconds.   ]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</delay>
+						<startheight translate="label, comment">
+							<label>Start Height</label>
+							<comment><![CDATA[This Height of the Grid where the Captions are displayed in Pixel. This Height is the Max height of Slider in Fullwidth Layout and in Responsive Layout.  In Fullscreen Layout the Gird will be centered Vertically in case the Slider is higher then this value.  ]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</startheight>
+						<startwidth translate="label, comment">
+							<label>Start Width</label>
+							<comment><![CDATA[This Height of the Grid where the Captions are displayed in Pixel. This Width is the Max Width of Slider in Responsive Layout.  In Fullscreen and in FullWidth Layout the Gird will be centered Horizontally in case the Slider is wider then this value.  ]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</startwidth>
+						<!--<fullScreenAlignForce translate="label, comment">-->
+						<!--	<label>Full Screen Align Force</label>-->
+						<!--	<comment><![CDATA[Possible Values: "on", "off"  - Allowed only in FullScreen Mode. It lets the Caption Grid to be the full screen, means all position should happen with aligns and offsets. This allow you to use the faresst corner of the slider to present any caption there.]]></comment>-->
+						<!--	<frontend_type>select</frontend_type>-->
+						<!--	<source_model>revolutionslider/system_config_onoff</source_model> -->
+						<!--	<sort_order>5</sort_order>-->
+						<!--	<show_in_default>1</show_in_default>-->
+						<!--	<show_in_website>1</show_in_website>-->
+						<!--	<show_in_store>1</show_in_store>-->
+						<!--</fullScreenAlignForce>-->
+						<!--<autoHeight translate="label, comment">-->
+						<!--	<label>Auto Height</label>-->
+						<!--	<comment><![CDATA[Possible Values: "on", "off"  - defines if in fullwidth mode the height of the Slider proportional always can grow. If it is set to "off" the max height is == startheight]]></comment>-->
+						<!--	<frontend_type>select</frontend_type>-->
+						<!--	<source_model>revolutionslider/system_config_onoff</source_model> -->
+						<!--	<sort_order>6</sort_order>-->
+						<!--	<show_in_default>1</show_in_default>-->
+						<!--	<show_in_website>1</show_in_website>-->
+						<!--	<show_in_store>1</show_in_store>-->
+						<!--</autoHeight>-->
+						<hideTimerBar translate="label, comment">
+							<label>Hide TimerBar</label>
+							<comment><![CDATA[Possible Values: "on" , "off" - it will hide or show the banner timer]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_onoff</source_model> 
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</hideTimerBar>
+						<hideThumbs translate="label, comment">
+							<label>Hide Thumbs</label>
+							<comment><![CDATA[0 - Never hide Thumbs.  1000- 100000 (ms) hide thumbs and navigation arrows, bullets after the predefined ms  (1000ms == 1 sec,  1500 == 1,5 sec etc..)  ]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</hideThumbs>
+						<hideNavDelayOnMobile translate="label, comment">
+							<label>Hide NavDelay OnMobile</label>
+							<comment><![CDATA[Hide all navigation after a while on Mobile (touch and release events based)  ]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>9</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</hideNavDelayOnMobile>
+						<thumbWidth translate="label, comment">
+							<label>Thumb Width</label>
+							<comment><![CDATA[The width and height of the thumbs in pixel. Thumbs are not responsive from basic. For Responsive Thumbs you will need to create media qury based thumb sizes.   ]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</thumbWidth>
+						<thumbHeight translate="label, comment">
+							<label>Thumb Height</label>
+							<comment><![CDATA[The width and height of the thumbs in pixel. Thumbs are not responsive from basic. For Responsive Thumbs you will need to create media qury based thumb sizes.    ]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>11</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</thumbHeight>
+						<thumbAmount translate="label, comment">
+							<label>Thumb Amount</label>
+							<comment><![CDATA[The Amount of visible Thumbs in the same time.  The rest of the thumbs are only visible on hover, or at slide change.  ]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>12</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</thumbAmount>
+						
+						<navigationType translate="label, comment">
+							<label>Navigation Type</label>
+							<comment><![CDATA[Display type of the navigation bar (Default:"none").]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_navigationtype</source_model> 
+							<sort_order>13</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</navigationType>
+						<navigationArrows translate="label, comment">
+							<label>Navigation Arrows</label>
+							<comment><![CDATA[Display position of the Navigation Arrows (Default: "nexttobullets")]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_navigationarrows</source_model> 
+							<sort_order>14</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</navigationArrows>
+						<hideThumbsOnMobile translate="label, comment">
+							<label>Hide Thumbs OnMobile</label>
+							<comment><![CDATA[if set to "on", Thumbs are not shown on Mobile Devices]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_onoff</source_model> 
+							<sort_order>15</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</hideThumbsOnMobile>
+						<hideBulletsOnMobile translate="label, comment">
+							<label>Hide Bullets OnMobile</label>
+							<comment><![CDATA[if set to "on", Bullets are not shown on Mobile Devices]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_onoff</source_model> 
+							<sort_order>16</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</hideBulletsOnMobile>
+						<hideArrowsOnMobile translate="label, comment">
+							<label>Hide Arrows OnMobile</label>
+							<comment><![CDATA[if set to "on", Arrows are not shown on Mobile Devices]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_onoff</source_model> 
+							<sort_order>17</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</hideArrowsOnMobile>
+						<hideThumbsUnderResoluition translate="label, comment">
+							<label>Hide Thumbs Under Resoluition</label>
+							<comment><![CDATA[Possible Values: 0 - 1900 - defines under which resolution the Thumbs should be hidden. (only if hideThumbonMobile set to off]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>18</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</hideThumbsUnderResoluition>
+						<!--<navigationStyle translate="label, comment">-->
+						<!--	<label>Navigation Style</label>-->
+						<!--	<comment><![CDATA[Look of the navigation bullets if navigationType "bullet" selected.]]></comment>-->
+						<!--	<frontend_type>select</frontend_type>-->
+						<!--	<source_model>revolutionslider/system_config_navigationstyle</source_model> -->
+						<!--	<sort_order>19</sort_order>-->
+						<!--	<show_in_default>1</show_in_default>-->
+						<!--	<show_in_website>1</show_in_website>-->
+						<!--	<show_in_store>1</show_in_store>-->
+						<!--</navigationStyle>-->
+						<navigationHAlign translate="label, comment">
+							<label>Navigation H Align</label>
+							<comment><![CDATA[Vertical and Horizontal Align of the Navigation bullets / thumbs (depending on which Style has been selected). ]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_navigationhalign</source_model> 
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</navigationHAlign>
+						<navigationVAlign translate="label, comment">
+							<label>Navigation V Align</label>
+							<comment><![CDATA[Vertical and Horizontal Align of the Navigation bullets / thumbs (depending on which Style has been selected). ]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_navigationvalign</source_model> 
+							<sort_order>21</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</navigationVAlign>
+						<navigationHOffset translate="label, comment">
+							<label>Navigation H Offset</label>
+							<comment><![CDATA[The Offset position of the navigation depending on the aligned position.  from -1000 to +1000 any value in px.   i.e. -30  ]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>22</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</navigationHOffset>
+						<navigationVOffset translate="label, comment">
+							<label>Navigation V Offset</label>
+							<comment><![CDATA[The Offset position of the navigation depending on the aligned position.  from -1000 to +1000 any value in px.   i.e. -30  ]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>23</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</navigationVOffset>
+						
+						<soloArrowLeftHalign translate="label, comment">
+							<label>Solo Arrow Left H Align</label>
+							<comment><![CDATA[Vertical and Horizontal Align of the Navigation Arrows (left and right independent!)]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_navigationhalign</source_model> 
+							<sort_order>24</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</soloArrowLeftHalign>
+						<soloArrowLeftValign translate="label, comment">
+							<label>Solo Arrow Left V Align</label>
+							<comment><![CDATA[Vertical and Horizontal Align of the Navigation Arrows (left and right independent!)]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_navigationvalign</source_model> 
+							<sort_order>25</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</soloArrowLeftValign>
+						<soloArrowLeftHOffset translate="label, comment">
+							<label>Solo Arrow Left H Offset</label>
+							<comment><![CDATA[The Offset position of the navigation depending on the aligned position.  from -1000 to +1000 any value in px.   i.e. -30   Each Arrow independent]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>26</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</soloArrowLeftHOffset>
+						<soloArrowLeftVOffset translate="label, comment">
+							<label>Solo Arrow Left V Offset</label>
+							<comment><![CDATA[The Offset position of the navigation depending on the aligned position.  from -1000 to +1000 any value in px.   i.e. -30   Each Arrow independent]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>27</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</soloArrowLeftVOffset>
+						
+						<soloArrowRightHalign translate="label, comment">
+							<label>Solo Arrow Right H Align</label>
+							<comment><![CDATA[Vertical and Horizontal Align of the Navigation Arrows (left and right independent!)]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_navigationhalign</source_model> 
+							<sort_order>28</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</soloArrowRightHalign>
+						<soloArrowRightValign translate="label, comment">
+							<label>Solo Arrow Right V Align</label>
+							<comment><![CDATA[Vertical and Horizontal Align of the Navigation Arrows (left and right independent!)]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_navigationvalign</source_model> 
+							<sort_order>29</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</soloArrowRightValign>
+						<soloArrowRightHOffset translate="label, comment">
+							<label>Solo Arrow Right H Offset</label>
+							<comment><![CDATA[The Offset position of the navigation depending on the aligned position.  from -1000 to +1000 any value in px.   i.e. -30   Each Arrow independent]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</soloArrowRightHOffset>
+						<soloArrowRightVOffset translate="label, comment">
+							<label>Solo Arrow Right V Offset</label>
+							<comment><![CDATA[The Offset position of the navigation depending on the aligned position.  from -1000 to +1000 any value in px.   i.e. -30   Each Arrow independent]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>31</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</soloArrowRightVOffset>
+						<keyboardNavigation translate="label, comment">
+							<label>keyboard Navigation</label>
+							<comment><![CDATA[Allows to use the Left/Right Arrow for Keyboard navigation when Slider is in Focus.]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_onoff</source_model> 
+							<sort_order>32</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</keyboardNavigation>
+						<touchenabled translate="label, comment">
+							<label>Touch Enabled</label>
+							<comment><![CDATA[Enable Swipe Function on touch devices (Default: "on")]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_onoff</source_model> 
+							<sort_order>33</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</touchenabled>
+						<onHoverStop translate="label, comment">
+							<label>On Hover Stop</label>
+							<comment><![CDATA[Stop the Timer if mouse is hovering the Slider.  Caption animations are not stopped !! They will just play to the end.]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_onoff</source_model> 
+							<sort_order>34</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</onHoverStop>
+						
+						<stopAtSlide translate="label, comment">
+							<label>Stop At Slide</label>
+							<comment><![CDATA[Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>35</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</stopAtSlide>
+						<stopAfterLoops translate="label, comment">
+							<label>Stop After Loops</label>
+							<comment><![CDATA[Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>36</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</stopAfterLoops>
+						
+						<hideCaptionAtLimit translate="label, comment">
+							<label>Hide Caption At Limit</label>
+							<comment><![CDATA[It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>37</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</hideCaptionAtLimit>
+						<hideAllCaptionAtLimit translate="label, comment">
+							<label>Hide All Caption At Lilmit</label>
+							<comment><![CDATA[Hide all The Captions if Width of Browser is less then this value]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>38</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</hideAllCaptionAtLimit>
+						<hideSliderAtLimit translate="label, comment">
+							<label>Hide Slider At Limit</label>
+							<comment><![CDATA[Hide the whole slider, and stop also functions if Width of Browser is less than this value  ]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>39</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</hideSliderAtLimit>
+						
+						<shadow translate="label, comment">
+							<label>Shadow</label>
+							<comment><![CDATA[ (0 == no Shadow, 1,2,3 - Different Shadow Types))]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</shadow>
+						<!--<fullWidth translate="label, comment">-->
+						<!--	<label>Full Width</label>-->
+						<!--	<comment><![CDATA[defines if the fullwidth/autoresponsive mode is activated]]></comment>-->
+						<!--	<frontend_type>select</frontend_type>-->
+						<!--	<source_model>revolutionslider/system_config_onoff</source_model> -->
+						<!--	<sort_order>41</sort_order>-->
+						<!--	<show_in_default>1</show_in_default>-->
+						<!--	<show_in_website>1</show_in_website>-->
+						<!--	<show_in_store>1</show_in_store>-->
+						<!--</fullWidth>-->
+						<!--<fullScreen translate="label, comment">-->
+						<!--	<label>Full Screen</label>-->
+						<!--	<comment><![CDATA[defines if the fullscreen mode is activated]]></comment>-->
+						<!--	<frontend_type>select</frontend_type>-->
+						<!--	<source_model>revolutionslider/system_config_onoff</source_model> -->
+						<!--	<sort_order>42</sort_order>-->
+						<!--	<show_in_default>1</show_in_default>-->
+						<!--	<show_in_website>1</show_in_website>-->
+						<!--	<show_in_store>1</show_in_store>-->
+						<!--</fullScreen>-->
+						<!--<minFullScreenHeight translate="label, comment">-->
+						<!--	<label>Min FullScreen Height</label>-->
+						<!--	<comment><![CDATA[The Minimum FullScreen Height]]></comment>-->
+						<!--	<frontend_type>text</frontend_type>-->
+						<!--	<sort_order>43</sort_order>-->
+						<!--	<show_in_default>1</show_in_default>-->
+						<!--	<show_in_website>1</show_in_website>-->
+						<!--	<show_in_store>1</show_in_store>-->
+						<!--</minFullScreenHeight>-->
+						<!--<fullScreenOffsetContainer translate="label, comment">-->
+						<!--	<label>FullScreen Offset Container</label>-->
+						<!--	<comment><![CDATA[The value is a Container ID or Class i.e. "#topheader"  - The Height of Fullheight will be increased with this Container height !]]></comment>-->
+						<!--	<frontend_type>text</frontend_type>-->
+						<!--	<sort_order>44</sort_order>-->
+						<!--	<show_in_default>1</show_in_default>-->
+						<!--	<show_in_website>1</show_in_website>-->
+						<!--	<show_in_store>1</show_in_store>-->
+						<!--</fullScreenOffsetContainer>-->
+						<dottedOverlay translate="label, comment">
+							<label>Dotted Overlay</label>
+							<comment><![CDATA[Creates a Dotted Overlay for the Background images extra. Best use for FullScreen / fullwidth sliders, where images are too pixaleted.]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_dottedoverlay</source_model> 
+							<sort_order>45</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</dottedOverlay>
+						<!--<forceFullWidth translate="label, comment">-->
+						<!--	<label>Force FullWidth</label>-->
+						<!--	<comment><![CDATA[Force the FullWidth Size even if the slider embeded in a boxed container. It can provide higher Performance usage on CPU. Try first set it to "off" and use fullwidth container instead of using this option.]]></comment>-->
+						<!--	<frontend_type>select</frontend_type>-->
+						<!--	<source_model>revolutionslider/system_config_onoff</source_model> -->
+						<!--	<sort_order>46</sort_order>-->
+						<!--	<show_in_default>1</show_in_default>-->
+						<!--	<show_in_website>1</show_in_website>-->
+						<!--	<show_in_store>1</show_in_store>-->
+						<!--</forceFullWidth>-->
+						
+						<swipe_velocity translate="label, comment">
+							<label>Swipe Velocity</label>
+							<comment><![CDATA[The Sensibility of Swipe Gesture (lower is more sensible) (Default: 0.7)]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_swipevelocity</source_model> 
+							<sort_order>48</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</swipe_velocity>
+						<swipe_max_touches translate="label, comment">
+							<label>Swipe Max Touches</label>
+							<comment><![CDATA[Max Amount of Fingers to touch (Default: 1)]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_swipetouches</source_model> 
+							<sort_order>49</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</swipe_max_touches>
+						<swipe_min_touches translate="label, comment">
+							<label>Swipe Min Touches</label>
+							<comment><![CDATA[Min Amount of Fingers to touch (Default: 1)]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_swipetouches</source_model> 
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</swipe_min_touches>
+						<drag_block_vertical translate="label, comment">
+							<label>Drag Block Vertical</label>
+							<comment><![CDATA[Prevent Vertical Scroll on Drag (Default: false)]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>revolutionslider/system_config_onoff</source_model> 
+							<sort_order>51</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</drag_block_vertical>
+					</fields>
+				</setting>
+				
+				
+			</groups>
+		</revolutionslider>
+	</sections>
+</config>

@@ -1,0 +1,69 @@
+
+<style type="text/css">
+	<?php echo $this->getLayout()->createBlock('core/template')->setTemplate('page/html/themeoption.phtml')->toHtml(); ?>
+</style>
+
+<?php
+$titlefont = Mage::getStoreConfig('themecolor/themefont/titlefont');
+$bodyfont = Mage::getStoreConfig('themecolor/themefont/bodyfont');
+$sectiontitle_font = Mage::getStoreConfig('themecolor/themefont/sectiontitle_font');
+$topmenu_fonts = Mage::getStoreConfig('themecolor/menu/topmenu_fonts');
+$submenu_fonts = Mage::getStoreConfig('themecolor/menu/submenu_fonts');
+$menu_fonts = Mage::getStoreConfig('themecolor/menu/menu_fonts');
+$responsive_topmenu_font_family = Mage::getStoreConfig('themecolor/responsivemenu/responsive_topmenu_font_family');
+$responsive_submenu_font_family = Mage::getStoreConfig('themecolor/responsivemenu/responsive_submenu_font_family');
+$sidebar_title_fonts = Mage::getStoreConfig('themecolor/sidebar/sidebar_title_fonts');
+$button_fonts = Mage::getStoreConfig('themecolor/product_list/button_fonts');
+$productname_fonts = Mage::getStoreConfig('themecolor/product_list/productname_fonts');
+$product_price_fonts = Mage::getStoreConfig('themecolor/product_list/product_price_fonts');
+?>
+
+
+
+<?php if(isset($titlefont) && $titlefont != null && $titlefont != '--select--') {  ?>
+<link href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $titlefont); ?>' rel='stylesheet' type='text/css'>
+<?php } ?>
+
+<?php if(isset($bodyfont) && $bodyfont != null && $bodyfont != '--select--') {  ?>
+<link href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $bodyfont); ?>' rel='stylesheet' type='text/css'>
+<?php } ?>
+
+<?php if(isset($sectiontitle_font) && $sectiontitle_font != null && $sectiontitle_font != '--select--') {  ?>
+<link href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $sectiontitle_font); ?>' rel='stylesheet' type='text/css'>
+<?php } ?>
+
+<?php if(isset($topmenu_fonts) && $topmenu_fonts != null && $topmenu_fonts != '--select--') {  ?>
+<link href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $topmenu_fonts); ?>' rel='stylesheet' type='text/css'>
+<?php } ?>
+
+<?php if(isset($submenu_fonts) && $submenu_fonts != null && $submenu_fonts != '--select--') {  ?>
+<link href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $submenu_fonts); ?>' rel='stylesheet' type='text/css'>
+<?php } ?>
+
+<?php if(isset($menu_fonts) && $menu_fonts != null && $menu_fonts != '--select--')  {  ?>
+<link href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $menu_fonts); ?>' rel='stylesheet' type='text/css'>
+<?php } ?>
+
+<?php if(isset($responsive_topmenu_font_family) && $responsive_topmenu_font_family != null && $responsive_topmenu_font_family != '--select--') {  ?>
+<link href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $responsive_topmenu_font_family); ?>' rel='stylesheet' type='text/css'>
+<?php } ?>
+
+<?php if(isset($responsive_submenu_font_family) && $responsive_submenu_font_family != null && $responsive_submenu_font_family != '--select--') {  ?>
+<link href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $responsive_submenu_font_family); ?>' rel='stylesheet' type='text/css'>
+<?php } ?>
+
+<?php if(isset($sidebar_title_fonts) && $sidebar_title_fonts != null && $sidebar_title_fonts != '--select--')  {  ?>
+<link href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $sidebar_title_fonts); ?>' rel='stylesheet' type='text/css'>
+<?php } ?>
+
+<?php if(isset($button_fonts) && $button_fonts != null && $button_fonts != '--select--')  {  ?>
+<link href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $button_fonts); ?>' rel='stylesheet' type='text/css'>
+<?php } ?>
+
+<?php if(isset($productname_fonts) && $productname_fonts != null && $productname_fonts != '--select--') {  ?>
+<link href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $productname_fonts); ?>' rel='stylesheet' type='text/css'>
+<?php } ?>
+
+<?php if(isset($product_price_fonts) && $product_price_fonts != null && $product_price_fonts != '--select--') {  ?>
+<link href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $product_price_fonts); ?>' rel='stylesheet' type='text/css'>
+<?php } ?>

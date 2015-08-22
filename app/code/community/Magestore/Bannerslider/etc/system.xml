@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<config>
+	<sections>
+		<bannerslider translate="label" module="bannerslider">
+			<label>Banner Slider</label>
+			<tab>mycustom_tab</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>6</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>			
+				<settings translate="label">
+					<label>Banner Slider Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>		
+						<banner_transaction_heading translate="label">
+							<label>Banner Transaction Settings</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</banner_transaction_heading>
+						<transition_style translate="label">
+							<label>Transition Style</label>
+							<frontend_type>select</frontend_type>
+							<source_model>bannerslider/system_config_bannertransitionstyle</source_model>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</transition_style>
+						<banner_speed_heading translate="label">
+							<label>Banner Speed Settings</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</banner_speed_heading>
+						<slide_speed translate="label">
+							<label>Slide Speed</label>
+							<frontend_type>text</frontend_type>
+							<comment><![CDATA[Add integrer in milliseconds, for example 5000 for 5 seconds.]]></comment>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</slide_speed>
+						<rewind_speed translate="label">
+							<label>Rewind Speed</label>
+							<frontend_type>text</frontend_type>
+							<comment><![CDATA[Add integrer in milliseconds, for example 5000 for 5 seconds.]]></comment>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</rewind_speed>
+						<banner_extra_heading translate="label">
+							<label>Banner Extra Settings</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</banner_extra_heading>
+						<auto_play translate="label">
+							<label>Auto Play</label>
+							<frontend_type>text</frontend_type>							
+							<comment><![CDATA[Add integrer in milliseconds, for example 5000 to play every 5 seconds. Blank will make it false.]]></comment>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</auto_play>
+						<stop_on_hover translate="label">
+							<label>Stop On Hover</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment><![CDATA[Yes : stops slider on hover.]]></comment>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</stop_on_hover>
+						<rewind_nav translate="label">
+							<label>Rewind Nav</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment><![CDATA[Takes slide to first item after reaching last. Use rewindSpeed to change animation speed.]]></comment>
+							<sort_order>9</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</rewind_nav>
+						<!--<scroll_per_page translate="label">
+							<label>Scroll Per Page</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment><![CDATA[Yes : Scroll per page not per item.]]></comment>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</scroll_per_page>-->
+						<navigation translate="label">
+							<label>Enable navigation Arrow</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>11</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</navigation>
+						<banner_pagination_heading translate="label">
+							<label>Banner Pagination Settings</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<sort_order>12</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</banner_pagination_heading>
+						<pagination translate="label">
+							<label>Enable Pagination</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>13</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</pagination>
+						<pagination_speed translate="label">
+							<label>Pagination Speed</label>
+							<frontend_type>text</frontend_type>
+							<comment><![CDATA[Add integrer in milliseconds, for example 5000 for 5 seconds.]]></comment>
+							<depends>
+								<pagination>1</pagination>	
+							</depends>
+							<sort_order>14</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</pagination_speed>
+						<pagination_numbers translate="label">
+							<label>Pagination Numbers</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<depends>
+								<pagination>1</pagination>	
+							</depends>
+							<sort_order>15</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</pagination_numbers>
+						<banner_description_heading translate="label">
+							<label>Banner Description Settings</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<sort_order>16</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</banner_description_heading>
+						<show_description translate="label, comment">
+							<label>Show description</label>
+							<comment><![CDATA[show description in front of image]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>17</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</show_description>					
+					</fields>
+				</settings>
+				
+				
+			</groups>
+		</bannerslider>
+	</sections>
+</config>

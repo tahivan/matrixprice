@@ -1,0 +1,286 @@
+
+/* ********************************************************************************************
+	Navigation
+*********************************************************************************************** */
+
+@media only screen and (min-width: 1042px)  {
+
+	/* Default Navigation ***********/
+	.nav-container{}
+	.nav-container *{-webkit-backface-visibility: hidden;-o-backface-visibility: hidden;-ms-backface-visibility: hidden;}
+	.nav-container #nav {text-transform:capitalize;}
+	.nav-container #nav ul.level0 { position:absolute; z-index: 1501;}
+	.nav-container #nav li{float: left;text-align:left;}
+	.nav-container #nav li:hover{}
+	.nav-container #nav li, .nav-container #nav li:hover{position: relative;}
+	.nav-container #nav a{text-decoration:none;font-size: 14px;display: block;position: relative;font-weight: normal;padding: 12px 10px;}
+	.nav-container #nav li a.over,
+	.nav-container #nav li.hover > a,
+	.nav-container #nav a:hover,
+	.nav-container #nav li.active a.level-top{color: #1bbeb4;}
+	
+	/* 2nd Level */
+	.nav-container #nav ul {
+		position:absolute;
+		width:210px;
+		top:44px;
+		z-index: 10000;
+		background-color: #FFFFFF;
+		
+		display: none/9;	
+		opacity: 0;
+		-moz-opacity: 0;
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);					
+		pointer-events: none;
+		/*visibility: hidden;*/
+		
+		-webkit-transform: 	translateY(20px);
+		-moz-transform: 	translateY(20px);
+		-o-transform: 		translateY(20px);
+		-ms-transform: 		translateY(20px);
+		transform: 		translateY(20px);
+		
+		-moz-box-shadow: 	0 0 5px -1px rgba(0,0,0,.2);
+		-webkit-box-shadow: 	0 0 5px -1px rgba(0,0,0,.2);
+		box-shadow: 		0 0 5px -1px rgba(0,0,0,.2);
+		
+		-webkit-transition: 	all 0.2s ease-in-out;
+		-moz-transition: 	all 0.2s ease-in-out;
+		-o-transition: 		all 0.2s ease-in-out;
+		transition: 		all 0.2s ease-in-out;     
+	}
+	.nav-container #nav li:hover > ul{
+		display: block/9;
+		opacity: 1;
+		-moz-opacity: 1;
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity=100);					
+		pointer-events: all;
+		/*visibility: visible;*/
+		
+		-webkit-transform: 		translateX(0px);
+		-moz-transform: 		translateX(0px);
+		-o-transform: 		translateX(0px);
+		-ms-transform: 		translateX(0px);
+		transform: 			translateX(0px);
+	}
+	.nav-container #nav > li > ul.shown-sub:before{
+		content: " ";
+		display: block;
+		border-bottom: 8px solid #E4E4E4;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-top: none;
+		margin-top: -8px;
+		position: absolute;
+		left: 20px;
+	}
+	.nav-container #nav div ul { position:static; width:auto;  }
+	
+	.nav-container #nav li ul li{float: none !important;display: inherit !important;}
+	.nav-container #nav li ul li a{line-height: normal;display: block;padding: 11px 15px;border-bottom: 1px solid #E4E4E4;}
+	.nav-container #nav li ul li.last > a{border-bottom: none;}
+	.nav-container #nav li ul li a span{}
+	.nav-container #nav li ul li a span.errow{}
+	.nav-container #nav li ul li a.over,
+	.nav-container #nav li ul li a:hover,
+	.nav-container #nav li ul li.hover > a{color: #1bbeb4;background-color: #252525;}
+	.nav-container #nav li ul li ,.nav-container #nav li ul li:hover{margin:0px;}
+	.nav-container #nav li ul li:last-child a{}
+	.nav-container #nav li ul li.last a{}
+	.nav-container #nav li ul li a span{}
+	
+	/* Category Label */
+	.nav-container #nav > li > a span.category-label{top: -15px;}
+	.nav-container #nav li ul li a span.category-label{margin-left: 0px;right: 10px;}
+	.nav-container #nav li ul li a span.category-label:before{display: none;}
+	
+	/* 3rd+ Level */
+	.nav-container #nav ul ul,
+	.nav-container #nav ul div { top:0px; margin-top: 0px;}
+	.nav-container #nav ul span,
+	.nav-container #nav ul li.last li span {}
+	.nav-container #nav li ul li ul {left:210px;}
+	.nav-container #nav li ul.shown-sub, #nav li .shown-sub {}
+	.nav-container #nav li ul.shown-sub {}
+
+}
+
+
+
+/* Responsive Menu ======================================================================== */
+
+@media screen and (max-width: 1041px) {
+    
+	.nav-maincontainer.sticky{
+		display: none !important;
+	}
+	
+	.toggleMenu {
+		height: 44px;
+		font-weight: normal;
+		line-height: 44px;
+		font-size: 17px;
+		float: left;
+	}
+	.toggleMenu.active,
+	.toggleMenu:hover{
+		color: #1bbeb4;
+	}
+	.toggleMenu:before{
+		font-family: FontAwesome;
+		padding-right: 13px;
+	}
+	.header-container.header4 .toggleMenu{
+		float: right;
+	}
+	#nav {
+		list-style: none;
+		position: absolute;
+		z-index: 999;
+		margin-top: 0px;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		text-align: left !important;
+		
+		-moz-box-shadow: 	0 0 5px -1px rgba(0,0,0,.2);
+		-webkit-box-shadow: 	0 0 5px -1px rgba(0,0,0,.2);
+		box-shadow: 		0 0 5px -1px rgba(0,0,0,.2);
+		
+		top: 44px;
+	}
+	
+	#nav:before,
+	#nav:after {
+		content: " "; 
+		display: table; 
+	}
+	#nav:after {
+		clear: both;
+	}
+	#nav ul {
+		list-style: none;
+		width: 9em;
+		background: none !important;
+	}
+	#nav a {
+		padding: 15px 50px 15px 20px;
+		margin-right: 0px;
+		display: block;
+		text-decoration: none;
+		font-size: 14px;
+		color: #252525 !important;
+	}
+	#nav a,
+	#nav a.over,
+	#nav li.active a.level-top{
+		background-color: #FFFFFF !important;
+	}
+	#nav a:hover,
+	#nav li.active a.level-top:hover{
+		background-color: #252525 !important;
+		color: #1bbeb4 !important;
+	}
+	.nav-container #nav.color > li > a{
+		padding: 15px 50px 15px 20px;
+	}
+	.nav-container #nav a span.category-label{
+		right: 60px;
+	}
+	.nav-container #nav a span.category-label:before{
+		display: none;
+	}
+	#nav li {
+		position: relative;
+		float: none !important;
+		display: inherit !important;
+	}
+	#nav li a{
+		border-bottom: 1px solid #E4E4E4 !important;
+	}
+	#nav > li {
+		float: left;
+		list-style-type:none;
+	}
+	#nav > li > .parent {
+		background-image: url("http://webdesigntutsplus.s3.amazonaws.com/tuts/378_tessa/tessa-lt-dropdowns-21c7868/images/downArrow.png");
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+	#nav > li > a {
+		display: block;
+	}
+	#nav > li > a:active{
+	
+	}
+	#nav li  ul {
+		position: absolute;
+		left: -9999px;
+	}
+	#nav > li.hover > ul {
+		left: 0;
+	}
+	#nav li li.hover ul {
+		left: 100%;
+		top: 0;
+	}
+	#nav li li a {
+		display: block;
+		position: relative;
+		z-index:100;
+		padding-left: 30px;
+		text-decoration:none;
+	}
+	#nav li li li a {
+		padding-left: 40px;
+		z-index:200;
+	}
+	#nav .active {
+		display: block;
+	   
+	}
+	#nav > li > .parent {
+		background-position: 95% 50%;
+	}
+	#nav > li > .parent {
+		background-image: none; 
+	}
+	#nav li .more {
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		display: block;
+		cursor: pointer;
+		font-family: FontAwesome;
+		width: 49px;
+		height: 49px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		font-size: 14px;
+		text-align: center;
+		line-height: 49px;
+		z-index: 101;
+	}
+	#nav li:hover > .more,
+	#nav li .more:hover,
+	#nav li.hover > .more{
+		color: #1bbeb4;        
+	}
+	#nav ul {
+		display: block;
+		width: 100%;
+	}
+	#nav > li.hover > ul , #nav li li.hover ul {
+		position: static;
+	}
+	
+}
+
+

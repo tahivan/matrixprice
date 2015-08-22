@@ -1,0 +1,582 @@
+<root>
+  <cms_page>
+    
+    <block>
+        <title>Neighborhood Fluid Responsive Magento Theme-Default</title>
+        <identifier>neighborhood-default-home</identifier>
+        <status>1</status>
+        <content>
+          <![CDATA[
+            <div class="clearer martop50">{{block type="core/template" template="catalog/product/multiproduct/multi-block/first.phtml"}}</div>
+            <div class="clearer martop50">{{block type="core/template" template="catalog/product/multiproduct/multi-block/second.phtml"}}</div>
+            <div class="clearer martop50">{{block type="cms/block" block_id="home-block1"}}</div>
+            <div class="clearer martop50">{{block type="cms/block" block_id="home-block2"}}</div>
+            <div class="clearer martop50">{{block type="core/template" template="catalog/product/multiproduct/multi-block/third.phtml"}}</div>
+            <div class="clearer martop50">{{block type="multiproduct/product_default_bestseller" template="catalog/product/multiproduct/multi-block/bestseller.phtml"}}</div>
+            <div class="clearer martop50">{{block type="catalog/product_manufacturer" template="catalog/product/brand.phtml"}}</div>
+          ]]>
+        </content>        
+    </block>
+    
+    <block>
+        <title>Neighborhood Fluid Responsive Magento Theme-Spanish</title>
+        <identifier>neighborhood-spanish-home</identifier>
+        <status>1</status>
+        <content>
+          <![CDATA[
+            <div class="clearer martop50">
+            <div class="grid_6">{{block type="core/template" template="catalog/product/multiproduct/multi-block/fourth.phtml"}}</div>
+            {{block type="cms/block" block_id="home-block1"}}</div>
+          ]]>
+        </content>        
+    </block>
+    
+    <block>
+        <title>Neighborhood Fluid Responsive Magento Theme-French</title>
+        <identifier>neighborhood-french-home</identifier>
+        <status>1</status>
+        <content>
+          <![CDATA[
+            <div class="clearer">{{block type="core/template" template="catalog/product/multiproduct/multi-block/first.phtml"}}</div>
+            <div class="clearer martop50">{{block type="cms/block" block_id="home-block2"}}</div>
+            <div class="clearer martop50">{{block type="core/template" template="catalog/product/multiproduct/multi-block/second.phtml"}}</div>
+          ]]>
+        </content>        
+    </block>
+    
+    <block>
+        <title>Neighborhood Fluid Responsive Magento Theme-German</title>
+        <identifier>neighborhood-german-home</identifier>
+        <status>1</status>
+        <content>
+          <![CDATA[
+            <div class=" clearer martop50">{{block type="core/template" template="catalog/product/multiproduct/multi-block/first.phtml"}}</div>
+            <div class="clearer martop50">{{block type="multiproduct/product_default_bestseller" template="catalog/product/multiproduct/multi-block/bestseller.phtml"}}</div>
+            <div class="clearer martop50">{{block type="core/template" template="catalog/product/multiproduct/multi-block/second.phtml"}}</div>
+            <div class="clearer martop50">{{block type="catalog/product_manufacturer" template="catalog/product/brand.phtml"}}</div>
+          ]]>
+        </content>        
+    </block>
+    
+    <block>
+        <title>Neighborhood Fluid Responsive Magento Theme-Italian</title>
+        <identifier>neighborhood-italian-home</identifier>
+        <status>1</status>
+        <content>
+          <![CDATA[
+            <div class="clearer martop50">{{block type="core/template" template="catalog/product/multiproduct/multi-block/first.phtml"}}</div>
+            <div class="clearer martop50">{{block type="core/template" template="catalog/product/multiproduct/multi-block/second.phtml"}}</div>
+            <div class="clearer martop50">{{block type="cms/block" block_id="home-block1"}}</div>
+            <div class="clearer martop50">{{block type="cms/block" block_id="home-block2"}}</div>
+            <div class="clearer martop50">{{block type="core/template" template="catalog/product/multiproduct/multi-block/third.phtml"}}</div>
+            <div class="clearer martop50">{{block type="catalog/product_manufacturer" template="catalog/product/brand.phtml"}}</div>
+          ]]>
+        </content>        
+    </block>
+    
+    <block>
+        <title>Typography</title>
+        <identifier>typography</identifier>
+        <status>1</status>
+        <content>
+          <![CDATA[
+            <div class="page-title">
+            <h1>Typography</h1>
+            </div>
+            <div class="clearer">&nbsp;</div>
+            <div class="pull-container clear"><!-- only use js for current block -->
+            <script type="text/javascript" src="{{skin url}}js/d3.min.js"></script>
+            <script type="text/javascript" src="{{skin url}}js/radialProgress.js"></script>
+            <!--Block Content -->
+            <div class="grid_3 peer-wrapper center centered radial">
+            <div id="div1"><span><em class="fa fa-mobile-phone fa-3x">&nbsp;</em></span></div>
+            <h3>Incredibly Responsive</h3>
+            <p>Neighborhood is completely responsive. And when we say responsive, we mean it won&rsquo;t only work on mobile devices; it&rsquo;ll look damn good too!</p>
+            <a href="#">Fine out more<em class="fa fa-chevron-right">&nbsp;</em></a></div>
+            <div class="grid_3 peer-wrapper center radial">
+            <div id="div2"><span><em class="fa fa-pencil fa-3x">&nbsp;</em></span></div>
+            <h3>Dynamic Blog</h3>
+            <p>create an interactive two-way communication platform to provide official information on your store news, upcoming products, promotions, and get customers&rsquo; feedback.</p>
+            <a href="#">Fine out more<em class="fa fa-chevron-right">&nbsp;</em></a></div>
+            <div class="grid_3 peer-wrapper center radial">
+            <div id="div3"><span><em class="fa fa-font fa-3x">&nbsp;</em></span></div>
+            <h3>Superior Typography</h3>
+            <p>Neighborhood includes pro Font Deck support. Or you can choose from 600+ Google Web fonts &amp; control the colour, size &amp; line height.</p>
+            <a href="#">Fine out more<em class="fa fa-chevron-right">&nbsp;</em></a></div>
+            <div class="grid_3 peer-wrapper center radial">
+            <div id="div4"><span><em class="fa fa-eye fa-3x">&nbsp;</em></span></div>
+            <h3>Stunning Sliders</h3>
+            <p>Neighborhood comes with 2 sliders included. The ever popular Revolution Slider and our own innovative and stunning Default Slider.</p>
+            <a href="#">Fine out more<em class="fa fa-chevron-right">&nbsp;</em></a></div>
+            </div>
+            <!-- only use javascript for current block -->
+            <script type="text/javascript" language="JavaScript">
+                            var div1=d3.select(document.getElementById('div1'));
+                            var div2=d3.select(document.getElementById('div2'));
+                            var div3=d3.select(document.getElementById('div3'));
+                            var div3=d3.select(document.getElementById('div4'));
+                        
+                            start();
+                        
+                        
+                            function labelFunction(val,min,max) {
+                        
+                            }
+                        
+                            function start() {
+                        
+                                var rp1 = radialProgress(document.getElementById('div1'))
+                                        .value(50)
+                                        .diameter(200)
+                                        .render();
+                        
+                                var rp2 = radialProgress(document.getElementById('div2'))
+                                        .diameter(200)
+                                        .value(75)
+                                        .render();
+                        
+                                var rp3 = radialProgress(document.getElementById('div3'))
+                                        .diameter(200)
+                                        .value(85)
+                                        .render();
+                                        
+                                var rp4 = radialProgress(document.getElementById('div4'))
+                                        .diameter(200)
+                                        .value(100)
+                                        .render();                
+                        
+                            }
+            </script>
+            <div class="clearer section-hr martop10 marbot40">&nbsp;</div>
+            <div class="pull-container clear">
+            <div class="grid_6">
+            <h1>H1 Heading</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hend merit non sed ligula. Vivamus purus odio, mollis ut sagittis vel, feugiat et nulla.</p>
+            <div class="clearer martop20">&nbsp;</div>
+            <h2>H2 Heading</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hend merit non sed ligula. Vivamus purus odio, mollis ut sagittis vel, feugiat et nulla.</p>
+            <div class="clearer martop20">&nbsp;</div>
+            <h3>H3 Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hend merit non sed ligula. Vivamus purus odio, mollis ut sagittis vel, feugiat et nulla.</p>
+            <div class="clearer martop20">&nbsp;</div>
+            <h4>H4 Heading</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hend merit non sed ligula. Vivamus purus odio, mollis ut sagittis vel, feugiat et nulla.</p>
+            <div class="clearer martop20">&nbsp;</div>
+            <h5>H5 Heading</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hend merit non sed ligula. Vivamus purus odio, mollis ut sagittis vel, feugiat et nulla.</p>
+            <div class="clearer martop20">&nbsp;</div>
+            <h6>H6 Heading</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hend merit non sed ligula. Vivamus purus odio, mollis ut sagittis vel, feugiat et nulla.</p>
+            </div>
+            <div class="grid_6">
+            <div class="peer-wrapper peer-icon peer-icon-circle peer-icon-hover indent large">
+            <div class="icon fa fa-star">&nbsp;</div>
+            <div class="peer-content">
+            <h6 class="above-heading">The Secondary Heading</h6>
+            <h3>Sample Heading</h3>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque solare de equis. Nullam ornare enim nec justo biben lobortis. In eget metus. Lorem ipsum dolor sit consectetur...</p>
+            <a class="go" href="#">Read more</a></div>
+            </div>
+            <br />
+            <div class="peer-wrapper peer-icon peer-icon-circle peer-icon-hover indent large">
+            <div class="icon fa fa-star">&nbsp;</div>
+            <div class="peer-content">
+            <h6 class="above-heading">The Secondary Heading</h6>
+            <h3>Feature Title</h3>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque quis. Nullam ornare enim nec justo bibendum lobortis. In eget metus. Lorem ipsum dolor sit consectetur, adipiscing elit</p>
+            <a class="go" href="#">Read more</a></div>
+            </div>
+            <br />
+            <div class="peer-wrapper peer-icon peer-icon-circle peer-icon-hover indent large">
+            <div class="icon fa fa-star">&nbsp;</div>
+            <div class="peer-content">
+            <h6 class="above-heading">The Secondary Heading</h6>
+            <h3>Sample Title</h3>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque quis. Nullam ornare enim nec justo bibendum lobortis. In eget metus. Lorem ipsum dolor sit consectetur, adipiscing elit</p>
+            <a class="go" href="#">Read more</a></div>
+            </div>
+            <br />
+            <div class="peer-wrapper peer-icon peer-icon-circle peer-icon-hover indent large">
+            <div class="icon fa fa-star">&nbsp;</div>
+            <div class="peer-content">
+            <h6 class="above-heading">The Secondary Heading</h6>
+            <h3>Feature Title</h3>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque quis. Nullam ornare enim nec justo bibendum lobortis. In eget metus. Lorem ipsum dolor sit consectetur, adipiscing elit</p>
+            <a class="go" href="#">Read more</a></div>
+            </div>
+            </div>
+            </div>
+            <div class="clearer section-hr martop30 marbot40">&nbsp;</div>
+            <div class="grid-container clear">
+            <blockquote class="blockquote">&ldquo;Lorem ipsum dolor sit amet, cons tet ur adipisicing et elit, sed mod. incidid unt ut out labore et dolore magna minim veniam, quis nostrud exercitation ulla mco nisi ut aliquip.&rdquo;</blockquote>
+            </div>
+            <div class="clearer section-hr martop30 marbot40">&nbsp;</div>
+            <div class="grid-container clear">
+            <blockquote class="blockquote2 pullquote">&ldquo;Lorem ipsum dolor sit amet, cons tet ur adipisicing et elit, sed mod. incidid unt ut out labore et dolore magna minim veniam, quis nostrud exercitation ulla mco nisi ut aliquip.&rdquo;</blockquote>
+            </div>
+            <div class="clearer section-hr martop30 marbot40">&nbsp;</div>
+            <div class="grid-container clear">
+            <div class="highlight-text">Lorem&nbsp;<span class="highlighted">ipsum dolor sit</span>&nbsp;amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor.</div>
+            </div>
+            <div class="clearer section-hr martop30 marbot40">&nbsp;</div>
+            <div class="pull-container clear">
+            <div class="grid_3">
+            <ul class="disc">
+            <li><a href="#">Sample Link</a></li>
+            <li><a href="#">Lectus vitae ligula tempus</a></li>
+            <li><a href="#">Vitae lorem ipsum dolor sit amet</a></li>
+            <li><a href="#">Sample lectus vitae ligula tempus</a></li>
+            <li><a href="#">Meat Our Best Partners</a></li>
+            <li><a href="#">Our Other Projects</a></li>
+            <li><a href="#">One Click To Join Us</a></li>
+            <li><a href="#">Follow Us On Twitter</a></li>
+            <li><a href="#">Magento Themes</a></li>
+            </ul>
+            </div>
+            <div class="grid_3"><ol class="ordered-list">
+            <li><a href="#">Sample Link</a></li>
+            <li><a href="#">Lectus vitae ligula tempus</a></li>
+            <li><a href="#">Vitae lorem ipsum dolor sit amet</a></li>
+            <li><a href="#">Sample lectus vitae ligula tempus</a></li>
+            <li><a href="#">Meat Our Best Partners</a></li>
+            <li><a href="#">Our Other Projects</a></li>
+            <li><a href="#">One Click To Join Us</a></li>
+            <li><a href="#">Follow Us On Twitter</a></li>
+            <li><a href="#">Magento Themes</a></li>
+            </ol></div>
+            <div class="grid_3">
+            <div class="peer-wrapper peer-icon indent">
+            <div class="icon i-digit">1</div>
+            <div class="peer-content">Unlimited colors, dozens of customizable elements</div>
+            </div>
+            <br />
+            <div class="peer-wrapper peer-icon indent">
+            <div class="icon i-digit">2</div>
+            <div class="peer-content">Customizable responsive layout based on fluid grid</div>
+            </div>
+            <br />
+            <div class="peer-wrapper peer-icon indent">
+            <div class="icon i-digit">3</div>
+            <div class="peer-content">50+ placeholders to display custom content</div>
+            </div>
+            <br />
+            <div class="peer-wrapper peer-icon indent">
+            <div class="icon i-digit">4</div>
+            <div class="peer-content">Create your custom sub-themes (variants)</div>
+            </div>
+            </div>
+            <div class="grid_3">
+            <ul class="bullet">
+            <li><a href="#">Sample Link</a></li>
+            <li><a href="#">Lectus vitae ligula tempus</a></li>
+            <li><a href="#">Vitae lorem ipsum dolor sit amet</a></li>
+            <li><a href="#">Sample lectus vitae ligula tempus</a></li>
+            <li><a href="#">Meat Our Best Partners</a></li>
+            <li><a href="#">Our Other Projects</a></li>
+            <li><a href="#">One Click To Join Us</a></li>
+            <li><a href="#">Follow Us On Twitter</a></li>
+            <li><a href="#">Magento Themes</a></li>
+            </ul>
+            </div>
+            </div>
+            <div class="clearer section-hr martop30 marbot40">&nbsp;</div>
+            <div class="grid-container clear">
+            <ul class="messages">
+            <li class="success-msg">
+            <ul>
+            <li><span>These are sample system messages displayed by Magento.</span></li>
+            </ul>
+            </li>
+            <li class="error-msg">
+            <ul>
+            <li><span>The maximum quantity allowed for purchase is 10.</span></li>
+            </ul>
+            </li>
+            <li class="notice-msg">
+            <ul>
+            <li><span>Please specify the product's option(s).</span></li>
+            </ul>
+            </li>
+            </ul>
+            </div>
+            <div class="clearer section-hr martop10 marbot40">&nbsp;</div>
+            <div class="pull-container clear">
+            <div class="button-large marbot20 grid-container">
+            <div class="grid_2"><button class="button btn-large" title="Large Button" type="button"><span><span>Large Button</span></span></button></div>
+            <div class="grid_2"><button class="button btn-large" title="Large Button" type="button"><span><span>Large Button</span></span></button></div>
+            <div class="grid_2"><button class="button btn-large" title="Large Button" type="button"><span><span>Large Button</span></span></button></div>
+            <div class="grid_2"><button class="button btn-large" title="Large Button" type="button"><span><span>Large Button</span></span></button></div>
+            <div class="grid_2"><button class="button btn-large" title="Large Button" type="button"><span><span>Large Button</span></span></button></div>
+            <div class="grid_2"><button class="button btn-large" title="Large Button" type="button"><span><span>Large Button</span></span></button></div>
+            </div>
+            <div class="button-medium marbot20 grid-container">
+            <div class="grid_2"><button class="button btn-medium" title="Medium Button" type="button"><span><span>Medium Button</span></span></button></div>
+            <div class="grid_2"><button class="button btn-medium" title="Medium Button" type="button"><span><span>Medium Button</span></span></button></div>
+            <div class="grid_2"><button class="button btn-medium" title="Medium Button" type="button"><span><span>Medium Button</span></span></button></div>
+            <div class="grid_2"><button class="button btn-medium" title="Medium Button" type="button"><span><span>Medium Button</span></span></button></div>
+            <div class="grid_2"><button class="button btn-medium" title="Medium Button" type="button"><span><span>Medium Button</span></span></button></div>
+            <div class="grid_2"><button class="button btn-medium" title="Medium Button" type="button"><span><span>Medium Button</span></span></button></div>
+            </div>
+            <div class="button-small grid-container">
+            <div class="grid_2"><button class="button btn-small" title="Small Button" type="button"><span><span>Small Button</span></span></button></div>
+            <div class="grid_2"><button class="button btn-small" title="Small Button" type="button"><span><span>Small Button</span></span></button></div>
+            <div class="grid_2"><button class="button btn-small" title="Small Button" type="button"><span><span>Small Button</span></span></button></div>
+            <div class="grid_2"><button class="button btn-small" title="Small Button" type="button"><span><span>Small Button</span></span></button></div>
+            <div class="grid_2"><button class="button btn-small" title="Small Button" type="button"><span><span>Small Button</span></span></button></div>
+            <div class="grid_2"><button class="button btn-small" title="Small Button" type="button"><span><span>Small Button</span></span></button></div>
+            </div>
+            </div>
+            <div class="clearer section-hr martop30 marbot40">&nbsp;</div>
+            <div class="pull-container clear">
+            <div class="grid_4">
+            <div class="peer-wrapper peer-icon peer-icon-square peer-icon-hover large">
+            <div class="icon fa fa-star">&nbsp;</div>
+            <h3>Sample Heading</h3>
+            <h6 class="below-heading">The Secondary Heading</h6>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque solare de equis. Nullam ornare enim nec justo biben lobortis. In eget metus. Lorem ipsum dolor sit consectetur...</p>
+            <a class="go" href="#">Read more</a></div>
+            </div>
+            <div class="grid_4">
+            <div class="peer-wrapper peer-icon peer-icon-square peer-icon-hover large">
+            <div class="icon fa fa-star">&nbsp;</div>
+            <h3>Feature Title</h3>
+            <h6 class="below-heading">The Secondary Heading</h6>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque quis. Nullam ornare enim nec justo bibendum lobortis. In eget metus. Lorem ipsum dolor sit consectetur, adipiscing elit</p>
+            <a class="go" href="#">Read more</a></div>
+            </div>
+            <div class="grid_4">
+            <div class="peer-wrapper peer-icon peer-icon-square peer-icon-hover large">
+            <div class="icon fa fa-star">&nbsp;</div>
+            <h3>Sample Title</h3>
+            <h6 class="below-heading">The Secondary Heading</h6>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque quis. Nullam ornare enim nec justo bibendum lobortis. In eget metus. Lorem ipsum dolor sit consectetur, adipiscing elit</p>
+            <a class="go" href="#">Read more</a></div>
+            </div>
+            </div>
+            <div class="clearer section-hr martop30 marbot40">&nbsp;</div>
+            <div class="pull-container clear">
+            <div class="grid_3">
+            <div class="peer-wrapper">
+            <div class="section-line">
+            <h3>Sample Heading</h3>
+            </div>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque solare de equis. Nullam ornare enim nec . . .</p>
+            <a href="#">Fine out more</a></div>
+            </div>
+            <div class="grid_3">
+            <div class="peer-wrapper peer-icon no-bg-color">
+            <div class="section-line">
+            <h3>Feature Title</h3>
+            </div>
+            <div class="icon i-letter marbot0">
+            <h2>N</h2>
+            </div>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque solare de equis. Nullam ornare enim nec . . .</p>
+            <a href="#">Fine out more</a></div>
+            </div>
+            <div class="grid_3">
+            <div class="peer-wrapper center">
+            <div class="section-line">
+            <h3>Sample Title</h3>
+            </div>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque solare de equis. Nullam ornare enim nec . . .</p>
+            <a href="#">Fine out more</a></div>
+            </div>
+            <div class="grid_3">
+            <div class="peer-wrapper peer-icon no-bg-color right a-right">
+            <div class="section-line">
+            <h3>Feature Title</h3>
+            </div>
+            <div class="icon i-letter marbot0">
+            <h2>N</h2>
+            </div>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque solare de equis. Nullam ornare enim nec . . .</p>
+            <a href="#">Fine out more</a></div>
+            </div>
+            </div>
+            <div class="clearer section-hr martop30 marbot40">&nbsp;</div>
+            <div class="pull-container clear">
+            <div class="grid_4">
+            <div class="peer-wrapper peer-icon peer-icon-round center peer-icon-hover">
+            <div class="icon fa fa-star">&nbsp;</div>
+            <h3>Sample Heading</h3>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque solare de equis. Nullam ornare enim nec justo biben lobortis. In eget metus. Lorem ipsum dolor sit consectetur...</p>
+            <a href="#">Fine out more &nbsp;&nbsp;<em class="fa fa-chevron-right" style="font-style: normal;">&nbsp;</em></a></div>
+            </div>
+            <div class="grid_4">
+            <div class="peer-wrapper peer-icon peer-icon-round center peer-icon-hover"><span class="icon fa fa-star">&nbsp;</span>
+            <h3>Feature Title</h3>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque solare de equis. Nullam ornare enim nec justo biben lobortis. In eget metus. Lorem ipsum dolor sit consectetur...</p>
+            <a href="#">Fine out more &nbsp;&nbsp;<em class="fa fa-chevron-right" style="font-style: normal;">&nbsp;</em></a></div>
+            </div>
+            <div class="grid_4">
+            <div class="peer-wrapper peer-icon peer-icon-round center peer-icon-hover"><span class="icon fa fa-star">&nbsp;</span>
+            <h3>Sample Title</h3>
+            <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque solare de equis. Nullam ornare enim nec justo biben lobortis. In eget metus. Lorem ipsum dolor sit consectetur...</p>
+            <a href="#">Fine out more &nbsp;&nbsp;<em class="fa fa-chevron-right" style="font-style: normal;">&nbsp;</em></a></div>
+            </div>
+            </div>
+            <div class="clearer section-hr martop30 marbot40">&nbsp;</div>
+            <div class="grid-container clear">
+            <div class="peer-wrapper">
+            <div class="img-box"><img src="{{media url="wysiwyg/block_banner/sidebar-left-blockimg.jpg"}}" alt="" /></div>
+            <h3>Sub Title</h3>
+            <p>Aliquam erat volutpat. Duis ac turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros.</p>
+            <p>Donec porta diam eu massa. Quisque diam lorem, interdum vitae,dapibus ac, scelerisque vitae, pede. Donec eget tellus non erat lacinia fermentum. Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam.</p>
+            <p>Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante isque eget, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit agna,endrerit sit amet, tincidunt ac, viverra sed, nulla.</p>
+            </div>
+            <div class="peer-wrapper right">
+            <div class="img-box"><img src="{{media url="wysiwyg/block_banner/sidebar-right-blockimg.jpg"}}" alt="" /></div>
+            <h3>Sub Title</h3>
+            <strong class="content">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit agna,endrerit sit amet, tincidunt ac, viverra sed, nulla.</strong> <br /> <br />
+            <p>Donec porta diam eu massa. Quisque diam lorem, interdum vitae,dapibus ac, scelerisque vitae, pede. Donec eget tellus non erat lacinia fermentum. Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam.</p>
+            <p>Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante isque eget, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit agna,endrerit sit amet, tincidunt ac, viverra sed, nulla.</p>
+            </div>
+            <div class="peer-wrapper">
+            <div class="center-block"><img src="{{media url="wysiwyg/block_banner/custom-blockimg4.jpg"}}" alt="" />
+            <p>The new Mismo collection for Autumn / Winter 2013.</p>
+            </div>
+            <br />
+            <h3>Sub Title</h3>
+            <p>Aliquam erat volutpat. Duis ac turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros.</p>
+            <ul class="disc content">
+            <li class="first">Alesuada at, neque. Vivamus eget nibh.</li>
+            <li>Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros.</li>
+            <li class="last">Vestibulum ante ipsum primis in faucibus orci.</li>
+            </ul>
+            <p>Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante isque eget, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit agna,endrerit sit amet, tincidunt ac, viverra sed, nulla.</p>
+            </div>
+            </div>
+            <div class="clearer section-hr marbot40">&nbsp;</div>
+            <div class="page-banners pull-container clear">
+            <div class="grid_6 banner"><a href="#"><img src="{{media url="wysiwyg/block_banner/sample-banner1.png"}}" alt="Sample Banner" /></a></div>
+            <div class="grid_6 banner"><a href="#"><img src="{{media url="wysiwyg/block_banner/sample-banner1.png"}}" alt="Sample Banner" /></a></div>
+            <div class="grid_4 banner"><a href="#"><img src="{{media url="wysiwyg/block_banner/sample-banner1.png"}}" alt="Sample Banner" /></a></div>
+            <div class="grid_4 banner"><a href="#"><img src="{{media url="wysiwyg/block_banner/sample-banner1.png"}}" alt="Sample Banner" /></a></div>
+            <div class="grid_4 banner"><a href="#"><img src="{{media url="wysiwyg/block_banner/sample-banner1.png"}}" alt="Sample Banner" /></a></div>
+            <div class="grid_3 banner"><a href="#"><img src="{{media url="wysiwyg/block_banner/sample-banner2.png"}}" alt="Sample Banner" /></a></div>
+            <div class="grid_3 banner"><a href="#"><img src="{{media url="wysiwyg/block_banner/sample-banner2.png"}}" alt="Sample Banner" /></a></div>
+            <div class="grid_6 banner"><a href="#"><img src="{{media url="wysiwyg/block_banner/sample-banner3.png"}}" alt="Sample Banner" /></a></div>
+            <div class="grid_3 banner"><a href="#"><img src="{{media url="wysiwyg/block_banner/sample-banner1.png"}}" alt="Sample Banner" /></a></div>
+            <div class="grid_3 banner"><a href="#"><img src="{{media url="wysiwyg/block_banner/sample-banner1.png"}}" alt="Sample Banner" /></a></div>
+            <div class="grid_3 banner"><a href="#"><img src="{{media url="wysiwyg/block_banner/sample-banner1.png"}}" alt="Sample Banner" /></a></div>
+            <div class="grid_3 banner"><a href="#"><img src="{{media url="wysiwyg/block_banner/sample-banner1.png"}}" alt="Sample Banner" /></a></div>
+            </div>
+          ]]>
+        </content>        
+    </block>
+    
+    <block>
+        <title>404 Not Found 1</title>
+        <identifier>no-route1</identifier>
+        <status>1</status>
+        <content>
+          <![CDATA[
+            <div class="page-title">
+            <h1>404 Not Found</h1>
+            </div>
+            <div class="page-not-found1">
+            <p class="above-text marbot40">Sorry but we couldn't find the page you are looking for. Please check to make sure you've typed the URL correctly. You may also want to search for what you are looking for.</p>
+            <div class="buttons-set">
+            <p class="back-link"><a href="{{store url=""}}">Go back to Homepage</a></p>
+            </div>
+            </div>
+          ]]>
+        </content>        
+    </block>
+    
+    <block>
+        <title>404 Not Found 2</title>
+        <identifier>no-route2</identifier>
+        <status>1</status>
+        <content>
+          <![CDATA[
+            <div class="page-title">
+            <h1>404 Not Found</h1>
+            </div>
+            <div class="page-not-found2">
+            <div class="grid_4 a-center"><span class="above-heading">Oops!</span></div>
+            <div class="grid_8">
+            <div class="martop30">
+            <h2>Sorry, this page does not exist</h2>
+            <p class="below-text">Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <p class="below-text ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,</p>
+            <div class="buttons-set">
+            <p class="back-link"><a href="{{store url=""}}">Go back to Homepage</a></p>
+            </div>
+            <div class="martop50">
+            <h2>Search our site</h2>
+            <p class="below-text">Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+          ]]>
+        </content>        
+    </block>
+    
+    <block>
+        <title>Neighborhood About Us</title>
+        <identifier>neighborhood-aboutus</identifier>
+        <status>1</status>
+        <content>
+          <![CDATA[
+            <div class="pull-container">
+            <div class="page-title">
+            <h1>About Neighborhood</h1>
+            </div>
+            <div class="grid_4 peer-wrapper">
+            <h2>Lorem ipsum</h2>
+            <p class="content" style="color: #555555;">By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+            <p class="content" style="color: #555555;">In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
+            </div>
+            <div class="grid_4 peer-wrapper">
+            <h2>Dolor sit amet</h2>
+            <p class="content" style="color: #555555;">enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
+            <p class="content" style="color: #555555;">Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+            <p class="content" style="color: #555555;">Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales</p>
+            </div>
+            <div class="grid_4">
+            <div class="page-banners">
+            <div class="banner"><img src="{{media url="wysiwyg/block_banner/custom-blockimg1.jpg"}}" alt="" /></div>
+            <div class="banner grid_6 no-left-margin"><img src="{{media url="wysiwyg/block_banner/custom-blockimg2.jpg"}}" alt="" /></div>
+            <div class="banner grid_6 no-right-margin"><img src="{{media url="wysiwyg/block_banner/custom-blockimg3.jpg"}}" alt="" /></div>
+            </div>
+            <h2>John Doe</h2>
+            <p>Some important guy</p>
+            </div>
+            <div class="separator clear" style="width: 100%; border-bottom: 2px solid; margin-top: 30px; margin-bottom: 50px; clear: both; float: left;">&nbsp;</div>
+            <div class="grid_4">
+            <div class="peer-wrapper peer-icon-square peer-icon peer-icon-hover large indent">
+            <div class="icon fa fa-map-marker">&nbsp;</div>
+            <div class="peer-content">
+            <h3>Free shipping for any order over $100</h3>
+            <p class="content no-margin">Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+            </div>
+            </div>
+            </div>
+            <div class="grid_4">
+            <div class="peer-wrapper peer-icon-square peer-icon peer-icon-hover large indent">
+            <div class="icon fa fa-mobile-phone">&nbsp;</div>
+            <div class="peer-content">
+            <h3>Personal advies nodig? Bel of mail</h3>
+            <p class="content no-margin">Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+            </div>
+            </div>
+            </div>
+            <div class="grid_4">
+            <div class="peer-wrapper peer-icon-square peer-icon peer-icon-hover large indent">
+            <div class="icon fa fa-envelope">&nbsp;</div>
+            <div class="peer-content">
+            <h3>The Cheapest of the Ukraine</h3>
+            <p class="content no-margin">Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+          ]]>
+        </content>        
+    </block>
+    
+  </cms_page>
+</root>

@@ -1,0 +1,44 @@
+
+
+/* ********************************************************************************************
+    Columngrid
+*********************************************************************************************** */
+
+.products-grid.columngrid{margin-left: -1%;margin-right: -1%;}
+.columngrid .item {float:left;margin-left:1%;margin-right:1%;margin-top:4%;}
+
+
+/* ********************************************************************************************
+    Columngrid Item
+*********************************************************************************************** */
+
+/* Column grid: 1 column */
+.columngrid-1col .item { width:98%; }
+
+/* Column grid: 2 columns */
+.columngrid-2col .item { width:48%; }
+.columngrid-2col .item:nth-child(2n+1) { clear:left; }
+
+/* Column grid: 3 columns */
+.columngrid-3col .item { width:31.3333%; }
+.columngrid-3col .item:nth-child(3n+1) { clear:left; }
+
+/* Column grid: 4 columns */
+.columngrid-4col .item { width:23%; }
+.columngrid-4col .item:nth-child(4n+1) { clear:left; }
+
+/* Column grid: 5 columns */
+.columngrid-5col .item { width:18%; }
+.columngrid-5col .item:nth-child(5n+1) { clear:left; }
+
+/* Column grid: 6 columns */
+.columngrid-6col .item { width:14.6666%; }
+.columngrid-6col .item:nth-child(6n+1) { clear:left; }
+
+/* Column grid: 7 columns */
+.columngrid-7col .item { width:12.2857%; }
+.columngrid-7col .item:nth-child(7n+1) { clear:left; }
+
+/* Column grid: 8 columns */
+.columngrid-8col .item { width:10.5%; }
+.columngrid-8col .item:nth-child(8n+1) { clear:left; }

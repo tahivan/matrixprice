@@ -1,0 +1,710 @@
+/*
+Do not change this file it lost your changes.
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ********************************************************************************************
+    Desktop, laptop - design for a width of 1280px
+*********************************************************************************************** */
+
+/* 1280px <= width */
+
+@media only screen and (min-width: 1280px)  {
+	
+    /* Column grid
+    ======================================================================================= */
+    /* Column grid: 1 columns */
+    .columngrid-adaptive.columngrid-1col .item { width:48%; clear:none !important; }
+    .columngrid-adaptive.columngrid-1col .item:nth-child(2n+1) { clear:left !important; }
+    
+    /* Column grid: 2 columns */
+    .columngrid-adaptive.columngrid-2col .item { width:31.3333%; clear:none !important; }
+    .columngrid-adaptive.columngrid-2col .item:nth-child(3n+1) { clear:left !important; }
+    
+    /* Column grid: 3 columns */
+    .columngrid-adaptive.columngrid-3col .item { width:23%; clear:none !important; }
+    .columngrid-adaptive.columngrid-3col .item:nth-child(4n+1) { clear:left !important; }
+    
+    /* Column grid: 4 columns */
+    .columngrid-adaptive.columngrid-4col .item { width:18%; clear:none !important; }
+    .columngrid-adaptive.columngrid-4col .item:nth-child(5n+1) { clear:left !important; }
+    
+    /* Column grid: 5 columns */
+    .columngrid-adaptive.columngrid-5col .item { width:14.6666%; clear:none !important; }
+    .columngrid-adaptive.columngrid-5col .item:nth-child(6n+1) { clear:left !important; }
+    
+    /* Column grid: 6 columns */
+    .columngrid-adaptive.columngrid-6col .item { width:12.2857%; clear:none !important; }
+    .columngrid-adaptive.columngrid-6col .item:nth-child(7n+1) { clear:left !important; }
+    
+    /* Column grid: 7 columns */
+    .columngrid-adaptive.columngrid-7col .item { width:10.5%; clear:none !important; }
+    .columngrid-adaptive.columngrid-7col .item:nth-child(8n+1) { clear:left !important; }
+    
+    /* Banner Slider Caption
+    ======================================================================================= */
+    .banner-slider .caption .heading { font-size:40px; line-height: 46px;}
+    .banner-slider .caption p { font-size:20px; line-height: 30px;}
+    
+    /* Cart
+    ======================================================================================= */
+    .cart-table .product-image { max-width:70px; }
+    
+    /* Misc
+    ======================================================================================= */
+    /* Mini cart */
+    .after-mini-cart { clear:none; }
+
+}
+
+
+/* ********************************************************************************************
+    Design for a width of 960-1280 px
+*********************************************************************************************** */
+
+/* 960px <= width < 1280px */
+@media only screen and (min-width: 960px) and (max-width: 1279px) {
+
+    /* Cart
+    ======================================================================================= */
+    .cart-table .product-image { max-width:80px; }
+
+}
+
+
+/* ********************************************************************************************
+    Design for a width of 1024 px
+*********************************************************************************************** */
+
+/* width <= 1024px */
+@media only screen and (max-width: 1041px) {
+    
+    /* Products grid
+    ======================================================================================= */
+    .products-grid .item .visible-onhover {visibility: visible;opacity: 1;}
+    .products-grid .item .fancybox { display: none !important; }
+    
+    /* Disable hover effect
+    ======================================================================================= */        
+    
+    /* Show elements normally displayed only on hover */
+    .category-products-grid .item .display-onhover {display: block !important;}
+    
+    /* Show elements normally displayed only on hover (Add to links & Add to cart) */
+    .products-grid .actions{bottom: 0px;}
+    
+    /* Product alter images normally displayed on hover */
+    .products-grid .item:hover .product-image .small-image,
+    .products-grid .item:hover .product-image .thumbnail{
+        -webkit-transform: translate3d(0,0%,0);
+        -moz-transform: translate3d(0,-100%,0);
+        -ms-transform: translate3d(0,-100%,0);
+        -o-transform: translate3d(0,-100%,0);
+    }
+        
+    /* Slider controls
+    ======================================================================================= */
+        
+    /* Show elements normally displayed only on hover */
+    .owl-theme .owl-controls .owl-buttons div,
+    .owl-theme:hover .owl-controls .owl-buttons div {opacity: 1;-moz-opacity: 1;filter: alpha(opacity=100);}
+        
+    /* Header Style 5
+    ======================================================================================= */
+    
+    /* Header Dropdown (Shopping cart & Quick Search) */
+    .header-container.header5 .quick-search .dropdown-menu,
+    .header-container.header5 .shopping_cart .dropdown-menu{right:auto;left:0;}
+    
+    .header-container.header5 .quick-search .dropdown-menu:before,
+    .header-container.header5 .shopping_cart .dropdown-menu:before{right:auto;left:11px;}
+    
+}
+
+
+/* ********************************************************************************************
+    Mobile, small old desktop - design for a width of less than 960px
+*********************************************************************************************** */
+
+/* width < 960px */
+@media only screen and (max-width: 959px) {
+                
+    /* Header Dropdown Elements
+    ======================================================================================= */
+    
+    /* All elements increase horizontal spacing */
+    .shopping_cart .dropdown-toggle.cover > div,
+    .quick-search .dropdown-toggle.cover > div,
+    .wishlist .dropdown-toggle.cover > div {padding: 0px 11px;}
+
+    /* Wishlist (Remove item count div) */
+    .wishlist .count{display:none;}
+        
+    /* Shopping Cart
+    ======================================================================================= */
+    .cart .cart-left-column,
+    .cart .cart-right-column{width:100% !important;margin-left:0% !important;margin-right:0% !important;}
+    .cart .cart-right-column{margin-top: 50px;}
+    
+    /* Banner Slider Caption
+    ======================================================================================= */
+    .banner-slider .caption {display: none !important;}
+
+}
+
+
+/* ********************************************************************************************
+    Tablet (Portrait) - design for a width of 768px
+*********************************************************************************************** */
+
+/* 768px <= width < 960px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    /* Default Magento classes
+    ======================================================================================= */
+    .nobr { white-space:normal !important; }    
+    
+    /* Cart
+    ======================================================================================= */
+    .cart-table .product-image { max-width:80px; }        
+    
+}
+
+
+/* ********************************************************************************************
+    All desktop - design for a width of 768px and wider
+*********************************************************************************************** */
+
+/* 768px <= width */
+@media only screen and (min-width: 768px) {
+	
+    /* Mobile accordion
+    ======================================================================================= */
+    .mobile-accordion .block-title { border-bottom:none; }		/* Hide line when not on mobile */
+    .mobile-accordion .opener { display:none !important; }		/* Always hide when not on mobile */
+    .mobile-accordion .block-content { display:block !important; }	/* Always show when not on mobile */
+    .accordion .block-content{display: none;}
+
+}
+
+
+/* ********************************************************************************************
+    All mobile - design for a width of less than 768px
+*********************************************************************************************** */
+
+/* width < 768px */
+@media only screen and (max-width: 767px) {
+        
+    /* Disable display banner with header
+    ======================================================================================= */
+    body.cms-index-index .header-container,
+    body.cms-index-defaultindex .header-container,
+    body.cms-home .header-container {position: relative !important;}
+    
+    /* Header
+    ======================================================================================= */
+
+    /* Global notices */
+    .global-site-notice .notice-inner { background:none; padding:10px 0; text-align:center; }
+    .global-site-notice .notice-inner p { width:100%; padding:0 0 10px; }
+    .global-site-notice .notice-inner .actions { padding-bottom:5px; }			
+            
+    /* Logo
+    ======================================================================================= */
+    .logo { width:80%; margin-left:auto; margin-right:auto; text-align: center !important; margin-top: 15px; margin-bottom: 15px;}
+        
+    /* Other
+    ======================================================================================= */
+    .header{text-align: center;}
+    .header-primary{padding:15px 0px;}
+    
+    /* Header elements - align center */
+    .header .dropdown,
+    .header .top-links{display: inline-block;float: none;margin-left: -3px;}
+    
+    /* Wishlist (Display on item count div) */
+    .wishlist .count{display: inline-block;}
+
+    /* Header Style 2
+    ======================================================================================= */
+    
+    /* Top Links & Dropdown */
+    .header-container.header2 .top-links{float:left;}
+    .header-container.header2 .currency.dropdown,
+    .header-container.header2 .currency.dropdown .dropdown-toggle.cover > div{padding-right: 0px;border-right-width: 0px;}
+    .header-container.header2 .currency.dropdown .dropdown-menu.left-hand,
+    .header-container.header2 .language.dropdown .dropdown-menu.left-hand{left: auto;right: 0;}
+    .header-container.header2 .currency.dropdown .dropdown-menu.left-hand:before,
+    .header-container.header2 .language.dropdown .dropdown-menu.left-hand:before{left:auto;right:20px;}
+    
+    /* Header Style 3
+    ======================================================================================= */
+    
+    /* Top Links & Dropdown */
+    .header-container.header3 .header .dropdown{float:left;}
+    .header-container.header3 .top-links{float:right;}
+    .header-container.header3 .currency.dropdown{border-right-width: 0px;}
+    
+    /* Header Style 4
+    ======================================================================================= */
+    
+    /* Top Links & Dropdown */
+    .header-container.header4 .header .dropdown{float:left;}
+    .header-container.header4 .header-primary .dropdown{float:right;}
+    .header-container.header4 .top-links{float:right;}
+    
+    /* Responsive Menu */
+    .header-container.header4 .toggleMenu{float:left;}
+    .header-container.header4 .nav-container{float:none;}
+    .header-container.header4 #cssmenu #mobile-menu,
+    .header-container.header4 #nav{left:0px;right:0px;}
+    .header-container.header4 #cssmenu,
+    .header-container.header4 .nav-container{position: relative;}        
+        
+    /* Header Style 5
+    ======================================================================================= */
+    
+    /* All elements - align center */
+    .header-container.header5 .header .item-left,
+    .header-container.header5 .header .item-right,
+    .header-container.header5 .header .dropdown{display:inline-block;float:none;vertical-align: middle;}
+
+    /* Responsive menu */
+    .header-container.header5 .nav{text-align:right;}
+    .header-container.header5 .toggleMenu{float:left;}
+    .header-container.header5 .nav-container{float:none;}
+    
+    /* Header Dropdown (Shopping cart & Quick Search) */
+    .header-container.header5 .quick-search .dropdown-menu,
+    .header-container.header5 .shopping_cart .dropdown-menu{right:0;left:auto;}
+    
+    .header-container.header5 .quick-search .dropdown-menu:before,
+    .header-container.header5 .shopping_cart .dropdown-menu:before{right:11px;left:auto;}
+    
+    /* Resposive Menu */
+    .header-container.header5 #cssmenu,
+    .header-container.header5 .nav-container{position: relative;}                    
+    
+    /* Category view
+    ======================================================================================= */
+    .products-list .product-shop,
+    .products-list .right-column,
+    .products-list .product-image-wrapper { margin-left: auto !important;margin-right: auto !important;float:none;}
+    
+    .products-list .product-image-wrapper,
+    .products-list .product-image{max-width:300px;display: block;}
+    .products-list .product-shop{padding-top: 20px;float:left;}
+
+    /* Toolbar
+    ======================================================================================= */
+    
+    /* Increase vertical spacing */
+    .my-account .pager{margin-top: 0px;}    
+
+    /* Footer
+    ======================================================================================= */
+    
+    /* Footer Bottom */
+    .footer-bottom{text-align:center;}
+    .footer-bottom address{margin-top:10px;}
+
+    /* Page heading with RSS link 
+    ======================================================================================= */
+    .page-title {  }
+    .page-title .link-rss { float:none; display:block; position:static; margin:10px 0 0; }       
+	
+    /* Cart
+    ======================================================================================= */
+    
+    /* Buttons below table: align center */
+    .cart-table tfoot tr.first td,
+    .my-wishlist .buttons-set{ text-align:center !important; padding:0;}
+    .cart-table tfoot button.button,
+    .my-wishlist .buttons-set button.button{ display:inline-block; float:none !important; margin:0 0 3px; padding:0; }
+		
+    /* Products Page
+    ======================================================================================= */
+            
+    /* Product primary column */
+    .product-view .product-shop{padding: 30px 0px 0 0px;}
+    
+    /* Product third column */
+    .product-view .product-third-column{padding: 30px 0px 0 0px;}    
+    
+    /* Tables
+    ======================================================================================= */
+    .data-table thead .nobr { white-space:normal !important; }
+    .data-table th,
+    .data-table td { padding:10px; }
+	
+    /* Tables Formatting
+    ======================================================================================= */
+    
+    /* Basic formatting */
+    .cart .data-table thead,
+    .my-wishlist .data-table thead,
+    .my-account .data-table thead,
+    .order-review .data-table thead,
+    .multiple-checkout .data-table thead{ display:none; }
+    
+    .cart .data-table tbody,
+    .my-wishlist .data-table tbody,
+    .my-account .data-table tbody,
+    .order-review .data-table tbody,
+    .multiple-checkout .data-table tbody{ background:transparent !important; }
+    
+    .cart .data-table tr,
+    .cart .data-table td,
+    .my-wishlist .data-table tr,
+    .my-wishlist .data-table td,
+    .my-account .data-table tr,
+    .my-account .data-table td,
+    .order-review .data-table tr,
+    .order-review .data-table td,
+    .multiple-checkout .data-table tr,
+    .multiple-checkout .data-table td{ border:none !important; background:transparent !important; display:block; width:100%; text-align:left !important; box-sizing: border-box;-webkit-box-sizing: border-box;-ms-box-sizing: border-box;-o-box-sizing: border-box;-moz-box-sizing: border-box;}
+    
+    .cart .data-table tr,
+    .my-wishlist .data-table tr,
+    .my-account .data-table tr,
+    .order-review .data-table tr,
+    .multiple-checkout .data-table tr{ border-bottom:1px solid #E4E4E4 !important; margin-bottom:20px; }
+    
+    .cart .data-table tfoot tr.last,
+    .my-wishlist .data-table tfoot tr.last,
+    .my-account .data-table tfoot tr.last,
+    .order-review .data-table tfoot tr.last,
+    .multiple-checkout .data-table tfoot tr.last{border-bottom: none !important;margin-bottom: 0px;}
+    
+    .cart .data-table tfoot tr.last{margin-bottom: 20px;}
+    
+    .data-table .product-name{display: inline;}
+    .order-items .price-excl-tax,
+    .multiple-checkout td .cart-price{display: inline-block;}
+    .multiple-checkout .data-table td select{width: 100%;}
+            
+    /* Highlight first cell in table footer */
+    .my-account .data-table tfoot tr td:first-child,
+    .order-review .data-table tfoot tr td:first-child,
+    .multiple-checkout .data-table tfoot tr td:first-child{ font-weight:bold; }
+
+    /* Responsive label */
+    .data-table .cartlabel {display: inline-block;width: 30%;min-width: 100px;max-width: 140px;margin-right: 10px;vertical-align: top;}
+    
+    /* Table item options */        
+    .data-table .item-options{margin: 5px 0 0 0px;}
+
+    /* Forms Elements
+    ======================================================================================= */
+    .form-list .field,
+    .form-list input.input-text,
+    .form-list textarea,
+    .form-list select,
+    .form-list li.wide .input-box,
+    .form-list li.wide input.input-text,
+    .form-list li.wide textarea,
+    .form-list li.wide select { max-width:100%; width: 100%;}
+	
+    /* Mobile accordion
+    ======================================================================================= */
+    .mobile-accordion .block-content { display:none; }  
+    .accordion .block-content{display: none;}           
+    .mobile-accordion { position:relative; }            
+        
+    /* Grid and basic layout
+    ======================================================================================= */
+
+    /* Margin for col-left and col-right */
+    .col-left,
+    .col-right{margin-top:20px}
+	
+    /* Magento utility classes
+    ======================================================================================= */
+    .nobr { white-space:normal !important; }        
+
+}
+/* end: width < 768px */
+
+
+/* ********************************************************************************************
+    Mobile (Landscape) - design for a width of 480px
+*********************************************************************************************** */
+
+/* 480 <= width < 768px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+
+}
+/* end: 480 <= width < 768px */
+
+
+/* ********************************************************************************************
+    Design for a width of 640px
+*********************************************************************************************** */
+
+/* 640 <= width < 768px */
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+
+    /* Column grid
+    ======================================================================================= */
+    .columngrid.columngrid-adaptive .item { width:48%; clear:none !important; }
+    .columngrid.columngrid-adaptive .item:nth-child(2n+1) { clear:left !important; }  
+
+}
+/* end: 640 <= width < 768px */
+
+
+/* ********************************************************************************************
+    Design for a width of less than 640px
+*********************************************************************************************** */
+
+/* width < 640px */
+@media only screen and (max-width: 639px) {
+	
+    /* Header
+    ======================================================================================= */
+    
+    /* Header Dropdown (language & currency) */
+    .header-container.header5 .currency.dropdown .dropdown-menu.left-hand,
+    .header-container.header5 .language.dropdown .dropdown-menu.left-hand{right:0px;left:auto;}
+    .header-container.header5 .currency.dropdown .dropdown-menu.left-hand:before,
+    .header-container.header5 .language.dropdown .dropdown-menu.left-hand:before{left:auto;right:20px;}
+    
+    /* Multiple Checkout Button Set (display backlink with button full width)
+    ======================================================================================= */                
+    .multiple-checkout .buttons-set .back-link,
+    .multiple-checkout .buttons-set .back-link + button.button,
+    .multiple-checkout .buttons-set .back-link + button.button span{float:none;}
+    .multiple-checkout .buttons-set .back-link + button.button{width:100%;margin-right: 0px;}
+    
+    /* Title Buttons
+    ======================================================================================= */                
+    .title-buttons button{margin-left: 0em;width: 100%;margin-top: 5px;}
+    .title-buttons button.button span{float:none;}
+    
+    /* Column grid
+    ======================================================================================= */
+    .columngrid.columngrid-adaptive .item { width:48%; clear:none !important; }
+    .columngrid.columngrid-adaptive .item:nth-child(2n+1) { clear:left !important; }    
+    
+}
+/* end: width < 640px */
+
+
+/* ********************************************************************************************
+    Design for a width of 480px
+*********************************************************************************************** */
+
+/* 480 <= width < 640px */
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+
+}
+/* end: 480 <= width < 640px */
+
+
+/* ********************************************************************************************
+    Design for a width of less than 480px (small mobile)
+*********************************************************************************************** */
+
+/* width < 480px */
+@media only screen and (max-width: 479px) {
+        
+    /* Header
+    ======================================================================================= */
+    
+    /* Shopping cart dropdown*/
+    .shopping_cart .dropdown-menu{min-width: 265px;}
+    
+    /* Block header top */
+    .header .item-left,
+    .header .item-right{margin-left:0px;margin-right:0px;display: inline-block;float: none;margin-left: -3px;}
+    
+    /* Header elements - align center */		
+    .header .mobile-inline-container { text-align:center; }
+    .header .mobile-inline-container > * { float:none; display:inline-block; margin-left:5px; margin-right:5px; }    
+		
+    /* Ajex Cart Popup
+    ======================================================================================= */
+    div.alert-inner{display: inherit;bottom: auto;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;-ms-box-sizing: border-box;max-width: 96%;left: 0;right: 0;margin: -80px auto 0px;}
+    div.alert-inner .alertcontent{position: initial; padding-top: 15px;}
+    div.alert-inner a{float: none !important;cursor: pointer;margin: 5px 5px;display: inline-block;vertical-align: top;}                  
+	
+    /* Product Page
+    ======================================================================================= */
+    
+    /* Reviews */
+    .product-view .form-add .data-table th{font-size: inherit;font-weight: bold;}
+    .product-view .form-add .data-table th,
+    .product-view .form-add .data-table td { padding:6px 1px; }
+    .product-view .form-add .form-list input.input-text,
+    .product-view .form-add .form-list textarea { width:90%; }
+
+    /* Add-to links */
+    .product-view .add-to-links { text-align: inherit; }
+
+    /* Toolbar
+    ======================================================================================= */
+    
+    /* All elements - align center */
+    .sorter,
+    .pager {text-align: center !important;}        
+    .sorter *,
+    .pager *{display:inline-block !important;float:none !important;text-align:center !important;}     		
+    
+    /* Account
+    ======================================================================================= */
+                
+    /* Product Review Detail*/
+    .product-review .product-img-box{width: auto;float: none;}
+    .product-review .product-details{margin: 0 0px 20px 0px;}
+        
+    /* Grid elements
+    ======================================================================================= */
+    .col2-set .col-1,
+    .col2-set .col-2 { width:100%; margin-bottom: 20px;}        
+
+}
+/* end: width < 480px */
+
+
+/* ********************************************************************************************
+    Design for a width of 320px (mobile - portrait)
+*********************************************************************************************** */
+
+/* 320px <= width < 480px */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+}
+/* end: 320px <= width < 480px */
+
+
+/* ********************************************************************************************
+    Design for a width of less than 380px
+*********************************************************************************************** */
+
+/* width < 380px */
+@media only screen and (max-width: 396px) {
+        
+    /* Header
+    ======================================================================================= */
+    
+    /* Header Dropdown */
+    .currency .dropdown-menu.left-hand {min-width: 130px;}
+    
+    /* Catalog Search */
+    .quick-search .dropdown-menu{  min-width: 180px;}
+    
+    /* Header Style 2
+    ======================================================================================= */
+    .header-container.header2 .header .top-links,
+    .header-container.header2 .header .dropdown{float:none;}
+    
+    .header-container.header2 .currency.dropdown,
+    .header-container.header2 .language.dropdown{border-right-width: 0px;border-left-width: 1px;}
+    
+    .header-container.header2 .language.dropdown .dropdown-toggle.cover > div{padding-left: 10px;}
+    .header-container.header2 .currency.dropdown .dropdown-toggle.cover > div{padding-right: 10px;}
+    .header-container.header2 .links-separators .links > li.last > a{padding-right: 10px;}
+    
+    /* Header Style 3
+    ======================================================================================= */
+    
+    /* Top Links & Dropdown */
+    .header-container.header3 .header .top-links,
+    .header-container.header3 .header .dropdown{float:none;}
+    .header-container.header3 .currency.dropdown{border-right-width: 1px;}
+    
+    /* Header Style 4
+    ======================================================================================= */
+    
+    /* Top Links & Dropdown */
+    .header-container.header4 .header .dropdown,
+    .header-container.header4 .top-links{float:none;}
+    .header-container.header4 .header-primary .dropdown{float:right;}
+    
+    /* Products list
+    ======================================================================================= */        
+    .products-list .btn-cart{width:auto;max-width: none;}
+    
+    /* Button Set (display backlink with button full width)
+    ======================================================================================= */                
+    .buttons-set .back-link,
+    .buttons-set .back-link + button.button,
+    .buttons-set .back-link + button.button span{float:none;}
+    .buttons-set .back-link + button.button{width:100%;margin-right: 0px;}
+    
+    .opc .buttons-set .back-link + button.button + .please-wait{width: 100%;text-align: center;margin-right: 0px;}
+    
+    /* Shopping Cart & Wishlist Button (Display same as button set) */
+    .cart-table tfoot button.button,
+    .my-wishlist .buttons-set button.button{width: 100%;margin: 0 0 5px 0px !important;}
+    
+    .cart-table tfoot button.button span,
+    .my-wishlist .buttons-set button.button span{float:none;}
+    
+    /* Column grid
+    ======================================================================================= */
+    /* Show 1 column */
+    .columngrid.columngrid-adaptive .item { width:98%; clear:none !important; }
+    
+}
+/* end: width < 320px */
+
+
+/* ********************************************************************************************
+    Design for a width of less than 320px
+*********************************************************************************************** */
+
+/* width < 320px */
+@media only screen and (max-width: 319px) {
+
+    /* Header
+    ======================================================================================= */
+    
+    /* Header Dropdown (language & currency) */
+    .header-container.header5 .currency.dropdown .dropdown-menu.left-hand,
+    .header-container.header5 .language.dropdown .dropdown-menu.left-hand{right:auto;left:0;}
+    .header-container.header5 .currency.dropdown .dropdown-menu.left-hand:before,
+    .header-container.header5 .language.dropdown .dropdown-menu.left-hand:before{right:auto;left:20px;}
+    
+    /* Banner
+    ======================================================================================= */
+    .banner .owl-pagination { display:none; } /* Deprecated */
+
+}
+/* end: width < 320px */
+
+
+/* ********************************************************************************************
+    Design for a width of 240px (small mobile)
+*********************************************************************************************** */
+
+/* 240px <= width < 320px */
+@media only screen and (min-width: 240px) and (max-width: 319px) {
+
+}
+/* end: 240px <= width < 320px */
+
+
+/* ********************************************************************************************
+    Design for a width of lass than 240px
+*********************************************************************************************** */
+
+/* width < 240px */
+@media only screen and (max-width: 239px) {
+
+}
+/* end: width < 240px */
+

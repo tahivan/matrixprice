@@ -1,0 +1,84 @@
+
+
+/* ********************************************************************************************
+	Peer Icons
+*********************************************************************************************** */
+
+.peer-icon .icon{width:40px;height:40px;font-size: 14px;text-align: center;line-height: 40px;text-indent: 4px;background-color: #F0F0F0;color: #252525;display: inline-block;}
+.peer-icon.large .icon{width:60px;height:60px;font-size: 24px;text-align: center;line-height: 60px;}
+.peer-icon .icon.i-digit,
+.peer-icon .icon.i-letter {font-size: 16px;line-height: 40px;font-weight: 700;text-align: center;text-indent: 0px;}
+.peer-icon.large .icon.i-digit,
+.peer-icon.large .icon.i-letter{font-size: 24px;line-height: 60px;font-weight: normal;}
+
+/* Peerwrapper Icon */
+.peer-wrapper .icon{margin: 0px 15px 10px 0px;float: left;}
+.peer-wrapper.right .icon{margin: 0px 0px 10px 15px;float: right;}
+
+/* Customize Peer Icons =============================================================== */
+
+/* Icons without background color */
+.peer-icon.no-bg-color .icon { background-color: transparent; }
+.peer-icon.force-no-bg-color .icon { background-color: transparent !important; }
+
+/* Display All icons square */
+.peer-icon-square .icon { border-radius: 0px; }
+
+/* Display All icons round */
+.peer-icon-round .icon { border-radius: 3px; }
+
+/* Display All icons circle */
+.peer-icon-circle .icon { border-radius: 100%; }
+
+/* Display Icon Hover Style*/
+.peer-icon-hover:hover .icon{background-color:#1bbeb4;color: #FFF;}
+
+/* Peer Wrapper */
+.peer-wrapper{margin-bottom: 2%;}
+.peer-wrapper:after{content: "";display: block;overflow: hidden;visibility: hidden;clear: both;zoom: 1;}
+.peer-wrapper .img-box{margin: 0px 15px 10px 0px;float: left;width: 30%;max-width: 300px;}
+.peer-wrapper.right .img-box{margin: 0px 0px 10px 15px;float: right;}
+.grid-col2-main .peer-wrapper .img-box{width: 50%;}
+.peer-wrapper .img-autosize{margin: 0px 15px 10px 0px;float: left;}
+.peer-wrapper.right .img-autosize{margin: 0px 0px 10px 15px;float: right;}
+.peer-wrapper.left{float: none !important;}
+.peer-wrapper.right{float: none !important;}
+.peer-wrapper.first { margin-top:0px; }
+.peer-wrapper.last { margin-bottom:0px; }
+
+/* Peer Headings */
+.peer-wrapper .below-heading {margin: -5px 0 10px;color: #999999;}
+.peer-wrapper .above-heading {color: #999999;line-height: 20px;}
+.peer-wrapper p{margin-bottom: 10px;}
+.peer-wrapper a.go{border-bottom: 1px dotted;padding-bottom: 3px;display: inline-block;}
+.peer-wrapper a.go:hover{}
+.peer-wrapper a i,
+.peer-wrapper a em{font-style: normal;}
+
+/* Peer Indent */
+.peer-wrapper.indent .peer-content{ overflow: hidden;zoom: 1;}
+
+/* Peer Centered */
+.peer-wrapper.center { text-align: center;}
+.peer-wrapper.center .icon {float: none;margin: 0 0 10px;}
+
+
+/* ********************************************************************************************
+	Social Link Icons
+*********************************************************************************************** */
+
+.social-link a{margin-right: 10px;margin-bottom: 5px;}
+.social-link a .icon{font-size: 19px;}
+.social-link a:hover .icon{color: #FFFFFF !important;}
+.social-link a:hover .fa-facebook{background-color: #3b5998!important;}
+.social-link a:hover .fa-twitter{background-color: #00aced!important;}
+.social-link a:hover .fa-google-plus{background-color: #dd4b39!important;}
+.social-link a:hover .fa-rss{background-color: #FF7600!important;}
+.social-link a:hover .fa-pinterest{background-color: #cb2128!important;}
+.social-link a:hover .fa-instagram{background-color: #3f729b!important;}
+.social-link a:hover .fa-linkedin{background-color: #007fb1!important;}
+.social-link a:hover .fa-vimeo-square{background-color: #1ab7ea!important;}
+.social-link a:hover .fa-youtube-play{background-color: #ff3333!important;}
+.social-link a:hover .fa-flickr{background-color: #0063db!important;}
+.social-link a:hover .fa-envelope-o {background-color: #7f7f7f!important;}
+ 

@@ -1,0 +1,48 @@
+<?php $sidebarmenu = Mage::getStoreConfig('mygeneral/menu/accordionmenu'); ?>
+<?php if($sidebarmenu == '1') { ?>
+<div class="block block-category-nav">
+	<div class="block-title">
+		<strong><span><?php echo $this->__('Categories') ?></span></strong>
+	</div>
+	<div class="block-content">
+		<ul id="sidenav">
+			<?php foreach ($this->getStoreCategories() as $_category): ?>
+				<?php echo Mage::helper('ExtraConfig')->categoryThemeSidebarMenu($_category, $this);?>
+			<?php endforeach ?>
+		</ul>
+	</div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+jQuery(function(j$) {
+	
+	j$("a.show-cat").click(function() {
+		var rightArrowParents = [];
+		var continueLoop = true;
+		j$(this).parents().not('html').each(function() {
+			if (this.getAttribute('id') == 'sidenav') {
+				continueLoop = false;
+			}
+			if(continueLoop) {
+				var entry = this.tagName.toLowerCase();
+				rightArrowParents.push(entry);
+			}
+		});
+		rightArrowParents.reverse();
+		var finalnode = '#sidenav ' + rightArrowParents.join(" ");
+		
+		j$(finalnode + ' ul').slideUp();
+		if (!j$(this).hasClass('active')){				  
+			  j$(this).next().slideToggle();
+			  j$(finalnode + ' a.show-cat').removeClass('active');
+			  j$(this).addClass('active');
+			}
+			else if (j$(this).hasClass('active')) {
+				j$(this).removeClass('active');
+			}
+	});
+});
+//]]>
+</script>
+<?php } ?>

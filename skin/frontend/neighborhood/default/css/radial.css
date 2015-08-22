@@ -1,0 +1,67 @@
+/**
+ Copyright (c) 2014 BrightPoint Consulting, Inc.
+
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated documentation
+ files (the "Software"), to deal in the Software without
+ restriction, including without limitation the rights to use,
+ copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following
+ conditions:
+
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+/* ********************************************************************************************
+	Radial Progress
+*********************************************************************************************** */
+
+.radial > div{
+    position: relative;
+    margin: 0 auto;
+    width: 170px;
+    height: 210px;
+    margin-bottom: 10px;
+    line-height: 170px;    
+}
+.radial .fa{line-height: inherit;text-indent: 8px;}
+.radial-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.background {
+    fill: #FFFFFF;
+    fill-opacity: 0.01;
+}
+
+.component {
+    fill: #1bbeb4;
+    opacity: 0.3;
+    -moz-opacity: 0.3;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);	
+}
+
+.arc {
+    stroke-weight:0.1;
+    fill: #1bbeb4;
+}
+
+.arc2 {
+    stroke-weight:0.1;
+    fill: #252525;
+}
+.radial .label{text-anchor:middle;font-size: 18px !important;fill:#1bbeb4;}

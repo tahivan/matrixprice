@@ -1,0 +1,16 @@
+<div class="mega-container">
+    <ul id="mega-nav" class="level-0">
+        <?php echo $this->getHtml(); ?>
+    </ul>
+</div>
+
+<div class="mega-mobile-container">
+    <div id="cssmenu">
+        <a href='#' onclick="j$('#mobile-menu').slideToggle(400)" class='toggleMenu'><span><?php echo $this->__('Navigation') ?></span></a>
+        <ul id="mobile-menu" style="display: none;">
+            <?php echo $this->getHtml('','',true); ?>
+        </ul>
+    </div>
+</div>
+
+ 

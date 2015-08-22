@@ -1,0 +1,8 @@
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addJs"><script>jscolor/jscolor.js</script></action>
+            <action method="addJs"><script>preview/preview.js</script></action>
+        </reference> 
+    </default>
+</layout>

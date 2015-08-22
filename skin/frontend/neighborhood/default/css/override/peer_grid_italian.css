@@ -1,0 +1,230 @@
+/*
+Do not change this file it lost your changes.
+*/
+
+
+
+/* ********************************************************************************************
+	Grid container
+*********************************************************************************************** */
+
+    	.container_12 {
+	    width:96%;
+	    		    		    max-width: 960px;
+		    	    	
+	}
+	
+	/*
+	Forces backgrounds to span full width,
+	even if there is horizontal scrolling.
+	Increase this if your layout is wider.
+      
+	Note: IE works fine without this fix.
+	*/
+	
+        		.ie8 .container_12 { max-width:1200px; }
+	        
+	    
+        
+    
+
+
+
+
+
+
+
+
+
+/* ********************************************************************************************
+    Desktop - design for a width of 1280px
+*********************************************************************************************** */
+
+/* 1280px <= width */
+
+@media only screen and (min-width: 1280px)  {
+
+	                            .container_12 { max-width:1200px; }
+            		
+	/* Hide */
+	.hide-below-1280 { display:inherit !important; }
+	
+}
+
+
+/* ********************************************************************************************
+    Design for a width of less than 1024 px
+*********************************************************************************************** */
+
+/* width < 1024px */
+
+@media only screen and (max-width: 1023px) {
+
+	/* Hide */
+	.hide-below-1024 { display:none !important; }
+	
+}
+
+
+/* ********************************************************************************************
+    Tablet (Portrait) - design for a width of 768px
+*********************************************************************************************** */
+
+/* 768px <= width < 960px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+                    .container_12 { max-width:737px; }
+        		
+	/* Hide */
+	.hide-below-960 { display:none !important; }
+	
+}
+
+/* ********************************************************************************************
+    All mobile - design for a width of less than 768px
+*********************************************************************************************** */
+
+/* width < 768px */
+
+@media only screen and (max-width: 767px) {
+	
+	/* Containers (Display full width and add side padding) */
+	.container_12 { width:92%; padding-left:2%; padding-right:2%; }
+	.pull-container { width:100%; margin-left:auto; }
+	
+	/* Grid >> Global (Remove both margin and display full width ) */
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12,
+	.grid_full {
+		width:100% !important;
+		margin-left:0;
+		margin-right:0;
+	}
+	
+	.no-both-margin.mobile-grid-half img{margin: 0 auto; display:table;}
+
+	/* Vertically aligned grid
+	======================================================================================= */
+	.v-grid-container { display:block; }
+	.v-grid { float:left; display:block; width:100%; }
+	
+}
+
+
+/* ********************************************************************************************
+    Mobile (Landscape) - design for a width of 480px
+*********************************************************************************************** */
+
+/* 480px <= width < 768px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+                    .container_12 { max-width:440px; }
+        		
+	/* Hide */
+	.hide-below-960 { display:none !important; }
+	.hide-below-768 { display:none !important; }
+	
+	/* Mobile Grid Half Units Avalaible */
+	.mobile-grid-half { width:48% !important; margin-left:1%; margin-right:1%; float:left;}
+	
+	/* Remove Left Margin */
+	.no-left-margin.mobile-grid-half { width:49% !important; margin-left:0%;}
+	
+	/* Remove Right Margin */
+	.no-right-margin.mobile-grid-half { width:49% !important;margin-right:0%; }
+	
+	/* Remove Both Margin */
+	.no-both-margin.mobile-grid-half { width:50% !important; margin-left:0%; margin-right:0%; }
+	
+}
+
+
+/* ********************************************************************************************
+    Mobile (Landscape, iPhone 4 Portrait) - design for a width of 640px
+*********************************************************************************************** */
+
+/* 640px <= width < 768px */
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+
+		    .container_12 { max-width:590px; }
+		
+}
+
+
+/* ********************************************************************************************
+    Design for a width of less than 480px (small mobile)
+*********************************************************************************************** */
+
+/* width < 480px */
+
+@media only screen and (max-width: 479px) {
+
+	/* Containers (Display full width and add side padding) */
+	.container_12 { max-width:none !important; width:94%; padding-left:3%; padding-right:3%; }
+	
+	/* Mobile Grid Half Units Avalaible (Use Onlye Header Nav) */
+	.nav .mobile-grid-half { width:48% !important; margin-left:1%; margin-right:1%; float:left;}
+	
+	/* Remove Left Margin */
+	.nav .no-left-margin.mobile-grid-half { width:49% !important; margin-left:0%;}
+	
+	/* Remove Right Margin */
+	.nav .no-right-margin.mobile-grid-half { width:49% !important;margin-right:0%; }
+	
+	/* Remove Both Margin */
+	.nav .no-both-margin.mobile-grid-half { width:50% !important; margin-left:0%; margin-right:0%; } 		
+
+}
+
+
+/* ********************************************************************************************
+    Mobile (Portrait) - design for a width of 320px
+*********************************************************************************************** */
+
+/* 320px <= width < 480px */
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+		    /* .container_12 { max-width:301px; } */
+		
+	/* Hide */
+	.hide-below-960 { display:none !important; }
+	.hide-below-768 { display:none !important; }
+	.hide-below-480 { display:none !important; }
+	
+}
+
+
+/* ********************************************************************************************
+    Mobile (Portrait) - design for a width of less than 320px
+*********************************************************************************************** */
+
+/* width < 320px */
+
+@media only screen and (max-width: 319px) {
+
+		    /* .container_12 { max-width:226px; } */
+		.container_12 { max-width:none !important; width:92%; padding-left:4%; padding-right:4%; }
+
+	/* Hide */
+	.hide-below-960 { display:none !important; }
+	.hide-below-768 { display:none !important; }
+	.hide-below-480 { display:none !important; }
+	.hide-below-320 { display:none !important; }
+	
+}
+
+

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<config>
+  <modules>
+    <Peerforest_Import>
+      <version>1.0.0</version>
+    </Peerforest_Import>
+  </modules>
+  <global>
+    <models>
+      <peerforest_import>
+        <class>Peerforest_Import_Model</class>
+      </peerforest_import>
+      <themeblockimport>
+        <class>Peerforest_Import_Model_Adminhtml</class>
+      </themeblockimport>
+    </models>
+    <helpers>
+      <peerforest_import>
+        <class>Peerforest_Import_Helper</class>
+      </peerforest_import>
+    </helpers>
+    <blocks>
+      <peerforest_import>
+        <class>Peerforest_Import_Block</class>
+      </peerforest_import>
+    </blocks>
+  </global>
+  
+  <admin>
+    <routers>
+      <peerforest>
+        <use>admin</use>
+        <args>
+          <module>Peerforest_Import_Adminhtml</module>
+          <frontName>peerforest</frontName>
+        </args>
+      </peerforest>
+    </routers>
+  </admin>
+  <default>
+    <import>
+      <general>
+        <overwirte_cms_block>0</overwirte_cms_block>
+        <overwirte_cms_page>0</overwirte_cms_page>
+      </general>
+    </import>
+  </default>
+</config>

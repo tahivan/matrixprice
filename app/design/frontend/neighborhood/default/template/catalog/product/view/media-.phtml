@@ -1,0 +1,152 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/**
+ * Product media data template
+ *
+ * @see Mage_Catalog_Block_Product_View_Media
+ */
+?>
+<?php
+    $_product = $this->getProduct();
+    $_helper = $this->helper('catalog/output');
+    $newsaleicon = Mage::getStoreConfig('mygeneral/product_list/newsaleicon');
+    $image_aspect_ratio = Mage::getStoreConfig('mygeneral/product_view/image_aspect_ratio');
+?>
+<?php
+        
+    $width = 588;
+    //$height = 650;
+    if($image_aspect_ratio == '1'){ 
+	$height = 0;
+    } else {
+	$height = 588;
+    }
+?>
+
+<?php $label = "";?>
+<?php if($newsaleicon == '1') { ?> 
+	<?php $gdate = date('Y-m-d');  //echo 'frpm:-'.$_product->special_from_date.'----';echo "to:-".$_product->special_to_date.'--';
+	$g= 0;
+	if($_product->special_from_date != null && $_product->special_to_date == "")
+	{
+	    if( $gdate >= $_product->special_from_date)
+	    {
+		    $g = 1; 
+	    }
+	}
+	if($_product->special_from_date != "" && $_product->special_to_date != "")
+	{
+	    if($gdate >= $_product->special_from_date && $gdate <= $_product->special_to_date)
+	    {
+	    $g = 1; 
+	    }
+	}
+	    
+	if($g == 1){
+	    $label ='<div class="sale"><label>'.$this->__('SALE').'</label></div>';
+	} ?>
+	
+	
+      <?php $hdate = date('Y-m-d');
+	$h= 0;
+	if($_product->news_from_date != null && $_product->news_to_date == "")
+	{
+	    if( $hdate >= $_product->news_from_date)
+	    {
+		    $h = 1; 
+	    }
+	}
+	if($_product->news_from_date != "" && $_product->news_to_date != "")
+	{
+	    if($hdate >= $_product->news_from_date && $hdate <= $_product->news_to_date)
+	    {
+	    $h = 1; 
+	    }
+	}
+	if($h == 1){ 
+	    $label .= '<div class="new"><label>'.$this->__('NEW').'</label></div>';
+	}?>  
+<?php } ?>      
+
+
+
+
+    <div class="img-box">
+	
+	<div class="product-image">
+	    <a class="product-image">
+	    <?php echo $label; ?>
+	    <?php
+	    if($image_aspect_ratio == '1'){
+		$_img = '<img id="loadImage" src="'.$this->helper('catalog/image')->init($_product, 'image')->constrainOnly(true)->keepAspectRatio(true)->keepFrame(false)->resize($width,$height).'" alt="'.$this->escapeHtml($this->getImageLabel()).'" title="'.$this->escapeHtml($this->getImageLabel()).'" />';
+	    } else {
+		$_img = '<img id="loadImage" src="'.$this->helper('catalog/image')->init($_product, 'image')->resize($width,$height).'" alt="'.$this->escapeHtml($this->getImageLabel()).'" title="'.$this->escapeHtml($this->getImageLabel()).'" />';
+	    }
+		echo $_helper->productAttribute($_product, $_img, 'image');
+	    ?>
+	    </a>
+	</div>
+	
+	<?php if (count($this->getGalleryImages()) > 0): ?>
+	
+	<div id="more-images-slider" class="itemslider-thumbnails">
+	<?php foreach ($this->getGalleryImages() as $_image): ?>
+	    <div class="item">
+		<?php if($image_aspect_ratio == '1'){ ?>
+		    <a class="product-image" href="#abc" data-src="<?php echo $this->helper('catalog/image')->init($_product, 'image', $_image->getFile())->constrainOnly(true)->keepAspectRatio(true)->keepFrame(false)->resize($width,$height) ?>" title="<?php echo $this->escapeHtml($_image->getLabel()) ?>"><img src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->constrainOnly(true)->keepAspectRatio(true)->keepFrame(false)->resize(120, 0); ?>" alt="<?php echo $this->escapeHtml($_image->getLabel()) ?>" /></a>
+		<?php } else { ?>
+		    <a class="product-image" href="#abc" data-src="<?php echo $this->helper('catalog/image')->init($_product, 'image', $_image->getFile())->resize($width,$height) ?>" title="<?php echo $this->escapeHtml($_image->getLabel()) ?>"><img src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->constrainOnly(true)->keepAspectRatio(true)->keepFrame(false)->resize(120, 0); ?>" alt="<?php echo $this->escapeHtml($_image->getLabel()) ?>" /></a>
+		<?php } ?>
+	    </div>
+	<?php endforeach; ?>
+	</div>
+	<?php endif; ?>
+    
+    </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+    jQuery(function(j$) {
+	j$("#more-images-slider").owlCarousel({
+	    itemsCustom : [
+		[0, 3],
+		[341, 4],
+		[430, 5],
+		[623, 6],
+		[751, 4],
+		[943, 5],
+		[1263, 6]
+	    ]<?php echo Mage::helper("ExtraConfig")->sliderSetting(); ?>
+	});	
+    
+    
+    j$(".item a.product-image").click(function () {	
+	j$("#loadImage").attr("src", j$(this).data('src'));	    
+    });
+    });
+//]]>
+</script>

@@ -1,0 +1,194 @@
+
+/* ********************************************************************************************
+	Full Width Elements (Div under container display in full width) 
+*********************************************************************************************** */
+
+.page-title,
+.product-view .product-essential .product-name{
+	margin-top: 0;
+	margin-bottom: 40px !important;
+	position: absolute;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-top: 0!important;
+	background-image: url(../../images/vertical-line_bkg.png);
+	background-repeat: repeat;
+	background-position: center top;
+	background-size: auto;
+	top: 0px;
+	clear:both;
+	max-width: 100%;
+	left: 1%;
+	right: 1%;
+}
+.page-title,
+.product-view .product-essential .product-name,
+.alt-bg{
+	width: 1176px;
+	border-bottom: 1px solid #E4E4E4;
+	max-width: 100%;
+}
+
+.page-title,
+.product-view .product-essential .product-name,
+.alt-bg{
+	margin-left: -180px!important;
+	padding-left: 180px;
+	padding-right: 180px;
+}
+
+/* Full Width Elements Responsive */
+@media only screen and (min-width: 1200px) {
+	.page-title,
+	.product-view .product-essential .product-name,
+	.alt-bg{
+		padding-left: 180px;
+		padding-right: 180px;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	.page-title,
+	.product-view .product-essential .product-name,
+	.alt-bg{
+		margin-left: -720px!important;
+		padding-left: 720px;
+		padding-right: 720px;
+	}
+}
+
+@media only screen and (min-width: 1980px) {
+	.page-title,
+	.product-view .product-essential .product-name,
+	.alt-bg{
+		margin-left: -820px!important;
+		padding-left: 820px;
+		padding-right: 820px;
+	}
+}
+
+/* Secondary headings */
+.fieldset .legend,
+.multiple-checkout .col2-set h2.legend,
+.info-set h2.legend,
+.multiple-checkout h2,
+.postTitle h2,
+  
+/* Account headings */
+
+/* Primary */
+.box-account .box-head h2,
+.order-items h2.table-caption,
+.order-items h2.sub-title,
+.order-items .order-comments h2{font-size: 18px;line-height: 24px;}
+
+/* Secondary */
+.dashboard .box .box-title h3,
+.dashboard .box .box-title h4,
+.order-info-box h2,
+.addresses-list h2{font-size: 16px;line-height: 20px;}
+
+/* Third */
+.dashboard .box-info h4,
+.addresses-list h3{font-size: 14px;line-height:18px;}
+
+
+/* ********************************************************************************************
+	Vertically Centered
+*********************************************************************************************** */
+
+/* Vertically aligned content */
+.v-centered-content {
+	display:table;
+}
+.v-centered-content .v-center {
+	display:table-cell;
+	vertical-align:middle;
+}
+
+/* Vertically aligned grid */
+.v-grid-container {
+	display:table;
+	width:100%;
+}
+.v-grid {
+	float:none;
+	display:table-cell;
+	vertical-align:middle;
+}
+.product-tabs-content .v-grid-container{
+	display: table;
+	width: 100%;
+}
+.product-tabs-content .v-grid{
+	float:none;
+	display:table-cell;
+	vertical-align:middle;	
+}
+
+
+/* ********************************************************************************************
+	Section Heading
+*********************************************************************************************** */
+
+.section-title{text-align: center;}
+
+/* Style For Section Title Box */
+.section-line,
+.block .block-title,
+.peercheckout-title{font-weight: normal;margin-top: 0;position: relative;margin-bottom: 20px;text-align: center;clear: both;}
+
+/* Title Left Or Right Sep.. */
+.section-line:before,
+.block .block-title:before,
+.peercheckout-title:before{content: "";display: block;border-top: 2px solid #444;width: 100%;height: 2px;position: absolute;top: 50%;z-index: 1;}
+
+/* Style For Section Title */
+.section-line > *,
+.block .block-title strong span,
+.peercheckout-title h2{font-size: 16px;padding: 0 10px;position: relative;display: inline-block;z-index: 1;background-color: #FFFFFF;margin-bottom: 0px;line-height: 20px;text-shadow: 0px 0px 0px;}
+
+.section-line h2:first-letter{text-transform: uppercase;}
+
+/* Common hr */
+.section-hr{clear: both;display: block;font-size: 0;line-height: 0;height: 0;margin: 0 0 10px;padding: 10px 0 0;background: none;border-bottom: 1px solid #E4E4E4;text-indent: -9999em;overflow: hidden;}
+.horizontal-break {height: 2px;width: 50px;margin: 20px auto 25px;background-color: #e4e4e4;}
+
+
+/* ********************************************************************************************
+	Vertical links
+*********************************************************************************************** */
+
+/* Basic Style */ 
+.links > li > a { padding:0 5px;line-height: 26px; } 
+.links > li > a:hover{color: #1bbeb4;}
+
+/* Basic links, no separators */
+.links > li { display: inline-block; vertical-align: middle;}
+.links > li > a { display:block;}
+
+/* Links With Separators (Position Right) */
+.links-separators .links > li { margin-left:-3px;}
+.links-separators .links > li > a {padding: 0 10px;border-color: #E4E4E4;border-width: 0px;border-style: solid;border-right-width: 1px;}
+.links-separators .links > li.last > a { border-right: none; padding-right: 0px;}
+.links-separators .links > li.first > a{}
+.links-separators .links > li.hide-separator > a { border-right: none;}
+.links-separators .links > li.separator-left > a { border-left-width: 1px;border-right-width: 0px; }
+
+/* Links With Separators (Position Left) */
+.links-separators-left .links > li { margin-left:-3px; }
+.links-separators-left .links > li > a {padding: 0 10px;border-color: #E4E4E4;border-width: 0px;border-style: solid;border-left-width: 1px;}
+.links-separators-left .links > li.first > a {border-left: none; padding-left: 0px;}
+.links-separators-left .links > li.hide-separator > a { border-left:none; }
+.links-separators-left .links > li.separator-right > a { border-left-width: 0px;border-right-width: 1px; }
+
+
+/* ********************************************************************************************
+	Hide Elements
+*********************************************************************************************** */
+
+/* Hide element if screen width is lower than the width specified in the class name */
+.hide-below-1680 { display:none !important; }
+.hide-below-1440 { display:none !important; }
+.hide-below-1360 { display:none !important; }
+.hide-below-1280 { display:none !important; }

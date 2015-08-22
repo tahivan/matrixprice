@@ -1,0 +1,509 @@
+<config>
+	<sections>	
+		<multiproduct translate="label" module="multiproduct">
+			<label>Multi Product</label>
+			<sort_order>7</sort_order>			
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<tab>mycustom_tab</tab>
+			<groups>
+				<block1 translate="label">
+					<label>Product Block-1 (Custom) Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<enable_heading translate="label">
+							<label>Enable Product Block1</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable_heading>
+						<enable translate="label">
+							<label>Enable Product Block1</label>
+							<frontend_type>select</frontend_type>
+							<comment><![CDATA[Yes : displays product in left block.]]></comment>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable>
+						<cusom_setting_heading translate="label">
+							<label>Block1 Settings</label>
+							<depends>
+								<enable>1</enable>
+							</depends>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cusom_setting_heading>
+						<multi_option translate="label">
+							<label>(Product / Custom Block) Option</label>
+							<frontend_type>select</frontend_type>
+							<depends>
+								<enable>1</enable>
+							</depends>
+							<source_model>multiproduct/DualMultiproducttab</source_model>							
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<can_be_empty>1</can_be_empty>
+						</multi_option>
+						<product_load_max translate="label">
+							<label>Max Product Limit</label>								
+							<frontend_type>text</frontend_type>
+							<depends>
+								<enable>1</enable>
+							</depends>
+							<comment><![CDATA[Limit Your Product To Show.]]></comment>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</product_load_max>
+						<cusom_block_heading translate="label">
+							<label>Custom Block Left</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<depends>
+								<enable>1</enable>
+								<multi_option>_customblock</multi_option>
+							</depends>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cusom_block_heading>
+						<customblock_first translate="label">
+							<label>Custom Block Id</label>								
+							<frontend_type>text</frontend_type>
+							<comment><![CDATA[Insert <b>CMS static block id<b>.]]></comment>
+							<depends>
+								<enable>1</enable>
+								<multi_option>_customblock</multi_option>
+							</depends>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</customblock_first>
+					</fields>
+				</block1>
+				<block2 translate="label">
+					<label>Product Block-2 (Custom) Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>2</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<enable_heading translate="label">
+							<label>Enable Product Block2</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable_heading>
+						<enable translate="label">
+							<label>Enable Product Block2</label>
+							<frontend_type>select</frontend_type>
+							<comment><![CDATA[Yes : displays product in left block.]]></comment>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable>
+						<cusom_setting_heading translate="label">
+							<label>Block2 Settings</label>
+							<depends>
+								<enable>1</enable>
+							</depends>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cusom_setting_heading>
+						<multi_option translate="label">
+							<label>(Product / Custom Block) Option</label>
+							<frontend_type>select</frontend_type>
+							<depends>
+								<enable>1</enable>
+							</depends>
+							<source_model>multiproduct/DualMultiproducttab</source_model>							
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<can_be_empty>1</can_be_empty>
+						</multi_option>
+						<product_load_max translate="label">
+							<label>Max Product Limit</label>								
+							<frontend_type>text</frontend_type>
+							<depends>
+								<enable>1</enable>
+							</depends>
+							<comment><![CDATA[Limit Your Product To Show.]]></comment>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</product_load_max>
+						<cusom_block_heading translate="label">
+							<label>Custom Block Left</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<depends>
+								<enable>1</enable>
+								<multi_option>_customblock</multi_option>
+							</depends>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cusom_block_heading>
+						<customblock_second translate="label">
+							<label>Custom Block Id</label>								
+							<frontend_type>text</frontend_type>
+							<comment><![CDATA[Insert <b>CMS static block id<b>.]]></comment>
+							<depends>
+								<enable>1</enable>
+								<multi_option>_customblock</multi_option>
+							</depends>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</customblock_second>
+					</fields>
+				</block2>				
+				<block3 translate="label">
+					<label>Product Block-3 (Custom) Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>3</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<enable_heading translate="label">
+							<label>Enable Product Block3</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable_heading>
+						<enable translate="label">
+							<label>Enable Product Block3</label>
+							<frontend_type>select</frontend_type>
+							<comment><![CDATA[Yes : displays product in right block.]]></comment>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable>
+						<cusom_setting_heading translate="label">
+							<label>Block3 Settings</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<depends>
+								<enable>1</enable>
+							</depends>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cusom_setting_heading>
+						<multi_option translate="label">
+							<label>(Product / Custom Block) Option</label>
+							<frontend_type>select</frontend_type>
+							<source_model>multiproduct/DualMultiproducttab</source_model>
+							<depends>
+								<enable>1</enable>
+							</depends>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<can_be_empty>1</can_be_empty>
+						</multi_option>
+						<product_load_max translate="label">
+							<label>Max Product Limit</label>								
+							<frontend_type>text</frontend_type>
+							<comment><![CDATA[Limit Your Product To Show.]]></comment>
+							<depends>
+								<enable>1</enable>
+							</depends>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</product_load_max>
+						<cusom_block_heading translate="label">
+							<label>Custom Block Right</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<depends>
+								<enable>1</enable>
+								<multi_option>_customblock</multi_option>
+							</depends>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cusom_block_heading>
+						<customblock_third translate="label">
+							<label>Custom Block Id</label>								
+							<frontend_type>text</frontend_type>
+							<comment><![CDATA[Insert <b>CMS static block id<b>.]]></comment>
+							<depends>
+								<enable>1</enable>
+								<multi_option>_customblock</multi_option>
+							</depends>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</customblock_third>
+					</fields>
+				</block3>
+				<block4 translate="label">
+					<label>Product Block-4 (Custom Without Slider) Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>4</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<enable_heading translate="label">
+							<label>Enable Product Block4</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable_heading>
+						<enable translate="label">
+							<label>Enable Product Block4</label>
+							<frontend_type>select</frontend_type>
+							<comment><![CDATA[Yes : displays product in right block.]]></comment>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable>
+						<cusom_setting_heading translate="label">
+							<label>Block4 Settings</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<depends>
+								<enable>1</enable>
+							</depends>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cusom_setting_heading>
+						<multi_option translate="label">
+							<label>(Product / Custom Block) Option</label>
+							<frontend_type>select</frontend_type>
+							<source_model>multiproduct/DualMultiproducttab</source_model>
+							<depends>
+								<enable>1</enable>
+							</depends>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<can_be_empty>1</can_be_empty>
+						</multi_option>
+						<product_load_max translate="label">
+							<label>Max Product Limit</label>								
+							<frontend_type>text</frontend_type>
+							<comment><![CDATA[Limit Your Product To Show.]]></comment>
+							<depends>
+								<enable>1</enable>
+							</depends>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</product_load_max>
+						<product_per_row translate="label">
+							<label>Product Per Row</label>								
+							<frontend_type>select</frontend_type>
+							<comment><![CDATA[Note : This will work if page width is less than or equal to 1024. <b>Due to fluid width : Number of product increases to set accordingly if page width is greater than 1024.</b>]]></comment>
+							<source_model>ExtraConfig/Columncount</source_model>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</product_per_row>
+						<cusom_block_heading translate="label">
+							<label>Custom Block Right</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<depends>
+								<enable>1</enable>
+								<multi_option>_customblock</multi_option>
+							</depends>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cusom_block_heading>
+						<customblock_fourth translate="label">
+							<label>Custom Block Id</label>								
+							<frontend_type>text</frontend_type>
+							<comment><![CDATA[Insert <b>CMS static block id<b>.]]></comment>
+							<depends>
+								<enable>1</enable>
+								<multi_option>_customblock</multi_option>
+							</depends>
+							<sort_order>9</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</customblock_fourth>
+					</fields>
+				</block4>
+				<block5 translate="label">
+					<label>Product Block (Best Seller) Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>5</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<enable_heading translate="label">
+							<label>Enable Product Block (Best Seller)</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable_heading>
+						<enable translate="label">
+							<label>Enable Product Block (Best Seller)</label>
+							<frontend_type>select</frontend_type>
+							<comment><![CDATA[Yes : displays best seller block.]]></comment>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable>
+						<cusom_setting_heading translate="label">
+							<label>Product Block (Best Seller) Custom Settings</label>
+							<depends>
+								<enable>1</enable>
+							</depends>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cusom_setting_heading>
+						<block_title translate="label">
+							<label>Product Block (Best Seller) Title</label>							
+							<frontend_type>text</frontend_type>
+							<depends>
+								<enable>1</enable>
+							</depends>
+							<comment><![CDATA[Default Title : <b>Bestsellers</b>]]></comment>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</block_title>
+						<period translate="label">
+							<label>Best Seller Time Period</label>
+							<depends>
+								<enable>1</enable>
+							</depends>
+							<comment><![CDATA[Product best selling duration. <br><b><strong style="color:red;">NOTE : </b>Default 60 days.</strong>]]></comment>
+							<frontend_type>text</frontend_type>							
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</period>
+						<product_load_max translate="label">
+							<label>Max Product Limit</label>								
+							<frontend_type>text</frontend_type>
+							<depends>
+								<enable>1</enable>
+							</depends>
+							<comment><![CDATA[Limit Your Product To Show.]]></comment>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</product_load_max>
+						<cusom_setting_heading translate="label">
+							<label>Mini Bestseller Product Block on Homepage</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cusom_setting_heading>
+						<mini_product_load_max translate="label">
+							<label>Mini Bestseller Product Block Limit</label>								
+							<frontend_type>text</frontend_type>
+							<comment><![CDATA[Limit Your Product To Show.]]></comment>
+							<sort_order>9</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</mini_product_load_max>
+					</fields>
+				</block5>
+				<block6 translate="label">
+					<label>Mini Top Rated Block Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>6</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<enable_heading translate="label">
+							<label>Mini Top Rated Product Block on Homepage</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable_heading>
+						<enable translate="label">
+							<label>Enable Top Rated Block</label>
+							<frontend_type>select</frontend_type>
+							<comment><![CDATA[Yes : displays best seller block.]]></comment>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable>
+						<mini_product_load_max translate="label">
+							<label>Mini Top Rated Block Limit</label>								
+							<frontend_type>text</frontend_type>
+							<comment><![CDATA[Limit Your Product To Show.]]></comment>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</mini_product_load_max>
+					</fields>
+				</block6>
+			</groups>
+		</multiproduct>
+	</sections>
+</config>

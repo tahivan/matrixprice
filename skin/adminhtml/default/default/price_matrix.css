@@ -1,0 +1,27 @@
+#matrix_table {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #d6d6d6;
+    border-image: none;
+    border-style: solid none none solid;
+    border-width: 1px 0 0 1px;
+    padding: 2px;
+}
+
+#matrix_table input {
+    width: 40px;
+}
+
+.mtx_price_val {
+    background: #ffd967 none repeat scroll 0 0 !important;
+}
+
+.mtx_width_val, .mtx_drop_val {
+    background: #d7e5ef none repeat scroll 0 0 !important;
+}
+
+.mtx_drop_val {
+    width: 70px !important;
+}

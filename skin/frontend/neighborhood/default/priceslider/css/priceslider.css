@@ -1,0 +1,55 @@
+
+
+/* ********************************************************************************************
+    Price Slider
+*********************************************************************************************** */
+
+
+#priceslider{margin-top: 7px;}
+.ui-rangeSlider{height: 20px;}
+.ui-rangeSlider,
+.ui-rangeSlider-container,
+.ui-rangeSlider-arrow{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}
+.ui-rangeSlider-withArrows .ui-rangeSlider-container{border-radius: 3px;max-width: 100%;}
+.ui-rangeSlider-noArrow .ui-rangeSlider-container{-moz-border-radius: 4px;border-radius: 4px;border-left: solid 1px #515862;border-right: solid 1px #515862;}
+.ui-rangeSlider-disabled.ui-rangeSlider-noArrow .ui-rangeSlider-container{border-color: #8490a3;}
+.ui-rangeSlider-container,
+.ui-rangeSlider-arrow{height: 7px;}
+.ui-rangeSlider-disabled .ui-rangeSlider-container,
+.ui-rangeSlider-disabled .ui-rangeSlider-arrow{border-top-color: #49576b;border-bottom-color: #9ca7b3;}
+.ui-rangeSlider-container,
+.ui-rangeSlider-arrow{background: #939393;}
+.ui-rangeSlider-disabled .ui-rangeSlider-container,
+.ui-rangeSlider-disabled .ui-rangeSlider-arrow,
+.ui-rangeSlider-disabled .ui-rangeSlider-label{background: #5bb300;}
+.ui-rangeSlider-arrow{width:14px;cursor:pointer;}
+.ui-rangeSlider-leftArrow{border-radius:4px 0 0 4px;border-left: solid 1px #515862;display: none;}
+.ui-rangeSlider-disabled .ui-rangeSlider-leftArrow{border-left-color: #8792a2; }
+.ui-rangeSlider-rightArrow{border-radius:0 4px 4px 0;border-right: solid 1px #515862;display: none;}
+.ui-rangeSlider-disabled .ui-rangeSlider-rightArrow{border-right-color: #8792a2; }
+.ui-rangeSlider-arrow-inner{position: absolute;top: 50%;border: 10px solid transparent;width:0;height:0;margin-top: -10px;}
+.ui-rangeSlider-leftArrow .ui-rangeSlider-arrow-inner{border-right:10px solid #a4a8b7;left: 0;margin-left: -8px;}
+.ui-rangeSlider-leftArrow:hover .ui-rangeSlider-arrow-inner{border-right:10px solid #b3b6c2;}
+.ui-rangeSlider-disabled .ui-rangeSlider-leftArrow .ui-rangeSlider-arrow-inner,
+.ui-rangeSlider-disabled .ui-rangeSlider-leftArrow:hover .ui-rangeSlider-arrow-inner{border-right-color: #bbc0cf;}
+.ui-rangeSlider-rightArrow .ui-rangeSlider-arrow-inner{border-left:10px solid #a4a8b7;right: 0;margin-right: -8px;}
+.ui-rangeSlider-rightArrow:hover .ui-rangeSlider-arrow-inner{border-left:10px solid #b3b6c2;}
+.ui-rangeSlider-disabled .ui-rangeSlider-rightArrow .ui-rangeSlider-arrow-inner,
+.ui-rangeSlider-disabled .ui-rangeSlider-rightArrow:hover .ui-rangeSlider-arrow-inner{border-left-color: #bbc0cf;}
+.ui-rangeSlider-innerBar{width: 110%;height: 100%;left: -10px;overflow: hidden;}
+.ui-rangeSlider-bar{background: #1bbeb4;height: 7px;border-radius: 3px;}
+.ui-rangeSlider-disabled .ui-rangeSlider-bar{background: #939393;}
+.ui-rangeSlider-handle{width:10px;height:10px;background: #fff;cursor:pointer;border: 5px solid #1bbeb4;border-radius: 50%;top: -7px !important;}
+.ui-rangeSlider-label{position: static !important;font-size:15px;float: left;margin-top: 30px;margin-bottom: 10px;}
+.ui-editRangeSlider-inputValue{width: 3.4em;text-align: center;font-size: 15px;border: none;background-color: #F0F0F0;border: 1px solid #E4E4E4;height: 25px;line-height: 25px;}
+.ui-editRangeSlider-inputValue:hover, .ui-editRangeSlider-inputValue:focus{border-color: #252525;outline: none;}
+.ui-rangeSlider .ui-ruler-scale{position:absolute;top:0;left:0;bottom:0;right:0;}
+.ui-rangeSlider .ui-ruler-tick { float: left; }
+.ui-rangeSlider .ui-ruler-scale0 .ui-ruler-tick-inner{color:white;margin-top:1px;border-left: 1px solid white;height:29px;padding-left:2px;position:relative;}
+.ui-rangeSlider .ui-ruler-scale0 .ui-ruler-tick-label{position:absolute;bottom: 6px;}
+.ui-rangeSlider .ui-ruler-scale1 .ui-ruler-tick-inner{border-left:1px solid white;margin-top: 25px;height: 5px;}
+.ui-rangeSlider-leftLabel{left: 0px !important;right: auto !important;}
+.ui-rangeSlider-rightLabel{right: 0px !important;left: auto !important;float: right;}
+.priceslider-loader-img{background: url("../images/loader.gif") no-repeat scroll center center #000000;border-radius: 6px;height: 44px;left: 50%;margin: -22px 0 0 -22px;opacity: 0.9;position: fixed;top: 50%;width: 44px;z-index: 9999;}
+#priceslider-button.button span{background-color: transparent;color: #5bb300;font-weight: 700;text-transform: uppercase;}
+#priceslider-button.button:hover span{color: #3d3d3d;}

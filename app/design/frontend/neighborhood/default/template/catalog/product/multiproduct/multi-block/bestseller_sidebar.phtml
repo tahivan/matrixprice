@@ -1,0 +1,56 @@
+
+<?php
+    $_productCollection=$this->getLoadedProductCollection();
+    $_helper = $this->helper('catalog/output');                    
+    $page_title = Mage::getStoreConfig('multiproduct/block5/block_title');
+    if(!isset($page_title) || $page_title == "")
+    {
+	$page_title = $this->__('Bestsellers');
+    }
+?>
+<?php if($_productCollection->count()): ?>
+<?php $_collectionSize = $_productCollection->count() ?>
+<div class="block block-bestseller">
+    <div class="block-title">
+	<strong><span><?php echo $page_title; ?></strong></span>
+    </div>
+    <div class="block-content">
+	<?php $columnCount = 5; $this->setColumnCount($columnCount); $_columnCount = $this->getColumnCount(); ?>
+	<div id="bestsellers-sidebar"  class="itemslider">
+	<?php $i=0;$j=0; foreach ($_productCollection as $_product): ?>
+	<?php if ($i++%$_columnCount==0): ?>
+	    <ol class="mini-products-list">
+	<?php endif; ?>
+	    
+	    <li class="item">	    
+		<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
+		    <img width="72" height="80" src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->constrainOnly(true)->keepAspectRatio(true)->keepFrame(false)->resize(72,0) ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />			
+		</a>		    		    		    		    
+		<div class="product-details">
+		    <p class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $this->htmlEscape($_product->getName()); ?></a></p>
+		    <?php echo $this->getPriceHtml($_product, true) ?>			
+		</div>
+	    </li>
+	<?php if ($i%$_columnCount==0): ?>
+	    </ol>
+	<?php endif; ?>
+	<?php endforeach ?>
+	</div>
+    </div>
+</div>
+<script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>	    
+
+<script type="text/javascript">
+//<![CDATA[
+jQuery(function(j$) {
+j$("#bestsellers-sidebar").owlCarousel({
+    itemsCustom : [
+	[0, 1]
+    ]<?php  echo Mage::helper("ExtraConfig")->sliderSetting(); ?>
+    ,autoHeight: true
+});
+});
+//]]>
+</script>
+
+<?php endif; ?>

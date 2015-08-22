@@ -1,0 +1,898 @@
+<root>
+  <cms_static_block>
+    
+    <block>
+      <title>Footer Block</title>
+      <identifier>footer-block</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="footer-primary-container">
+          <div class="footer-primary footer container_12">
+          <div class="grid_3">
+          <div class="accordion mobile-accordion"><span class="opener">&nbsp;</span>
+          <div class="section-line block-title">
+          <h4>Welcome to Neighborhood</h4>
+          </div>
+          <div class="block-content"><br /><img src="{{media url="wysiwyg/block_banner/footer-logo.png"}}" alt="" />
+          <p class="martop20">Neighborhood is a clean, responsive &amp; retina-ready eCommerce Magento theme. It has everything you need to start selling today!</p>
+          </div>
+          </div>
+          </div>
+          <div class="grid_3">
+          <div class="accordion mobile-accordion"><span class="opener">&nbsp;</span>
+          <div class="section-line block-title">
+          <h4>About Neighborhood</h4>
+          </div>
+          <div class="block-content">
+          <ul class="list bullet separator">
+          <li><a title="Our Story" href="#">Our Story</a></li>
+          <li><a title="Stores" href="#">Stores</a></li>
+          <li><a title="Press" href="#">Press</a></li>
+          <li><a title="Events" href="#">Events</a></li>
+          <li><a title="Contact" href="#">Contact</a></li>
+          </ul>
+          </div>
+          </div>
+          </div>
+          <div class="grid_3">
+          <div class="accordion mobile-accordion"><span class="opener">&nbsp;</span>
+          <div class="section-line block-title">
+          <h4>Online Shopping</h4>
+          </div>
+          <div class="block-content">
+          <ul class="list bullet separator">
+          <li><a title="F.A.Q.&rsquo;s" href="#">F.A.Q.&rsquo;s</a></li>
+          <li><a title="Delivery &amp; Returns" href="#">Delivery &amp; Returns</a></li>
+          <li><a title="Ordering Tracking" href="#">Ordering Tracking</a></li>
+          <li><a title="Payment" href="#">Payment</a></li>
+          <li><a title="Privacy" href="#">Privacy</a></li>
+          </ul>
+          </div>
+          </div>
+          </div>
+          <div class="grid_3">
+          <div class="accordion mobile-accordion"><span class="opener">&nbsp;</span>
+          <div class="section-line block-title">
+          <h4>Follow Us</h4>
+          </div>
+          <div class="block-content">
+          <div class="social-link peer-icon peer-icon-circle footer-bottom-border"><a class="tooltip_container" title="Facebook" href="#"> <span class="icon fa fa-facebook">&nbsp;</span> <span class="tooltip">Facebook</span></a> <a class="tooltip_container" title="Twitter" href="#"> <span class="icon  fa fa-twitter">&nbsp;</span> <span class="tooltip">Twitter</span></a> <a class="tooltip_container" title="Pinterest" href="#"> <span class="icon fa fa-pinterest">&nbsp;</span> <span class="tooltip">Pinterest</span></a> <a class="tooltip_container" title="Vimeo" href="#"> <span class="icon fa fa-vimeo-square">&nbsp;</span> <span class="tooltip">Vimeo</span></a> <a class="tooltip_container" title="Flickr" href="#"> <span class="icon fa fa-flickr">&nbsp;</span> <span class="tooltip">Flickr</span></a></div>
+          {{block type="newsletter/subscribe" name="left.newsletter" template="newsletter/subscribe.phtml"}}</div>
+          </div>
+          </div>
+          </div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Detail Right Block</title>
+      <identifier>detail-right-block</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="page-banners">
+          <div class="banner mobile-grid-half no-left-margin"><img src="{{media url="wysiwyg/block_banner/custom-blockimg2.jpg"}}" alt="" /></div>
+          <div class="banner mobile-grid-hal no-right-margin"><img src="{{media url="wysiwyg/block_banner/custom-blockimg3.jpg"}}" alt="" /></div>
+          </div>
+          <div class="clearer martop20">&nbsp;</div>
+          <div class="peer-wrapper peer-icon-circle peer-icon-hover indent">
+          <div class="icon fa fa-truck">&nbsp;</div>
+          <div class="peer-content">
+          <h4>Free Shipping</h4>
+          <p class="below-heading">All country</p>
+          </div>
+          </div>
+          <div class="peer-wrapper peer-icon-circle peer-icon-hover indent">
+          <div class="icon fa fa-users">&nbsp;</div>
+          <div class="peer-content">
+          <h4>support service</h4>
+          <p class="below-heading">8-800-250-08-78</p>
+          </div>
+          </div>
+          <div class="peer-wrapper peer-icon-circle peer-icon-hover indent">
+          <div class="icon fa fa-gift">&nbsp;</div>
+          <div class="peer-content">
+          <h4>Gifts</h4>
+          <p class="below-heading">each bid</p>
+          </div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Detail Bottom Block</title>
+      <identifier>detail-bottom-block</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="pull-container page-banners">
+          <div class="grid_4 banner"><img src="{{media url="wysiwyg/block_banner/custom-blockimg1.jpg"}}" alt="" /><br /><br />
+          <p>Firmly based in the Danish design tradition and appreciation for the values of classic craftsmanship, Mismo unites natural materials with simple yet refined details to create products of true style. Leather constitutes the backbone of Mismo design, and only the best materials of premium quality are used.</p>
+          <br />
+          <p>Functionality and detail are meticulously harmonised with versatility and durability to strike exactly the right balance.</p>
+          </div>
+          <div class="grid_4 banner mobile-grid-half"><img src="{{media url="wysiwyg/block_banner/custom-blockimg2.jpg"}}" alt="" /></div>
+          <div class="grid_4 banner mobile-grid-half"><img src="{{media url="wysiwyg/block_banner/custom-blockimg3.jpg"}}" alt="" /></div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Women Block</title>
+      <identifier>women-block</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="horizontal-section"><a href="#"> <img src="{{media url="wysiwyg/block_banner/category_banner/categorybanner-women.jpg"}}" alt="Women" /></a></div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Block Header Top1</title>
+      <identifier>block-header-top1</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="block_header_top_left item item-left hide-below-480">The premier destination for premium products</div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Before Main Container Full Width Block</title>
+      <identifier>before-maincontainer-full-width-block</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+                  <p>&nbsp;</p>
+          <!-- only use js for current block -->
+          <script type="text/javascript" src="{{skin url}}js/d3.min.js"></script>
+          <script type="text/javascript" src="{{skin url}}js/radialProgress.js"></script>
+          <!--Block Content -->
+          <div class="container_12 clearer martop50">
+          <div class="pull-container">
+          <div class="grid_3 peer-wrapper center radial">
+          <div id="div1">
+          <div><em class="fa fa-mobile-phone fa-3x">&nbsp;</em></div>
+          </div>
+          <h3>Incredibly Responsive</h3>
+          <p>Neighborhood is completely responsive. And when we say responsive, we mean it won&rsquo;t only work on mobile devices; it&rsquo;ll look damn good too!</p>
+          <a href="#">Fine out more<em class="fa fa-chevron-right">&nbsp;</em></a></div>
+          <div class="grid_3 peer-wrapper center radial">
+          <div id="div2">
+          <div><em class="fa fa-pencil fa-3x">&nbsp;</em></div>
+          </div>
+          <h3>Dynamic Blog</h3>
+          <p>create an interactive two-way communication platform to provide official information on your store news, upcoming products, promotions, and get customers&rsquo; feedback.</p>
+          <a href="#">Fine out more<em class="fa fa-chevron-right">&nbsp;</em></a></div>
+          <div class="grid_3 peer-wrapper center radial">
+          <div id="div3">
+          <div><em class="fa fa-font fa-3x">&nbsp;</em></div>
+          </div>
+          <h3>Superior Typography</h3>
+          <p>Neighborhood includes pro Font Deck support. Or you can choose from 600+ Google Web fonts &amp; control the colour, size &amp; line height.</p>
+          <a href="#">Fine out more<em class="fa fa-chevron-right">&nbsp;</em></a></div>
+          <div class="grid_3 peer-wrapper center radial">
+          <div id="div4">
+          <div><em class="fa fa-eye fa-3x">&nbsp;</em></div>
+          </div>
+          <h3>Stunning Sliders</h3>
+          <p>Neighborhood comes with 2 sliders included. The ever popular Revolution Slider and our own innovative and stunning Default Slider.</p>
+          <a href="#">Fine out more<em class="fa fa-chevron-right">&nbsp;</em></a></div>
+          </div>
+          </div>
+          <!-- only use javascript for current block -->
+          <script type="text/javascript" language="JavaScript">
+                        var div1=d3.select(document.getElementById('div1'));
+                        var div2=d3.select(document.getElementById('div2'));
+                        var div3=d3.select(document.getElementById('div3'));
+                        var div3=d3.select(document.getElementById('div4'));
+                    
+                        start();
+                    
+                    
+                        function labelFunction(val,min,max) {
+                    
+                        }
+                    
+                        function start() {
+                    
+                            var rp1 = radialProgress(document.getElementById('div1'))
+                                    .diameter(200)
+                                    .value(100)
+                                    .render();
+                    
+                            var rp2 = radialProgress(document.getElementById('div2'))
+                                    .diameter(200)
+                                    .value(100)
+                                    .render();
+                    
+                            var rp3 = radialProgress(document.getElementById('div3'))
+                                    .diameter(200)
+                                    .value(100)
+                                    .render();
+                                    
+                            var rp4 = radialProgress(document.getElementById('div4'))
+                                    .diameter(200)
+                                    .value(100)
+                                    .render();                
+                    
+                        }
+          </script>
+        ]]>
+      </content>      
+    </block>
+       
+    <block>
+      <title>Custom Right Sidebar Block1</title>
+      <identifier>custom-right-sidebar-block1</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="block">
+          <div class="block-title"><strong><span>Custom Block</span></strong></div>
+          <div class="block-content">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          </div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Custom Right Sidebar Block2</title>
+      <identifier>custom-right-sidebar-block2</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="block">
+          <div class="center-block"><img src="{{media url="wysiwyg/block_banner/sidebar-right-blockimg.jpg"}}" alt="" /></div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Custom Left Sidebar Block1</title>
+      <identifier>custom-left-sidebar-block1</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="block">
+          <div class="block-title"><strong><span>Custom Block</span></strong></div>
+          <div class="block-content">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          </div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+        
+    <block>
+      <title>Custom Left Sidebar Block2</title>
+      <identifier>custom-left-sidebar-block2</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="block ">
+          <div class="center-block"><img src="{{media url="wysiwyg/block_banner/sidebar-left-blockimg.jpg"}}" alt="" /></div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Custom Tab1</title>
+      <identifier>block_product_tab1</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="peer-wrapper">
+          <div class="bot-shadow img-box"><img src="{{media url="wysiwyg/block_banner/sidebar-right-blockimg.jpg"}}" alt="" /></div>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+          <br />
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+          <br />
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Custom Tab2</title>
+      <identifier>block_product_tab2</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="peer-wrapper right">
+          <div class="bot-shadow img-box"><img src="{{media url="wysiwyg/block_banner/sidebar-left-blockimg.jpg"}}" alt="" /></div>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+          <br />
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+          <br />
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>After Main Container Full Width Block</title>
+      <identifier>after-maincontainer-full-width-block</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="fixed-bgimg clearer martop50" style="margin-bottom: -50px;">
+          <div class="container_12">
+          <div class="grid_4">
+          <div class="peer-wrapper peer-icon peer-icon-circle peer-icon-hover large center">
+          <div class="icon fa fa-mobile-phone">&nbsp;</div>
+          <h3>Incredibly Responsive</h3>
+          <p>Neighborhood is completely responsive. And when we say responsive, we mean it won&rsquo;t only work on mobile devices; it&rsquo;ll look damn good!</p>
+          <a href="#">Fine out more &nbsp;&nbsp;<em class="fa fa-chevron-right" style="font-style: normal;">&nbsp;</em></a></div>
+          </div>
+          <div class="grid_4">
+          <div class="peer-wrapper peer-icon peer-icon-circle peer-icon-hover large center">
+          <div class="icon fa fa-pencil">&nbsp;</div>
+          <h3>Dynamic Blog</h3>
+          <p>create an interactive two-way communication platform to provide official information on your store news, upcoming products, promotions, and get customers&rsquo; feedback</p>
+          <a href="#">Fine out more &nbsp;&nbsp;<em class="fa fa-chevron-right" style="font-style: normal;">&nbsp;</em></a></div>
+          </div>
+          <div class="grid_4">
+          <div class="peer-wrapper peer-icon peer-icon-circle peer-icon-hover large center">
+          <div class="icon fa fa-font">&nbsp;</div>
+          <h3>Superior Typography</h3>
+          <p>Neighborhood includes pro Font Deck support. Or you can choose from 600+ Google Web fonts &amp; control the colour, background &amp; patten.</p>
+          <a href="#">Fine out more &nbsp;&nbsp;<em class="fa fa-chevron-right" style="font-style: normal;">&nbsp;</em></a></div>
+          </div>
+          </div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Home Block1</title>
+      <identifier>home-block1</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="spb_impact_text alt-bg">
+          <div class="container_12">
+          <div class="impact-text-wrap clearfix grid_full">
+          <div class="spb_call_text">
+          <h2 style="text-transform: uppercase;">Free international shipping! offer ends May 20th 2013</h2>
+          </div>
+          <span class="impact-text-arrow"> <em class="fa fa-angle-right">&nbsp;</em> </span></div>
+          </div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Contack us block</title>
+      <identifier>contact-us-block</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="peer-wrapper peer-icon peer-icon-hover large indent">
+          <div class="icon fa fa-map-marker">&nbsp;</div>
+          <div class="peer-content">
+          <h4>Address</h4>
+          <p style="color: #999999;">Apple aComputer Inc,1 Infinite Loop<br />Cupertino CA, 95014</p>
+          </div>
+          </div>
+          <div class="peer-wrapper peer-icon peer-icon-hover large indent">
+          <div class="icon fa fa-mobile-phone">&nbsp;</div>
+          <div class="peer-content">
+          <h4>Phone</h4>
+          <p style="color: #999999;">+44 (0) 800 123 4567<br />+44 (0) 800 123 4568</p>
+          </div>
+          </div>
+          <div class="peer-wrapper peer-icon peer-icon-hover large indent">
+          <div class="icon fa fa-envelope">&nbsp;</div>
+          <div class="peer-content">
+          <h4>Mail</h4>
+          <p style="color: #999999;">hello@hezy.org<br />hello@hezy.ru</p>
+          </div>
+          </div>
+          <div class="peer-wrapper peer-icon peer-icon-hover large indent">
+          <div class="icon fa fa-skype">&nbsp;</div>
+          <div class="peer-content">
+          <h4>Skype</h4>
+          <p style="color: #999999;">hezy.org<br />hezytheme</p>
+          </div>
+          </div>
+          <div class="section-hr">&nbsp;</div>
+          <div class="social-link  peer-icon martop20 a-center"><a title="Facebook" href="#"> <span class="icon fa fa-facebook">&nbsp;</span> </a> <a title="Twitter" href="#"> <span class="icon  fa fa-twitter">&nbsp;</span> </a> <a title="Pinterest" href="#"> <span class="icon fa fa-pinterest">&nbsp;</span> </a> <a title="Vimeo" href="#"> <span class="icon fa fa-vimeo-square">&nbsp;</span> </a> <a title="Flickr" href="#"> <span class="icon fa fa-flickr">&nbsp;</span> </a></div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Mega Fashion Right Block</title>
+      <identifier>mega-fashion-right-block</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="header-mega-dropdown-wrapper"><img src="{{media url="wysiwyg/block_banner/single-blog-img1.jpg"}}" alt="" />
+          <h3 class="heading">Responsive Magento Theme</h3>
+          <p>Neighborhood is a premium Magento theme with advanced admin module. It's extremely customizable and fully responsive. Can be used for every type of store.</p>
+          <h5><a class="go" style="color: red;" href="http://themeforest.net/item/neighborhood-responsive-multipurpose-shop-theme/8816946">Buy this Magento theme</a></h5>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Mega Fashion Bottom Block</title>
+      <identifier>mega-fashion-bottom-block</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="show-links" style="background-color: #f0f0f0; padding: 15px;">
+          <ul class="links">
+          <li class="label">Featured Categories :</li>
+          <li class="first"><a href="#">Evening Tops</a></li>
+          <li><a href="#">Dresses</a></li>
+          <li class="last"><a href="#">Shirts &amp; Blouses</a></li>
+          </ul>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Mega Electronics Top Block</title>
+      <identifier>mega-electronics-top-block</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="links-separators show-links f-left">
+          <ul class="links">
+          <li class="label">Recommended :</li>
+          <li class="first"><a href="#">Configurable Phone</a></li>
+          <li><a href="#">Galaxy S3</a></li>
+          <li><a href="#">Galaxy S4</a></li>
+          <li><a href="#">iPad Retina</a></li>
+          <li class="last"><a href="#">iPhone 5</a></li>
+          </ul>
+          </div>
+          <div class="links-separators show-links f-right">
+          <ul class="links">
+          <li class="first"><a href="#">Add</a></li>
+          <li><a href="#">More</a></li>
+          <li><a href="#">Custom</a></li>
+          <li class="last"><a href="#">Links</a></li>
+          </ul>
+          </div>
+          <div class="clearer section-hr">&nbsp;</div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Mega Electronics Left Block</title>
+      <identifier>mega-electronics-left-block</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="header-mega-dropdown-wrapper"><img src="{{media url="wysiwyg/block_banner/single-blog-img.jpg"}}" alt="" />
+          <h3 class="heading">Responsive Magento Theme</h3>
+          <p>Neighborhood is a premium Magento theme with advanced admin module. It's extremely customizable and fully responsive. Can be used for every type of store.</p>
+          <h5><a class="go" style="color: red;" href="http://themeforest.net/item/neighborhood-responsive-multipurpose-shop-theme/8816946">Buy this Magento theme</a></h5>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Custom Menu</title>
+      <identifier>menu_block_1</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="header-mega-dropdown-wrapper">
+          <div class="grid_3">
+          <div class="peer-wrapper no-margin">
+          <h2 class="heading">Responsive Magento Theme</h2>
+          <p>Neighborhood is a premium Magento theme with advanced admin module. It's extremely customizable and fully responsive. Can be used for every type of store.</p>
+          <h5><a class="go" style="color: red;" href="http://themeforest.net/item/neighborhood-responsive-multipurpose-shop-theme/8816946">Buy this Magento theme</a></h5>
+          </div>
+          </div>
+          <div class="grid_3">
+          <div class="peer-wrapper peer-icon peer-icon-hover large">
+          <div class="icon fa fa-desktop">&nbsp;</div>
+          <h4 class="heading">Responsive Design</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate cursus adipiscing</p>
+          <a class="go" href="{{store url='features'}}">See all features</a></div>
+          </div>
+          <div class="grid_3">
+          <div class="peer-wrapper peer-icon peer-icon-hover large">
+          <div class="icon fa fa-wrench">&nbsp;</div>
+          <h4 class="heading">Easy to customize</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate cursus adipiscing</p>
+          <a class="go" href="{{store url='features'}}">See all features</a></div>
+          </div>
+          <div class="grid_3">
+          <div class="peer-wrapper peer-icon peer-icon-hover large">
+          <div class="icon fa fa-cogs">&nbsp;</div>
+          <h4 class="heading">Power Admin</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate cursus adipiscing</p>
+          <a class="go" href="{{store url='features'}}">See all features</a></div>
+          </div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Category Content Block</title>
+      <identifier>category-content-block</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="pull-container page-banners martop30">
+          <div class="grid_4 banner"><img src="{{media url="wysiwyg/block_banner/custom-blockimg1.jpg"}}" alt="" /><br /><br />
+          <p>Firmly based in the Danish design tradition and appreciation for the values of classic craftsmanship, Mismo unites natural materials with simple yet refined details to create products of true style. Leather constitutes the backbone of Mismo design, and only the best materials of premium quality are used.</p>
+          </div>
+          <div class="grid_4 banner mobile-grid-half"><img src="{{media url="wysiwyg/block_banner/custom-blockimg2.jpg"}}" alt="" /></div>
+          <div class="grid_4 banner mobile-grid-half"><img src="{{media url="wysiwyg/block_banner/custom-blockimg3.jpg"}}" alt="" /></div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Category Sidebar Block</title>
+      <identifier>category-sidebar-block</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="block">
+          <div class="block-title"><strong><span>Category Block</span></strong></div>
+          <div class="block-content">
+          <p>Your content goes here and it will display only on category sidebar</p>
+          </div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Banner Right Block</title>
+      <identifier>banner-right-block</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="slider-banners hide-below-768">
+          <div class="banner"><img src="{{media url="wysiwyg/block_banner/banner-right1.jpg"}}" alt="" /></div>
+          <div class="banner last"><img src="{{media url="wysiwyg/block_banner/banner-right2.jpg"}}" alt="" /></div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Block Header Top2</title>
+      <identifier>block-header-top2</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="social-link block_header_top_right item item-right"><a title="Facebook" href="#"> <span class="fa fa-facebook">&nbsp;</span> </a> <a title="Twitter" href="#"> <span class=" fa fa-twitter">&nbsp;</span> </a> <a title="Pinterest" href="#"> <span class="fa fa-pinterest">&nbsp;</span> </a> <a title="Vimeo" href="#"> <span class="fa fa-vimeo-square">&nbsp;</span> </a> <a title="Flickr" href="#"> <span class="fa fa-flickr">&nbsp;</span></a></div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Detail Social Link</title>
+      <identifier>detail-sociallink</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="social-link"><label>Share</label> <a class="tooltip_container" title="Facebook" href="#"> <span class="fa fa-facebook">&nbsp;</span> <span class="tooltip">Facebook</span></a> <a class="tooltip_container" title="Twitter" href="#"> <span class="fa fa-twitter">&nbsp;</span> <span class="tooltip">Twitter</span></a> <a class="tooltip_container" title="Pinterest" href="#"> <span class="fa fa-pinterest">&nbsp;</span> <span class="tooltip">Pinterest</span></a> <a class="tooltip_container" title="Vimeo" href="#"> <span class="fa fa-vimeo-square">&nbsp;</span> <span class="tooltip">Vimeo</span></a> <a class="tooltip_container" title="Flickr" href="#"> <span class="fa fa-flickr">&nbsp;</span> <span class="tooltip">Flickr</span></a></div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Home Block 2</title>
+      <identifier>home-block2</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+            <div class="pull-container">
+            <div class="grid_6">{{widget type="blog/last" blocks_count="2" categories="1"}}</div>
+            <div class="grid_3 mobile-grid-half">{{block type="multiproduct/product_default_bestsellercustom" template="catalog/product/multiproduct/multi-block/bestseller_custom.phtml"}}</div>
+            <div class="grid_3 mobile-grid-half">
+            <div class="peer-wrapper">
+            <div class="section-line">
+            <h2>Features</h2>
+            </div>
+            <div class="bot-shadow"><a class="scale-on-hover reletive" href="{{store url='features'}}"><img src="{{media url="wysiwyg/block_banner/custom-blockimg2.jpg"}}" alt="" /></a></div>
+            </div>
+            </div>
+            </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>After Main Container Full Width Block-German</title>
+      <identifier>after-maincontainer-full-width-block-german</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="fixed-bgimg a-center martop50" style="margin-bottom: -50px;">
+          <div class="container_12">
+          <div class="grid_full">
+          <h4>Testimonials</h4>
+          <br />
+          <div id="customslider1">
+          <div class="item peer-wrapper">
+          <h2>"I just wanted to take a minute and express my thanks for the incredible support I have received so far from the SwiftIdeas team. Seriously, these guys are second to none. I&rsquo;ve purchased a countless number of themes on here, and have yet to come across one as elegant, easy to use, and well supported as this one."</h2>
+          <p class="below-heading">Ringdal</p>
+          </div>
+          <div class="item peer-wrapper">
+          <h2>&ldquo;Just a note on how wonderful this theme is! If you are thinking of purchasing, I&rsquo;d say do it! The flexibility is awesome and the possibilities are endless. I also want to thank SwiftIdeas for the EXCELLENT support with setting things up and answering questions that I had. If you are looking for a theme WITH support, this is it!&rdquo;</h2>
+          <p class="below-heading">tomdekok</p>
+          </div>
+          <div class="item peer-wrapper">
+          <h2>"I&rsquo;ve purchased many themes from here searching for the perfect one only to be disappointed, thankfully after wasting a fair amount of money I have found a theme that not only looks good but is also unbelievably flexible and easy to use. To top it all off the support from Swift Ideas is amazing, infact i&rsquo;m not sure how they get anything else done. If you a thinking about getting this theme i&rsquo;d definitely recommend it."</h2>
+          <p class="below-heading">abovecreative</p>
+          </div>
+          <div class="item peer-wrapper">
+          <h2>"The customisation possibilities are 10 of 10. No words needed &ndash; you can do mostly anything, and everything was thought out for your future needs. Plus,&nbsp;Swift Ideas support is the best support I've ever experienced!"</h2>
+          <p class="below-heading">kostyasazonov</p>
+          </div>
+          <div class="item peer-wrapper">
+          <h2>"Gorgeous, just gorgeous I love this theme. The nicest theme I ever worked with and I have worked with hundreds of them. Thanks for beautiful work, keep it up!"</h2>
+          <p class="below-heading">Ringdal</p>
+          </div>
+          <div class="item peer-wrapper">
+          <h2>"I just wanted to take a minute and express my thanks for the incredible support I have received so far from the SwiftIdeas team. Seriously, these guys are second to none. I&rsquo;ve purchased a countless number of themes on here, and have yet to come across one as elegant, easy to use, and well supported as this one."</h2>
+          <p class="below-heading">bschwart</p>
+          </div>
+          <div class="item peer-wrapper">
+          <h2>&ldquo;Just a note on how wonderful this theme is! If you are thinking of purchasing, I&rsquo;d say do it! The flexibility is awesome and the possibilities are endless. I also want to thank SwiftIdeas for the EXCELLENT support with setting things up and answering questions that I had. If you are looking for a theme WITH support, this is it!&rdquo;</h2>
+          <p class="below-heading">tomdekok</p>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          <script type="text/javascript">
+                        j$(document).ready(function() {
+                            
+                             j$("#customslider1").owlCarousel({
+                              itemsCustom : [
+                                 [0, 1],
+                                 [767, 1]
+                                 ],
+                                 navigation : true,
+                                 slideSpeed : 1000,        
+                                 autoHeight:true
+                            });
+                            
+                           });
+          </script>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Home Block 1-Spanish</title>
+      <identifier>home-block1-spanish</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="grid_3 mobile-grid-half">
+          <div class="clearer clear">{{block type="multiproduct/product_default_review" name="top-reviews" after="catalog.categorymenu" template="catalog/product/multiproduct/top_rated.phtml"}}</div>
+          <div class="clearer clear martop30">{{block type="multiproduct/product_default_bestsellercustom" template="catalog/product/multiproduct/multi-block/bestseller_custom.phtml"}}</div>
+          <div class="clearer clear martop30">
+          <div class="featured-block">
+          <div class="section-line">
+          <h2>Featured</h2>
+          </div>
+          <a class="scale-on-hover bot-shadow" href="#"> <img src="{{media url="wysiwyg/block_banner/custom-blockimg1.jpg"}}" alt="" /></a> <br />
+          <p>Firmly based in the Danish design tradition and appreciation for the values of classic craftsmanship, Mismo unites natural materials with simple yet refined details to create products of true style. Leather constitutes the backbone of Mismo design, and only the best materials of premium quality are used.</p>
+          </div>
+          </div>
+          </div>
+          <div class="grid_3 mobile-grid-half">
+          <div class="section-line">
+          <h2>Featured</h2>
+          </div>
+          <div class="peer-wrapper"><a class="scale-on-hover bot-shadow" href="#"><img src="{{media url="wysiwyg/block_banner/single-blog-img1.jpg"}}" alt="" /></a><br />
+          <h3>Neighborhood exclusive: Eytys</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam massa quis mauris sollicitudin commodo venenatis ligula commodo. Sed blandit convallis dignissim.</p>
+          </div>
+          <div class="peer-wrapper"><a class="scale-on-hover bot-shadow" href="#"><img src="{{media url="wysiwyg/block_banner/sidebar-left-blockimg.jpg"}}" alt="" /></a><br />
+          <h3>Neighborhood exclusive: Eytys</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam massa quis mauris sollicitudin commodo venenatis ligula commodo. Sed blandit convallis dignissim.</p>
+          </div>
+          <div class="peer-wrapper"><a class="scale-on-hover bot-shadow" href="#"><img src="{{media url="wysiwyg/block_banner/sidebar-right-blockimg.jpg"}}" alt="" /></a><br />
+          <h3>Neighborhood exclusive: Eytys</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam massa quis mauris sollicitudin commodo venenatis ligula commodo. Sed blandit convallis dignissim.</p>
+          </div>
+          <div class="peer-wrapper"><a class="scale-on-hover bot-shadow" href="#"><img src="{{media url="wysiwyg/block_banner/custom-blockimg2.jpg"}}" alt="" /></a><br />
+          <h3>Neighborhood exclusive: Eytys</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam massa quis mauris sollicitudin commodo venenatis ligula commodo. Sed blandit convallis dignissim.</p>
+          </div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>After Main Container Full Width Block-Spanish</title>
+      <identifier>after-maincontainer-full-width-block-spanish</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="fixed-bgimg clearer martop50 a-center" style="margin-bottom: -50px;">
+          <div class="container_12">
+          <div class="grid_full">
+          <h4>Tweets from the shop floor</h4>
+          <br />
+          <h2>We have just updated Neighborhood &amp; Dante with major performance improvements, along with other additions and fixes. Enjoy!</h2>
+          <div class="twitter_intents martop20"><a class="reply" href="#"><em class="fa fa-reply">&nbsp;</em></a> <a class="retweet" href="#"><em class="fa fa-retweet">&nbsp;</em></a> <a class="favorite" href="#"><em class="fa fa-star">&nbsp;</em></a> <a class="timestamp" href="#" target="_blank">3 weeks ago</a></div>
+          </div>
+          </div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>After Main Container Full Width Block-French</title>
+      <identifier>after-maincontainer-full-width-block-french</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="fixed-bgimg a-center martop50" style="margin-bottom: -50px;">
+          <div class="container_12">
+          <div class="grid_full">
+          <h4>What our clients say</h4>
+          <br />
+          <div id="customslider2">
+          <div class="item peer-wrapper">
+          <h2>&ldquo;Just a note on how wonderful this theme is! If you are thinking of purchasing, I&rsquo;d say do it! The flexibility is awesome and the possibilities are endless. I also want to thank SwiftIdeas for the EXCELLENT support with setting things up and answering questions that I had. If you are looking for a theme WITH support, this is it!&rdquo;</h2>
+          <p class="below-heading">tomdekok</p>
+          </div>
+          <div class="item peer-wrapper">
+          <h2>"I&rsquo;ve purchased many themes from here searching for the perfect one only to be disappointed, thankfully after wasting a fair amount of money I have found a theme that not only looks good but is also unbelievably flexible and easy to use. To top it all off the support from Swift Ideas is amazing, infact i&rsquo;m not sure how they get anything else done. If you a thinking about getting this theme i&rsquo;d definitely recommend it."</h2>
+          <p class="below-heading">abovecreative</p>
+          </div>
+          <div class="item peer-wrapper">
+          <h2>"The customisation possibilities are 10 of 10. No words needed &ndash; you can do mostly anything, and everything was thought out for your future needs. Plus,&nbsp;Swift Ideas support is the best support I've ever experienced!"</h2>
+          <p class="below-heading">kostyasazonov</p>
+          </div>
+          <div class="item peer-wrapper">
+          <h2>"Gorgeous, just gorgeous I love this theme. The nicest theme I ever worked with and I have worked with hundreds of them. Thanks for beautiful work, keep it up!"</h2>
+          <p class="below-heading">Ringdal</p>
+          </div>
+          <div class="item peer-wrapper">
+          <h2>"I just wanted to take a minute and express my thanks for the incredible support I have received so far from the SwiftIdeas team. Seriously, these guys are second to none. I&rsquo;ve purchased a countless number of themes on here, and have yet to come across one as elegant, easy to use, and well supported as this one."</h2>
+          <p class="below-heading">bschwart</p>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          <script type="text/javascript">
+                        j$(document).ready(function() {
+                            
+                             j$("#customslider2").owlCarousel({
+                              itemsCustom : [
+                                 [0, 1],
+                                 [767, 1]
+                                 ],
+                                 navigation : true,
+                                 slideSpeed : 1000,        
+                                 autoHeight:true
+                            });
+                            
+                           });
+          </script>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Before Main Container Full Width Block-French</title>
+      <identifier>before-maincontainer-full-width-block-french</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="grid-container clearer martop50">
+          <div class="container_12">
+          <div class="grid_3">
+          <div class="peer-wrapper">
+          <div class="section-line">
+          <h3>Sample Heading</h3>
+          </div>
+          <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque solare de equis. Nullam ornare enim nec . . .</p>
+          <a href="#">Fine out more</a></div>
+          </div>
+          <div class="grid_3">
+          <div class="peer-wrapper">
+          <div class="section-line">
+          <h3>Sample Heading</h3>
+          </div>
+          <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque solare de equis. Nullam ornare enim nec . . .</p>
+          <a href="#">Fine out more</a></div>
+          </div>
+          <div class="grid_3">
+          <div class="peer-wrapper">
+          <div class="section-line">
+          <h3>Sample Heading</h3>
+          </div>
+          <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque solare de equis. Nullam ornare enim nec . . .</p>
+          <a href="#">Fine out more</a></div>
+          </div>
+          <div class="grid_3">
+          <div class="peer-wrapper">
+          <div class="section-line">
+          <h3>Sample Heading</h3>
+          </div>
+          <p>Lorem ipsum dolor sit, consectetur adipiscing elit. Etiam neque velit, blandit sed scelerisque solare de equis. Nullam ornare enim nec . . .</p>
+          <a href="#">Fine out more</a></div>
+          </div>
+          </div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Home Block 1-Italian</title>
+      <identifier>home-block1-italian</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div class="fixed-bgimg alt-bg clearer a-center">
+          <div class="container_12">
+          <div class="grid_full">
+          <h2><span style="color: #ffffff;">&ldquo;Functionality and detail are meticulously with versatility and durability to strike exactly the right balance.&rdquo;</span></h2>
+          </div>
+          </div>
+          </div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Typography</title>
+      <identifier>menu_typography</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div>&nbsp;</div>
+        ]]>
+      </content>      
+    </block>
+    
+    <block>
+      <title>Subcategory Listing Block</title>
+      <identifier>subcategory-listing-block</identifier>
+      <status>1</status>
+      <content>
+        <![CDATA[
+          <div>{{block type="core/template" template="catalog/category/sub.phtml"}}</div>
+        ]]>
+      </content>      
+    </block>
+    
+  </cms_static_block>
+</root>
+
+

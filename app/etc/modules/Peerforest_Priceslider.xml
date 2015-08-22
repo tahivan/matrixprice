@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Peerforest_Priceslider>
+            <active>true</active>
+            <codePool>local</codePool>            
+        </Peerforest_Priceslider>
+    </modules>
+</config>

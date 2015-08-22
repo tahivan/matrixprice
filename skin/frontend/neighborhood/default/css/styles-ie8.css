@@ -1,0 +1,62 @@
+
+/* ********************************************************************************************
+    Internet Explorer: less than or equal 8
+*********************************************************************************************** */
+
+/* Hide element if screen width is lower than the width specified in the class name */
+.ie8 .hide-below-1680 { display:inherit !important; }
+.ie8 .hide-below-1440 { display:inherit !important; }
+.ie8 .hide-below-1360 { display:inherit !important; }
+.ie8 .hide-below-1280 { display:inherit !important; }
+
+
+/* ********************************************************************************************
+    Borders instead of dropdown shadows
+*********************************************************************************************** */
+
+.remember-me-popup,
+.map-popup,
+.tool-tip { border:1px solid #E4E4E4; }
+
+/* Forms */
+input.input-text{line-height: 23px;}
+.block-subscribe input{line-height: 15px;}
+
+
+/* ********************************************************************************************
+    Dropdown
+*********************************************************************************************** */
+
+#mega-nav .megamenu-vertical ul.subs ul,
+#mega-nav div.mega-block,
+.nav-container #nav ul,
+.dropdown-menu{display: none;border:1px solid #E4E4E4;visibility: inherit;}
+#mega-nav .megamenu-vertical ul.subs li:hover > ul,
+#mega-nav li:hover div.mega-block,
+.nav-container #nav li:hover > ul,
+.dropdown:hover .dropdown-menu{opacity: 1;-moz-opacity: 1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter: alpha(opacity=100); pointer-events: all;display: block;}
+
+
+/* ********************************************************************************************
+    Sale New label
+*********************************************************************************************** */
+
+.sale, .new{width: 60px;padding-top: 0px;padding-bottom: 0px;}
+.sale{left: 0px!important;}
+.new{right: 0px!important;}
+
+
+/* ********************************************************************************************
+    Remove Category Toolbar Botom Margin
+*********************************************************************************************** */
+
+.category-products .toolbar .pager{margin-bottom: 0%;}
+
+
+/* ********************************************************************************************
+    Mobile accordion blocks (disable for old IE)
+*********************************************************************************************** */
+
+.mobile-accordion .block-content { display: block !important; }
+.mobile-accordion .opener { display: none !important; }
+

@@ -1,0 +1,123 @@
+<?php
+if(Mage::getStoreConfig('mygeneral/banner/enable')){
+if(Mage::getStoreConfig('mygeneral/banner/displaybanner') == 'default'){
+
+	$caption_position = Mage::getStoreConfig('mygeneral/banner/caption_position');
+	$caption_width = Mage::getStoreConfig('mygeneral/banner/caption_width');
+	$class = $caption_position;
+	
+	$i = 0;
+	?>
+	
+	<?php $bannerCollection = $this->getBannerCollection(); ?>
+	<?php $configData = Mage::getStoreConfig('bannerslider'); ?>
+	<div class="clear"></div>
+	<div class="bannerslider banner<?php if(Mage::getStoreConfig('mygeneral/banner/bannerwidth')){ ?> container_12<?php } ?>">
+	<div class="<?php if(Mage::getStoreConfig('mygeneral/banner/bannerwidth')){ ?>grid_full<?php } ?>">	
+		
+		<?php if(Mage::getStoreConfig('mygeneral/banner/bannerwithblock') == '2' || Mage::getStoreConfig('mygeneral/banner/bannerwithblock') == '4'){ ?>
+			<div class="no-left-margin grid_3 left-block">
+				<?php
+				$blockId = Mage::getStoreConfig('mygeneral/banner/bannerleftblock');
+				    if($blockId != "") {
+					echo $this->getLayout()->createBlock('cms/block')->setBlockId($blockId)->toHtml();
+				    }
+				?>
+			</div>
+		<?php } ?>
+		
+		<ul class="banner-slider <?php if(Mage::getStoreConfig('mygeneral/banner/bannerwithblock') == '2'){ ?> no-right-margin grid_9<?php } elseif(Mage::getStoreConfig('mygeneral/banner/bannerwithblock') == '3') { ?> no-left-margin grid_9<?php } elseif(Mage::getStoreConfig('mygeneral/banner/bannerwithblock') == '4') { ?>  grid_6<?php } ?>">	
+		<?php foreach ($bannerCollection as $banner): ?>
+			<li class="item">
+				<a href="<?php echo $banner['weblink'];?>"><img src=" <?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . $banner['filename']?>" alt="<?php $banner['filename']; ?>" /></a>
+				
+				<?php if ($configData['settings']['show_description'] == '1'):?>
+				<div class="caption <?php echo $class; ?>">
+					<h2 class="heading"><?php echo $banner['title']?></h2>
+					<p><?php echo $banner['content']; ?></p>
+					<button type="button" title="<?php echo $this->__('CLICK TO SHOP') ?>" class="button" onclick="setLocation('<?php echo $banner['weblink'];?>')"><span><span><?php echo $this->__('CLICK TO SHOP') ?></span></span></button>
+				</div>
+				<?php endif;?>			      
+			</li>	
+		<?php $i++; endforeach; ?>
+		</ul>
+		
+		<?php if(Mage::getStoreConfig('mygeneral/banner/bannerwithblock') == '3' || Mage::getStoreConfig('mygeneral/banner/bannerwithblock') == '4'){ ?>
+			<div class="no-right-margin grid_3 right-block">
+				<?php
+				$blockId = Mage::getStoreConfig('mygeneral/banner/bannerrightblock');
+				    if($blockId != "") {
+					echo $this->getLayout()->createBlock('cms/block')->setBlockId($blockId)->toHtml();
+				    }
+				?>
+			</div>
+		<?php } ?>
+		
+	</div>
+	</div>
+	<div class="clear"></div>
+	
+	<script type="text/javascript">
+	j$(document).ready(function() {
+		j$(".banner-slider").owlCarousel({
+			singleItem:true,
+			autoHeight : true<?php echo Mage::helper("ExtraConfig")->bannerSliderSetting(); ?>
+		});
+	});
+	</script>
+
+<?php } else { ?>
+
+	<?php
+	$helper = Mage::helper('cms');
+	$processor = $helper->getBlockTemplateProcessor();
+	?>
+	
+	<?php
+		$bannerObj = new Peerforest_Revolutionslider_Block_Revolutionslider();
+		$bannerCollection = $bannerObj->getBannerCollection();
+	?>
+	<?php $configData = Mage::getStoreConfig('revolutionslider'); ?>
+	<div class="bannercontainer responsive">
+	<div class="banner">
+		
+		<ul>
+			
+				   <?php
+		foreach ($bannerCollection as $banner):
+		?>
+			
+			<li <?php if($banner['data_transition'] != '' && $banner['data_transition'] != null){ ?>data-transition="<?php echo $banner['data_transition']; ?>"<?php } ?> <?php if($banner['data_slotamount'] != '' && $banner['data_slotamount'] != null){ ?>data-slotamount="<?php echo $banner['data_slotamount']; ?>"<?php } ?> <?php if($banner['data_masterspeed'] != '' && $banner['data_masterspeed'] != null){ ?>data-masterspeed="<?php echo $banner['data_masterspeed']; ?>"<?php } ?> <?php if($banner['data_delay'] != '' && $banner['data_delay'] != null){ ?>data-delay="<?php echo $banner['data_delay']; ?>"<?php } ?> <?php if($banner['weblink'] != '' && $banner['weblink'] != null){ ?>data-link="<?php echo $banner['weblink']; ?>"<?php } ?> target="_blank" data-thumb="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . $banner['filename']?>">
+				    <img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . $banner['filename']?>" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" alt="<?php $banner['filename']; ?>"/>
+				    
+					
+									
+							<?php if ($configData['setting']['show_description'] == '1'):?>
+								<?php echo $processor->filter($banner['text']); ?>
+							<?php endif;?>	
+									
+					
+			</li>
+			
+			 <?php
+						$i++;
+						endforeach;
+				?>
+					
+		</ul>		    
+				   
+	</div>
+	</div>
+	   
+	<script type="text/javascript">	
+		j$('.banner').revolution({
+			parallax:"off",
+			autoHeight:"on",
+			fullWidth:"on",
+			forceFullWidth:"off"
+			<?php echo Mage::helper("ExtraConfig")->revolutionbannerSliderSetting(); ?>
+		});
+	</script>
+
+<?php } ?>
+<?php } ?>

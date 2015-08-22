@@ -1,0 +1,45 @@
+<layout version="0.1.0">        
+    
+    <catalog_category_layered translate="label">
+        <reference name="head">
+            <action method="addItem" ifconfig="priceslider/options/enabled"><type>skin_css</type><name>priceslider/css/priceslider.css</name><params/></action>
+            <action method="addItem" ifconfig="priceslider/options/custom_css"><type>skin_css</type><name>priceslider/css/priceslider-custom.css</name><params/></action>
+            <!--<action method="addItem" ifconfig="priceslider/options/add_jquery_min"><type>skin_js</type><name>priceslider/js/jquery-1.10.2.min.js</name><params/></action>-->
+            <action method="addItem" ifconfig="priceslider/options/add_jquery_ui_min"><type>skin_js</type><name>priceslider/js/jquery-ui.min.js</name><params/></action>
+            <action method="addItem" ifconfig="priceslider/options/enabled"><type>skin_js</type><name>priceslider/js/jQEditRangeSlider-min.js</name><params/></action>
+            <action method="addItem" ifconfig="priceslider/options/enabled"><type>skin_js</type><name>priceslider/js/priceslider.js</name><params/></action>
+        </reference>
+        <reference name="catalog.leftnav">
+            <action method="setTemplate" ifconfig="priceslider/options/enabled">
+                <template>peerforest/priceslider/catalog/layer/view.phtml</template>
+            </action>
+        </reference>
+        <reference name="product_list_toolbar">
+            <action method="setTemplate" ifconfig="priceslider/options/enabled">
+                <template>peerforest/priceslider/catalog/product/list/toolbar.phtml</template>
+            </action>
+        </reference>        
+    </catalog_category_layered>
+    
+    <catalogsearch_result_index translate="label">
+        <reference name="head">
+            <action method="addItem" ifconfig="priceslider/options/enabled"><type>skin_css</type><name>priceslider/css/priceslider.css</name><params/></action>
+            <action method="addItem" ifconfig="priceslider/options/custom_css"><type>skin_css</type><name>priceslider/css/priceslider-custom.css</name><params/></action>
+            <!--<action method="addItem" ifconfig="priceslider/options/add_jquery_min"><type>skin_js</type><name>priceslider/js/jquery-1.10.2.min.js</name><params/></action>-->
+            <action method="addItem" ifconfig="priceslider/options/add_jquery_ui_min"><type>skin_js</type><name>priceslider/js/jquery-ui.min.js</name><params/></action>
+            <action method="addItem" ifconfig="priceslider/options/enabled"><type>skin_js</type><name>priceslider/js/jQEditRangeSlider-min.js</name><params/></action>
+            <action method="addItem" ifconfig="priceslider/options/enabled"><type>skin_js</type><name>priceslider/js/priceslider.js</name><params/></action>
+        </reference>
+        <reference name="catalogsearch.leftnav">            
+            <action method="setTemplate" ifconfig="priceslider/options/enabled">
+                <template>peerforest/priceslider/catalog/layer/view.phtml</template>
+            </action>            
+        </reference>
+        <reference name="product_list_toolbar">                    
+            <action method="setTemplate" ifconfig="priceslider/options/enabled">
+                <template>peerforest/priceslider/catalog/product/list/toolbar.phtml</template>
+            </action>                        
+        </reference>
+    </catalogsearch_result_index>
+    
+</layout>

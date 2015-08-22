@@ -1,0 +1,79 @@
+<div class="measure_wrapper" id="measure_form" data_url="<?php echo $this->getMeasureAction(); ?>">
+    <div class="fieldset">
+        <ul class="form-list">
+            <!--UNIT-->
+            <li class="fields">
+                <div class="field">
+                    <label for="Unit" class="required">
+                        <em>*</em>
+                        <?php echo Mage::helper('contacts')->__('Unit') ?>
+                    </label>
+
+                    <div class="input-box">
+                        <input onclick="calculate.addMeasureOdd(0)" checked="true" id="unit_cm" class="radio"
+                               type="radio" value="0"
+                               title="<?php echo Mage::helper('qsoft_pricematrix')->__('Cm') ?>" name="unit">
+                        <?php echo Mage::helper('contacts')->__('Cm') ?>
+                        <input onclick="calculate.addMeasureOdd(1)" id="unit_inch" class="radio" type="radio"
+                               value="1" title="<?php echo Mage::helper('qsoft_pricematrix')->__('Inch') ?>"
+                               name="unit">
+                        <input type="hidden" id="measure_unit"/>
+                        <?php echo Mage::helper('contacts')->__('Inch') ?>
+                    </div>
+                </div>
+            </li>
+            <!--END UNIT-->
+
+            <li class="fields">
+                <!--DROP-->
+                <div class="field">
+                    <label for="drop" class="required">
+                        <em>*</em>
+                        <?php echo Mage::helper('contacts')->__('Drop') ?>
+                    </label>
+
+                    <div class="input-box">
+                        <input name="drop" id="measure_drop"
+                               title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('qsoft_pricematrix')->__('Drop')) ?>"
+                               value="" onkeyup="calculate.checkInteger(this)" onkeydown="calculate.checkInteger(this)"
+                               class="input-text required-entry" type="text"/>
+                        <select id="drop_odd" name="drop_odd">
+                            <option value="0">0</option>
+                        </select>
+                    </div>
+                </div>
+                <!--END DROP-->
+
+                <!--WIDTH-->
+                <div class="field">
+                    <label for="width" class="required">
+                        <em>*</em>
+                        <?php echo Mage::helper('qsoft_pricematrix')->__('Width') ?></label>
+
+                    <div class="input-box">
+                        <input name="width" id="measure_width"
+                               title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('qsoft_pricematrix')->__('Width')) ?>"
+                               value="" onkeyup="calculate.checkInteger(this)" onkeydown="calculate.checkInteger(this)"
+                               class="input-text required-entry" type="text"/>
+                        <select id="width_odd" name="width_odd">
+                            <option value="0">0</option>
+                        </select>
+                    </div>
+                </div>
+                <!--END WIDTH-->
+            </li>
+        </ul>
+    </div>
+    <input type="hidden" id="prd_id" value="<?php echo $this->getCurrentProductId(); ?>">
+
+    <div id="price_result"></div>
+    <div class="buttons-set">
+        <button class="button" title="<?php echo $this->__('Calculate Price'); ?>" type="button"
+                onclick="calculate.calculatePrice();">
+            <span><span><?php echo $this->__('Calculate Price') ?></span></span>
+        </button>
+    </div>
+</div>
+<script type="text/javascript" language="javascript">
+    var calculate = new calculatePrice('measure_form');
+</script>

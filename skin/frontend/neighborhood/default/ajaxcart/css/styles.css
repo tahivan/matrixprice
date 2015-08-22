@@ -1,0 +1,112 @@
+
+
+/* ********************************************************************************************
+	Ajex Add To Cart Popup
+*********************************************************************************************** */
+
+.ajaxcartpro_progress{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -22px 0 0 -22px;
+	background: url(../images/fancybox_loading.gif) center center no-repeat #000;
+	width: 44px;
+	height: 44px;
+	z-index: 9999;
+	opacity: 0.9;
+	border-radius: 6px;
+}
+#multiproduct-loader .ajaxcartpro_progress{
+	position: inherit;
+	margin: 0px;
+	display: inline-block;
+}
+
+div.alert{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.80);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000)";
+	z-index: 1000;
+	
+}
+
+div.alert-inner {
+	position: absolute;
+	right: 50%;
+	margin: auto;
+	text-align: left;
+	z-index: 10010;
+	border-top: none;
+	width: 400px;
+	bottom: 0;
+	height: 160px;
+	max-width: 100%;
+	background-color: #FFFFFF;
+	top: 50%;
+	margin-top: -80px;
+	left: 50%;
+	margin-left: -200px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+/*Use Only IE 7+*/
+.ie8 div.alert-inner{position: fixed;top: 50%;left: 50%;margin: -68px 0 0 -200px;z-index: 9999;}
+
+div.alert-inner p{
+	background-color: #F0F0F0;
+	border-bottom: 1px solid #E4E4E4;
+	padding: 20px;
+	padding-right: 40px;
+}
+div.alert-inner p strong{
+	padding-right: 2px;
+}
+div.alert-inner button.close{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+	border: none;
+	border-radius: 100%;
+	font-size: 20px;
+	background-color: transparent;
+	color: #252525;
+	opacity: 0.2;
+}
+div.alert-inner button.close:hover{
+	opacity: .4;
+	filter: alpha(opacity=40);
+}
+div.alert-inner .alertcontent{
+	text-align: center;
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+}
+div.alert-inner a{
+	float: left;
+	cursor: pointer;
+}
+div.alert-inner a.cart{
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<config>
+	<menu>
+		<!--<peerforest translate="title" module="revolutionslider">
+			<title>Banner Slider</title>
+			<sort_order>80</sort_order>
+			<children>					
+				<items module="revolutionslider">
+					<title>Revolution Slider</title>
+					<sort_order>0</sort_order>
+					<action>revolutionslider/adminhtml_revolutionslider</action>
+				</items>
+			</children>
+		</peerforest>-->
+		<peerforest translate="title" module="revolutionslider">
+			<title>Revolution Slider</title>
+			<sort_order>80</sort_order>
+			<action>revolutionslider/adminhtml_revolutionslider</action>
+		</peerforest>
+	</menu>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<peerforest translate="title" module="revolutionslider">
+							<title>Banner Slider</title>
+							<sort_order>80</sort_order>							
+						</peerforest>
+						<Peerforest_Revolutionslider>
+							<title>Revolution Slider Module</title>
+							<sort_order>10</sort_order>
+						</Peerforest_Revolutionslider>
+						<system>
+							<children>
+								<config>
+									<children>
+										<revolutionslider translate="title" module="revolutionslider"> 
+											<title>Revolution Slider Settings</title>
+											<sort_order>50</sort_order>
+										</revolutionslider>
+									</children>							
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+</config>

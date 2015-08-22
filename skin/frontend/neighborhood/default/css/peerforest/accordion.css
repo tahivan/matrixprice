@@ -1,0 +1,33 @@
+
+
+/* ********************************************************************************************
+	Accordion
+*********************************************************************************************** */
+
+.accordion { position:relative; }
+.accordion .block-title{font-size: 16px;line-height: 20px;}
+
+/* Accordion Opner */
+.accordion .opener {
+	position: absolute;
+	right: 0;
+	top: 0px;
+	display: block;
+	cursor: pointer;
+	font-family: FontAwesome;
+	width: 34px;
+	height: 34px;
+	border-radius: 3px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 36px;
+	text-indent: 4px;
+	z-index: 2;	
+}
+.accordion .opener:hover {
+	color: #1bbeb4;
+}
+.footer .accordion .opener{
+	top: -5px;
+	text-align: right;
+}

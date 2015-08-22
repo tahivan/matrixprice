@@ -1,0 +1,14 @@
+<?php
+    $_helper    = $this->helper('catalog/output');
+    $_category  = $this->getCurrentCategory();
+?>
+<?php $categoryblock = $_category->getData('custom_block_position'); ?>
+<?php if($categoryblock == 'top-sidebar'){ ?>
+    <?php if($this->isMixedMode()): ?>
+        <div class="category-block-section content-width">
+            <div class="grid_full">
+                <?php echo $this->getCmsBlockHtml() ?>
+            </div>
+        </div>
+    <?php endif; ?>
+<?php } ?>

@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <mygeneral>
+                                        <title>Theme Settings</title>
+                                        <sort_order>1</sort_order>
+                                    </mygeneral>
+                                    <themecolor>
+                                        <title>Theme Design</title>
+                                        <sort_order>2</sort_order>
+                                    </themecolor>
+                                    <themelayout>
+                                        <title>Theme Layout</title>
+                                        <sort_order>3</sort_order>
+                                    </themelayout>
+                                    <productzoom>
+                                        <title>Product Zoom</title>
+                                        <sort_order>4</sort_order>
+                                    </productzoom>  
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                 </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

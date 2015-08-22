@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+
+<config>
+    <sections>
+        <priceslider translate="label" >
+	    <label>Price Slider</label>
+            <sort_order>8</sort_order>
+            <class>superclass</class>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <tab>mycustom_tab</tab>
+	    <groups>
+                <options translate="label">
+                    <label>Price Slider Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Price slider enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+			<action translate="label">
+                            <label>Price slider Action</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>priceslider/slideraction</source_model>
+			    <comment><![CDATA[on slide: works on ajax.]]></comment>
+                            <sort_order>2</sort_order>
+			    <depends>
+				<enabled>1</enabled>
+			    </depends>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </action>
+			<button_label translate="label">
+                            <label>Label For Button</label>
+                            <frontend_type>text</frontend_type>                            
+			    <depends>
+				<enabled>1</enabled>
+				<action>button</action>
+			    </depends>
+			    <comment><![CDATA[Default Label : Search.]]></comment>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </button_label>
+			<priceslider_ajax_on translate="label">
+                            <label>Use Price-slider With Ajax</label>
+                            <frontend_type>select</frontend_type>
+			    <source_model>adminhtml/system_config_source_yesno</source_model>
+			    <depends>
+				<enabled>1</enabled>
+				<action>button</action>
+			    </depends>			    
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </priceslider_ajax_on>
+			<enable_priceslider_fullwidth translate="label">
+				<label>Disable Price-range</label>
+				<frontend_type>select</frontend_type>
+			    <source_model>adminhtml/system_config_source_yesno</source_model>
+			    <depends>
+				<enabled>1</enabled>				
+			    </depends>			    
+				<sort_order>5</sort_order>
+				<show_in_default>1</show_in_default>
+				<show_in_website>1</show_in_website>
+				<show_in_store>1</show_in_store>
+			</enable_priceslider_fullwidth>
+			<priceslider_layered_navigation_ajax_on translate="label">
+				<label>Use Layered Navigation With Ajax</label>
+				<frontend_type>select</frontend_type>
+			    <source_model>adminhtml/system_config_source_yesno</source_model>
+			    <depends>
+				<enabled>1</enabled>				
+			    </depends>			    
+				<sort_order>6</sort_order>
+				<show_in_default>1</show_in_default>
+				<show_in_website>1</show_in_website>
+				<show_in_store>1</show_in_store>
+			</priceslider_layered_navigation_ajax_on>
+			<priceslider_toolbar_ajax_on translate="label">
+				<label>Use Toolbar With Ajax</label>
+				<frontend_type>select</frontend_type>
+			    <source_model>adminhtml/system_config_source_yesno</source_model>
+			    <depends>
+				<enabled>1</enabled>				
+			    </depends>			    
+				<sort_order>7</sort_order>
+				<show_in_default>1</show_in_default>
+				<show_in_website>1</show_in_website>
+				<show_in_store>1</show_in_store>
+			</priceslider_toolbar_ajax_on>
+			<priceslider_addfile_settings translate="label">
+                            <label>Price-slider JS File Include Settings</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+			    <depends>
+				<enabled>1</enabled>
+			    </depends>			    
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </priceslider_addfile_settings>			
+			
+<!--			<add_jquery_min translate="label">-->
+<!--                            <label>Add Jquery Min File</label>-->
+<!--                            <frontend_type>select</frontend_type>-->
+<!--                            <source_model>adminhtml/system_config_source_yesno</source_model>-->
+<!--			    <depends>-->
+<!--				<enabled>1</enabled>-->
+<!--			    </depends>-->
+<!--			    <comment><![CDATA[Includes jquery-1.10.2.min.js]]></comment>-->
+<!--                            <sort_order>9</sort_order>-->
+<!--                            <show_in_default>1</show_in_default>-->
+<!--                            <show_in_website>1</show_in_website>-->
+<!--                            <show_in_store>1</show_in_store>-->
+<!--                        </add_jquery_min>-->
+			<add_jquery_ui_min translate="label">
+                            <label>Add Jquery Ui Min File</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+			    <depends>
+				<enabled>1</enabled>
+			    </depends>
+			    <comment><![CDATA[Includes jquery-ui.min.js]]></comment>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+			</add_jquery_ui_min>
+			
+			<priceslider_addCssfile_settings translate="label">
+                            <label>Price-slider Css File Include Settings</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+			    <depends>
+				<enabled>1</enabled>
+			    </depends>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </priceslider_addCssfile_settings>
+			
+			<custom_css translate="label">
+                            <label>Add Custom-Css File</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+			    <depends>
+				<enabled>1</enabled>
+			    </depends>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </custom_css>
+			
+			<priceslider_extra_setting translate="label">
+                            <label>Price-slider Extra Settings</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+			    <depends>
+				<enabled>1</enabled>
+			    </depends>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </priceslider_extra_setting>
+			
+			<priceslider_title translate="label">
+                            <label>Label For Price Slider</label>
+                            <frontend_type>text</frontend_type>                            
+			    <depends>
+				<enabled>1</enabled>
+			    </depends>
+			    <comment><![CDATA[Default title : Price Slider.]]></comment>
+                            <sort_order>14</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </priceslider_title>
+			<input_type_editable translate="label">
+                            <label>Show Input Type Editable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+			    <depends>
+				<enabled>1</enabled>
+			    </depends>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </input_type_editable>
+		    </fields>
+		</options>
+	    </groups>
+        </priceslider>
+    </sections>
+</config>

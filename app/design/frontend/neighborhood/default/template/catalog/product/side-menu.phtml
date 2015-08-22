@@ -1,0 +1,14 @@
+<?php
+$verticalmenu = Mage::getStoreConfig('mygeneral/menu/verticalmenu'); ?>
+<?php if($verticalmenu == '1') { ?>
+<div class="block block-sidenav">
+    <div class="sidenav-title block-title">
+        <strong><span><?php echo $this->__('Categories') ?></span></strong>
+    </div>
+    <div class="block-content">
+        <ul id="side-nav" class="level-0">
+            <?php echo $this->getSideHtml(); ?>
+        </ul>
+    </div>
+</div>
+<?php } ?>

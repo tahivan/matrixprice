@@ -1,0 +1,52 @@
+
+
+/* ********************************************************************************************
+	Internet Explorer: less than or equal 7
+*********************************************************************************************** */
+
+
+/* ********************************************************************************************
+	Header
+*********************************************************************************************** */
+
+.header { z-index:3000; position:relative; }
+.header .form-search .button { top:2px; right:0; }
+li.level0 > a > span > .category-label {	top:-24px; right:5px; }
+
+/* Enforce floating for second level links block */
+#nav ul.level0 > li { float:left !important; }
+
+
+/* ********************************************************************************************
+	Drop-down
+*********************************************************************************************** */
+
+.dropdown-toggle * { display:block; float:left; }
+.dropdown-menu > li * { display:block; float:left; }
+
+
+/* ********************************************************************************************
+	Vertically aligned grid
+*********************************************************************************************** */
+
+.v-grid-container .v-grid { float:left; display:block; width:32%; }
+.v-grid-container .v-grid.clearer { clear:none; }
+
+
+/* ********************************************************************************************
+	Clearing
+*********************************************************************************************** */
+
+/* clearer: IE6/7 */
+.clearer {
+	display:block; clear:both; height:auto; overflow:hidden;
+}
+.cart .crosssell {
+	display:block; clear:both; height:auto; overflow:hidden;
+}
+
+/* Reset negative value of the top margin of old prices */
+.product-view .product-shop .price-box .old-price { margin-top:0; }
+
+/* Remove icon */
+button.btn-checkout span span .img-checkout { display:none; }

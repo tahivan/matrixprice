@@ -1,0 +1,72 @@
+<?php
+/* @var $this QSoft_PriceMatrix_Block_Adminhtml_Catalog_Product_Edit_Tab_Price_Matrix */
+$_htmlId = $this->getElement()->getHtmlId();
+$_htmlClass = $this->getElement()->getClass();
+$_htmlName = $this->getElement()->getName();
+$_readonly = $this->getElement()->getReadonly();
+$_showWebsite = $this->isShowWebsiteColumn();
+$_editWebsite = $this->isAllowChangeWebsite();
+$_priceValueValidation = $this->getPriceValidation('validate-greater-than-zero');
+$rowConfig = $this->getConfig('drop');
+$colConfig = $this->getConfig('width', $prices);
+
+?>
+
+<tr>
+    <td class="label"><?php echo $this->getElement()->getLabel() ?></td>
+    <td>
+        <table border="0">
+            <tbody>
+            <tr>
+                <td>
+                    <label><?php echo $this->__('Rows:'); ?></label>
+                    <em id="matrix_rows_info">0</em>
+                </td>
+                <td>
+                    <label><?php echo $this->__('Columns:'); ?></label>
+                    <em id="matrix_columns_info">0</em>
+                </td>
+                <td>
+                    <label><?php echo $this->__('Unit:'); ?></label>
+                    <em id="matrix_columns"><?php echo $this->__('cm'); ?></em>
+                </td>
+            </tr>
+            <tr></tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="3" class="a-left">
+                    <?php $this->getButtonsHtml(); ?>
+                </td>
+            </tr>
+            </tfoot>
+        </table>
+    </td>
+</tr>
+
+<tr>
+    <td></td>
+    <td class="matrix">
+        <table cellspacing="0" class="data border" id="matrix_table" border="1" cellprefix="<?php echo $_htmlName; ?>">
+            <tbody>
+            <tr class="first">
+                <td><?php echo $this->__('Drop\Width'); ?></td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+
+<script type="text/javascript" language="javascript">
+    var matrixPrice = new matrixPrice('matrix_table');
+    <?php if($rowConfig !== ''): ?>
+    matrixPrice.addDropValue(<?php echo "'".$rowConfig."'" ?>);
+    <?php endif; ?>
+    <?php if($colConfig !== ''): ?>
+    matrixPrice.addWidthValue(<?php echo "'".$colConfig."'" ?>);
+    <?php endif; ?>
+    <?php if($prices !== ''): ?>
+    matrixPrice.addPriceValue(<?php echo "'".$prices."'" ?>);
+    <?php endif; ?>
+</script>
+

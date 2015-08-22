@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <import translate="label">
+            <label>Import Default Theme's Settings</label>
+            <frontend_type>text</frontend_type>
+            <tab>mycustom_tab</tab>
+            <sort_order>11</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>Import Theme's Default CMS ( Blocks / Pages )</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <heading_static_blocks translate="label">
+                            <label>Import Static CMS Blocks</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_static_blocks>
+                        <overwirte_cms_block translate="label">
+                            <label>Overwrite Static CMS Blocks</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment><![CDATA[Select "YES" if you want to overwirte existing blocks with same block identifier.<br><strong style="color:red;"><b>NOTE : Click on "Save Config" Button, after selecting this option to get in action.</b></strong>]]></comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </overwirte_cms_block>
+                        <import_static_cms translate="label">
+                            <label>Static CMS Blocks</label>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>peerforest_import/adminhtml_cms_import_button</frontend_model>
+                            <import_for>cms/blocks</import_for>
+                            <comment>This helps you to quickly import all static default themes CMS blocks.</comment>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </import_static_cms>
+                        
+                        <heading_cms_page translate="label">
+                            <label>Import CMS Pages</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_cms_page>
+                        <overwirte_cms_page translate="label">
+                            <label>Overwrite CMS Pages</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment><![CDATA[Select "YES" if you want to overwirte existing blocks with same block identifier.<br><strong style="color:red;"><b>NOTE : Click on "Save Config" Button, after selecting this option to get in action.</b></strong>]]></comment>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </overwirte_cms_page>
+                        <import_cms_page translate="label">
+                            <label>CMS Pages</label>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>peerforest_import/adminhtml_cms_import_button</frontend_model>
+                            <import_for>cms/pages</import_for>
+                            <comment>This helps you to quickly import all default themes CMS pages.</comment>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </import_cms_page>
+                    </fields>
+                </general>
+                
+                <banner translate="label">
+                    <label>Import Default Banner</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <heading_banner_blocks translate="label">
+                            <label>Import Default Banners</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_banner_blocks>                        
+                        <import_banner translate="label">
+                            <label>Default Banner</label>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>peerforest_import/adminhtml_banner_button</frontend_model>                            
+                            <comment>This helps you to quickly import all default banner.</comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </import_banner>
+                    </fields>
+                </banner>                
+            </groups>
+        </import>
+    </sections>
+</config>

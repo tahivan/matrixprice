@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>    
+        <reference name="head">            
+            <action method="addItem" ifconfig="peermegamenu/options/enabled"><type>skin_css</type><name>megamenu/css/megamenu.css</name><params/></action>
+            <action method="addItem" ifconfig="peermegamenu/options/enabled"><type>skin_css</type><name>megamenu/css/megamenu-custom.css</name><params/></action>			
+            <action method="addItem" ifconfig="peermegamenu/options/add_jquery_min"><type>skin_js</type><name>megamenu/js/jquery.min.js</name><params/></action>            
+            <action method="addItem" ifconfig="peermegamenu/options/enabled"><type>skin_js</type><name>megamenu/js/megamenu.js</name><params/></action>
+        </reference>
+
+        <reference name="top.menu">
+            <action method="unsetChild" ifconfig="peermegamenu/options/enabled"><name>catalog.topnav</name></action>
+            <block type="megamenu/topmenu" name="catalog.topnav.menu">
+                <action method="setTemplate" ifconfig="peermegamenu/options/enabled"><template>peerforest/megamenu/topmenu.phtml</template></action>
+            </block>
+        </reference>		
+    </default>
+</layout>

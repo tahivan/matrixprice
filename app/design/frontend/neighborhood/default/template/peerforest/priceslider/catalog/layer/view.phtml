@@ -1,0 +1,132 @@
+<?php if($this->canShowBlock()): ?>
+<?php $instance = Mage::helper("ExtraConfig"); ?>
+<?php $categorysidebar = Mage::getStoreConfig('mygeneral/category/displaycategorysidebar');?>
+<?php $categorysidebarFullEnable = Mage::getStoreConfig('priceslider/options/enable_priceslider_fullwidth',Mage::app()->getStore());?>
+<?php
+$layeredAjaxOn = Mage::getStoreConfig('priceslider/options/priceslider_layered_navigation_ajax_on',Mage::app()->getStore());
+$toolbarAjaxOn = Mage::getStoreConfig('priceslider/options/priceslider_toolbar_ajax_on',Mage::app()->getStore());
+
+$sliderTitle = Mage::getStoreConfig('priceslider/options/priceslider_title',Mage::app()->getStore());
+    if($sliderTitle == ''){
+       $sliderTitle= 'Price Slider';
+    }
+?>
+<div class="block block-layered-nav">
+    <!--<div class="block-title">
+        <strong><span><?php // echo $this->__('Shop By') ?></span></strong>
+    </div>-->
+    <div class="block-content">
+        <?php echo $this->getStateHtml() ?>
+        <?php if ($this->getLayer()->getState()->getFilters()): ?>
+            <div class="actions"><a href="<?php echo $clearLink[0]."?clr=1"; ?>"><?php echo $this->__('Clear All') ?></a></div>
+        <?php endif; ?>
+        <!--<p class="block-subtitle"><?php echo $this->__('Shopping Options') ?></p>-->
+            <dl id="narrow-by-list"<?php if($categorysidebar == 'full'){ ?> class="pull-container"<?php } ?>>
+                <?php if($categorysidebarFullEnable == 0) :?>
+                <div class="view<?php if($categorysidebar == 'full'){ ?> accordion grid_3<?php } ?>">
+                     <?php if($categorysidebar == 'full'){ ?><span class="opener"></span><?php } ?>
+                    <dt class="block-title">
+                        <strong><span><?php echo $this->__($sliderTitle) ?></span></strong>
+                    </dt>      
+                    <dd<?php if($categorysidebar == 'full'){ ?> class="block-content"<?php } ?>>
+                        <?php
+                            $sliderTitle = Mage::getStoreConfig('priceslider/options/priceslider_title',Mage::app()->getStore());
+                            $slideHelper = Mage::helper('priceslider');
+                            $slideHelper->initSlider();
+                            
+                            if($sliderTitle == ''){
+                               $sliderTitle= 'Price Slider';
+                            }
+                            $ajaxOn = Mage::getStoreConfig('priceslider/options/priceslider_ajax_on',Mage::app()->getStore());
+                            if($this->getActionType() == 'slider'){
+                                $ajaxOn = 1;
+                            }                            
+                            $inputType = (Mage::getStoreConfig('priceslider/options/input_type_editable',Mage::app()->getStore()) == 1)? 'editRangeSlider':'rangeSlider';
+                            $defaultminprice = $slideHelper->getRequestedMinPrice();
+                            $defaultmaxprice = $slideHelper->getRequestedMaxPrice();    
+                        ?>
+                        <div id="priceslider" data-jsdetail='[{"defaultminprice":"<?php echo $defaultminprice;?>","defaultmaxprice":"<?php echo $defaultmaxprice;?>"}]'>
+                        </div>
+                        <?php if(Mage::getStoreConfig('priceslider/options/action',Mage::app()->getStore()) == 'button') :?>
+                            <div class="actions">
+                                <button id="priceslider-button" type="button" title="Price Slider" class="button btn-cart"><span><span><?php if(Mage::getStoreConfig('priceslider/options/button_label',Mage::app()->getStore()) !=""):?><?php echo Mage::getStoreConfig('priceslider/options/button_label',Mage::app()->getStore());?><?php else :?>Search<?php endif;?></span></span></button>
+                            </div>    
+                        <?php endif;?>                        
+                        <script type="text/javascript">
+                        (function($, undefined){        
+                                $(document).ready(function(){              
+                                    $("#priceslider").<?php echo $inputType; ?>({
+                                        defaultValues:{min:<?php echo $defaultminprice;?>, max:<?php echo $defaultmaxprice;?> },
+                                        bounds:{min:<?php $cMinP = $slideHelper->getCategoryMinPrice(); $cMaxP = $slideHelper->getCategoryMaxPrice(); echo ($cMinP == $cMaxP)? ($cMaxP - ($cMaxP/100)) : $cMinP;?> , max:<?php echo $cMaxP;?>},
+                                        arrows:true,
+                                    });
+                                });
+                                
+                                $(document).on("<?php echo $slideHelper->getActionType();?>", "<?php echo $slideHelper->getActionElement();?>", function(){
+                                    var psdata = $('#priceslider').data('jsdetail');
+                                    var minVal = $("#priceslider").<?php echo $inputType; ?>("min");        
+                                    var maxVal = $("#priceslider").<?php echo $inputType; ?>("max");                
+                                    
+                                    if (parseInt(psdata[0].defaultminprice) != parseInt(minVal) || parseInt(psdata[0].defaultmaxprice) != parseInt(maxVal)) {                
+                                        $('#priceslider').<?php echo $inputType; ?>('resize');                        
+                                        var url = window.location.href;                                        
+                                        initSliderAction(url,<?php echo $ajaxOn; ?>,0,1);
+                                    }
+                                    return false;
+                                });
+                        })(jQuery);
+                        </script>
+                    </dd>
+                </div>
+                <?php endif; ?>
+        <?php if($this->canShowOptions()): ?>                        
+                <?php $_filters = $this->getFilters(); ?>
+                <?php foreach ($_filters as $_filter): ?>
+                <?php if($_filter->getItemsCount()): ?>
+                <?php if(strtolower($_filter->getName()) != 'price' || $categorysidebarFullEnable == 1) : ?>                    
+                        <div class="view<?php if($categorysidebar == 'full'){ ?> accordion grid_3<?php } ?>">
+                            <?php if($categorysidebar == 'full'){ ?><span class="opener"></span><?php } ?>
+                            <dt class="block-title">
+                                <strong><span><?php echo $this->__($_filter->getName()) ?></span></strong>
+                            </dt>  
+                            <dd<?php if($categorysidebar == 'full'){ ?> class="block-content"<?php } ?>><?php echo $_filter->getHtml() ?></dd>
+                        </div>
+                <?php endif; ?>
+                <?php endif; ?>
+                <?php endforeach; ?>
+            </dl>
+            <script type="text/javascript">decorateDataList('narrow-by-list')</script>
+        <?php endif; ?>
+    </div>
+</div>
+<div id="priceslider-loader" class="priceslider-loader-img" style="display: none;"></div>
+
+<script type="text/javascript">    
+    jQuery(function(j$) {                       
+        j$(document).on("click",'.block-layered-nav a',function () {
+            var clrCheck = 0;
+            if (this.href.search("price=") == -1) {                
+                clrCheck = 1;
+            }
+            initSliderAction(this.href,<?php echo $layeredAjaxOn; ?>,clrCheck,0);
+            return false;
+        });
+        
+        j$(document).on("click",'.toolbar a',function () {
+            initSliderAction(this.href,<?php echo $toolbarAjaxOn; ?>,0,0);
+            return false;
+        });                        
+    });
+    
+    function toolSelect(sUrl){
+        initSliderAction(sUrl,<?php echo $toolbarAjaxOn; ?>,0,0);
+        return false;
+    }
+    
+    function initSliderAction(sUrl,ajaxOn,clrCheck,addPriceToUrl){
+        var url = getUrlParameter(sUrl,'ajax',ajaxOn);
+        loadFilteredProduct(url,ajaxOn,"<?php echo $inputType; ?>",clrCheck,"<?php echo $categorysidebarFullEnable; ?>",addPriceToUrl);
+        return false;    
+    }
+    </script>
+<?php endif; ?>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <QSoft_PriceMatrix>
+            <active>true</active>
+            <codePool>local</codePool>
+        </QSoft_PriceMatrix>
+    </modules>
+</config>

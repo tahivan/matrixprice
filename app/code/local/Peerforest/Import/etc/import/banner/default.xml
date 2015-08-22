@@ -1,0 +1,24 @@
+<root>
+    <import>
+        <banner>
+            <title>NIKE ROSHE RUN</title>            
+            <filename>default-banner1.jpg</filename>
+            <status>1</status>            
+            <sorting_order>1</sorting_order>            
+        </banner>
+        
+        <banner>
+            <title>NIKE ROSHE RUN</title>            
+            <filename>default-banner2.jpg</filename>
+            <status>1</status>            
+            <sorting_order>2</sorting_order>            
+        </banner>
+        
+        <banner>
+            <title>NIKE ROSHE RUN</title>            
+            <filename>default-banner3.jpg</filename>
+            <status>1</status>            
+            <sorting_order>3</sorting_order>            
+        </banner>
+    </import>
+</root>

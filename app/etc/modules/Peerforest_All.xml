@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Peerforest_Ajax>
+          <active>true</active>
+          <codePool>local</codePool>
+        </Peerforest_Ajax>
+        
+        <Peerforest_ExtraConfig>
+          <active>true</active>
+          <codePool>local</codePool>
+        </Peerforest_ExtraConfig>
+
+        <Peerforest_Gfont>
+          <active>true</active>
+          <codePool>local</codePool>
+        </Peerforest_Gfont>
+    
+        <Peerforest_Import>
+          <active>true</active>
+          <codePool>local</codePool>
+        </Peerforest_Import>
+        
+        <Peerforest_MultiProduct>
+          <active>true</active>
+          <codePool>local</codePool>
+        </Peerforest_MultiProduct>
+        
+        <Peerforest_Revolutionslider>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Peerforest_Revolutionslider>
+    </modules>
+</config> 

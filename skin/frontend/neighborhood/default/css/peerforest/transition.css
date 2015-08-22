@@ -1,0 +1,102 @@
+
+
+/* ********************************************************************************************
+	Transitions
+*********************************************************************************************** */
+
+/* Links */
+a,
+.load-more-holder span i{
+	transition:		color 450ms ease-in-out, background-color 450ms ease-in-out;
+	-moz-transition:	color 450ms ease-in-out, background-color 450ms ease-in-out;
+	-webkit-transition:	color 450ms ease-in-out, background-color 450ms ease-in-out;
+	-o-transition:		color 450ms ease-in-out, background-color 450ms ease-in-out;
+}
+a:hover,
+.load-more-holder a:hover span i{
+	transition-duration:			100ms;
+	-moz-transition-duration:		100ms;
+	-webkit-transition-duration:	        100ms;
+	-o-transition-duration:			100ms;
+}
+
+/* sorter view mode */
+.sorter .view-mode .grid,
+.sorter .view-mode .list,
+
+/* Back link */
+.buttons-set .back-link a,
+div.alert a,
+
+/* Add-to links */
+.add-to-links a,
+.addto-links-icons span.icon,
+
+/*Quick View*/
+.quick-view a,
+
+/* Accordion: opener */
+.accordion .opener,
+
+/* Scroll to top */
+.scrollup,
+
+/* Forms */
+input.input-text, select, textarea,
+.product-options ul.options-list,
+.quantity_counter,
+
+/* Product image thumbnails */
+.product-view .product-img-box .more-views .thumbnails li a,
+
+/* Product mini-lists */
+.mini-products-list .product-image,
+.cart .crosssell .product-image,
+
+/* Tabs & accordion */
+.resp-tabs-list li,
+
+/* OPC accordion */
+.opc .step-title,
+
+/* Structural elements */
+.block-layered-nav dd li,
+
+/* Grid */
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_full,
+.grid-col2-sidebar,
+.grid-col2-main,
+
+/* Products */
+.product-view .product-img-box,
+
+/* Forms */
+.form-search .input-text,
+
+/* Main menu */
+#nav > li,
+
+/* Misc */
+.header .logo,
+
+/* Peer Icons */
+.peer-icon-hover .icon,
+.social-link a .icon
+{
+	transition:		all 300ms ease-in-out;
+	-moz-transition:	all 300ms ease-in-out;
+	-webkit-transition:	all 300ms ease-in-out;
+	-o-transition:		all 300ms ease-in-out;
+}

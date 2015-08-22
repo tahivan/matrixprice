@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+	<reference name="head">
+	    
+	    <action method="addItem"><type>skin_js</type><name>js/jquery-1.8.2.min.js</name><params/></action>
+	    <action method="addItem"><type>skin_js</type><name>js/noconflict.js</name></action>
+	    <action method="addItem"><type>skin_js</type><name>js/script.js</name><params/></action>
+	    <action method="addItem" ifconfig="mygeneral/product_list/ajaxcart"><type>skin_js</type><name>ajaxcart/js/fancybox/jquery.fancybox.pack.js</name></action>
+	    <action method="addItem" ifconfig="mygeneral/product_list/ajaxcart"><type>skin_js</type><name>ajaxcart/js/fancybox/jquery.easing-1.3.pack.js</name></action>
+	    <action method="addItem" ifconfig="mygeneral/product_list/ajaxcart"><type>skin_js</type><name>ajaxcart/js/ajaxcart.js</name></action>
+	    <action method="addItem"><type>skin_js</type><name>slider/js/owl.carousel.min.js</name><params/></action>
+	    <action method="addItem"><type>skin_js</type><name>revolution_slider/js/jquery.themepunch.plugins.min.js</name><params/></action>
+	    <action method="addItem"><type>skin_js</type><name>revolution_slider/js/jquery.themepunch.revolution.min.js</name><params/></action>
+	    <action method="addItem"><type>skin_js</type><name>js/easyResponsiveTabs.js</name></action>
+	    
+	    
+	    <action method="addItem"><type>skin_js</type><name>swatch-zoom/lib/modernizr.custom.min.js</name></action>
+	    <action method="addItem"><type>skin_js</type><name>swatch-zoom/app.js</name></action>
+	    <action method="addItem"><type>skin_js</type><name>swatch-zoom/lib/imagesloaded.js</name></action>
+	    
+	    <action method="addItem"><type>skin_css</type><name>css/styles-ie7.css</name><params/><if>lt IE 8</if></action>
+	    <action method="addItem"><type>skin_css</type><name>css/styles-ie8.css</name><params/><if>lt IE 9</if></action>
+	    <action method="addItem"><type>skin_css</type><name>css/nav.css</name><params/></action>
+	    <action method="addItem" ifconfig="mygeneral/menu/verticalmenu"><type>skin_css</type><name>css/sidemenu.css</name><params/></action>
+	    <action method="addCss" ifconfig="mygeneral/product_list/ajaxcart"><stylesheet>ajaxcart/js/fancybox/jquery.fancybox.css</stylesheet></action>
+	    <action method="addCss" ifconfig="mygeneral/product_list/ajaxcart"><stylesheet>ajaxcart/css/styles.css</stylesheet></action>
+	    <action method="addItem"><type>skin_css</type><name>slider/css/owl.carousel.css</name><params/></action>
+	    <action method="addItem"><type>skin_css</type><name>slider/css/owl.theme.css</name><params/></action>
+	    <action method="addItem"><type>skin_css</type><name>slider/css/owl.transitions.css</name><params/></action>
+	    <action method="addItem"><type>skin_css</type><name>revolution_slider/css/settings.css</name><params/></action>
+	    <action method="addCss"><stylesheet>css/radial.css</stylesheet></action>
+	    <action method="addCss"><stylesheet>css/peerforest/accordion.css</stylesheet></action>
+	    <action method="addCss"><stylesheet>css/peerforest/dropdown.css</stylesheet></action>
+	    <action method="addCss"><stylesheet>css/peerforest/fluidgrids.css</stylesheet></action>
+	    <action method="addCss"><stylesheet>css/peerforest/general.css</stylesheet></action>
+	    <action method="addCss"><stylesheet>css/peerforest/peericons.css</stylesheet></action>
+	    <action method="addCss"><stylesheet>css/peerforest/columngrid.css</stylesheet></action>
+	    <action method="addCss"><stylesheet>css/peerforest/tabs.css</stylesheet></action>
+	    <action method="addCss"><stylesheet>css/peerforest/transition.css</stylesheet></action>	    
+	    <action method="addCss"><stylesheet>fonts/css/font-awesome.css</stylesheet></action>
+	    <action method="addCss"><stylesheet>fonts/css/MyFontsWebfontsKit.css</stylesheet></action>
+	    <action method="addItem"><type>skin_css</type><name>css/update_version_1.1.css</name><params/></action>
+	    <action method="addItem"><type>skin_css</type><name>css/update_version_1.2.css</name><params/></action>
+	    
+	    <action method="addCss"><stylesheet helper="ExtraConfig/Data/getGridCss" /></action>
+	    <action method="addCss"><stylesheet helper="ExtraConfig/Data/getLayoutCss" /></action>
+	    
+	    <block type="core/template" name="head.style" template="page/html/head-style.phtml" before="-" />
+	    
+	    <action method="addCss" ifconfig="mygeneral/extra_settings/customcss"><stylesheet>css/custom.css</stylesheet></action>
+	</reference>
+	
+	<reference name="before_body_end">
+		<block type="core/template" name="head.script" template="page/html/head-script.phtml" before="-" />
+	</reference>
+	
+	<reference name="root">
+	    <block type="core/text_list" name="top" as="top" translate="label">
+		<label>Top Row</label>
+	    </block>
+	</reference>
+	
+	<reference name="root">
+	    <block type="core/text_list" name="topblock" as="topblock" translate="label">
+		<label>Top Block</label>
+	    </block>
+	</reference>
+	
+	<reference name="root">
+	    <block type="core/text_list" name="bottom" as="bottom" translate="label">
+		<label>Bottom Row</label>
+	    </block>
+	</reference>
+	
+	<reference name="top.links">
+	    <remove name="checkout_cart_link" />
+	    <!--<remove name="wishlist_link" />-->
+	    <!--<block type="checkout/links" name="checkout_cart_link_custom">
+		<action method="addCartLink"></action>
+	    </block>-->
+	    <!--<action method="removeLinkByUrl"><url helper="customer/getAccountUrl"/></action>-->
+	</reference>
+	
+	
+	
+	
+	<reference name="right">
+	    <block type="multiproduct/product_default_bestseller" name="bestseller-sidebar" template="catalog/product/multiproduct/multi-block/bestseller_sidebar.phtml"/>
+	    <block type="catalog/product_manufacturer" name="brand-sidebar" template="catalog/product/brand_sidebar.phtml"/>
+	    
+	    <action method="unsetChild"><name>cart_sidebar</name></action>
+	    
+	    <action method="unsetChild"><name>wishlist</name></action>
+	    
+	    <action ifconfig="mygeneral/staticblock/brandblock" method="unsetChild"><name>brand-sidebar</name></action>
+	    <action ifconfig="mygeneral/staticblock/bestsellerblock" method="unsetChild"><name>bestseller-sidebar</name></action>
+	    
+	    <block type="cms/block" name="Custom Right Sidebar Block1" after="-">
+                <action method="setBlockId"><block_id>custom-right-sidebar-block1</block_id></action>
+            </block>
+	    <block type="cms/block" name="Custom Right Sidebar Block2" after="-">
+                <action method="setBlockId"><block_id>custom-right-sidebar-block2</block_id></action>
+            </block>
+	</reference>
+	
+	<reference name="left">
+	    <block type="megamenu/topmenu" name="sidemenu" before="catalog.categorymenu" template="catalog/product/side-menu.phtml"/>
+	    <block type="catalog/navigation" name="catalog.categorymenu" before="catalog.leftnav" template="catalog/product/categorymenu.phtml"/>
+	    
+	    <action method="unsetChild"><name>cart_sidebar</name></action>
+	    
+	    <block type="wishlist/customer_sidebar" name="wishlist_sidebar" as="wishlist" template="wishlist/sidebar.phtml"/>
+	    
+	    <block type="cms/block" name="Custom Left Sidebar Block1" after="-">
+                <action method="setBlockId"><block_id>custom-left-sidebar-block1</block_id></action>
+            </block>
+	    <block type="cms/block" name="Custom Left Sidebar Block2" after="-">
+                <action method="setBlockId"><block_id>custom-left-sidebar-block2</block_id></action>
+            </block>
+	</reference>
+	
+	<reference name="header">
+            <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml" before="-">
+                <action method="addItemRender"><type>simple</type><block>checkout/cart_item_renderer</block><template>checkout/cart/sidebar/default.phtml</template></action>
+                <action method="addItemRender"><type>grouped</type><block>checkout/cart_item_renderer_grouped</block><template>checkout/cart/sidebar/default.phtml</template></action>
+                <action method="addItemRender"><type>configurable</type><block>checkout/cart_item_renderer_configurable</block><template>checkout/cart/sidebar/default.phtml</template></action>
+                <block type="core/text_list" name="cart_sidebar.extra_actions" as="extra_actions" translate="label" module="checkout">
+                    <label>Shopping Cart Sidebar Extra Actions</label>
+                </block>
+            </block>
+	    
+	    <block type="wishlist/customer_sidebar" name="wishlist.header" as="wishlist.header" template="wishlist/header.phtml"/>
+	    <!--<action ifconfig="mygeneral/header/displayheader_wishlistbox" method="unsetChild"><name>wishlist.header</name></action>-->
+        </reference>
+	
+	<remove name="right.permanent.callout"/>
+	<remove name="left.permanent.callout"/>
+	
+    </default>
+    
+    <cms_index_index>
+	<reference name="top">
+	    <block type="bannerslider/bannerslider" name="bannerslider" template="bannerslider/bannerslider.phtml"/>
+	</reference>
+	<reference name="topblock">    
+	    <block type="cms/block" name="top-block" after="bannerslider">
+                <action ifconfig="mygeneral/staticblock/topblock" method="setBlockId"><block_id>before-maincontainer-full-width-block</block_id></action>
+            </block>
+	</reference>
+	
+	<reference name="bottom">
+	    <block type="cms/block" name="bottom-block" before="footer">
+                <action ifconfig="mygeneral/staticblock/bottomblock" method="setBlockId"><block_id>after-maincontainer-full-width-block</block_id></action>
+            </block>
+	</reference>
+    </cms_index_index>
+    
+    <catalog_category_default>
+	<reference name="root">
+		<action method="setTemplate"><template>page/category.phtml</template></action>
+	</reference>
+	<reference name="root">
+            <block type="catalog/category_view" name="categorybanner_contentwidth" as="categorybanner_contentwidth" template="catalog/category/banner_contentwidth.phtml" />
+	    <block type="catalog/category_view" name="categorybanner_fullwidth" as="categorybanner_fullwidth" template="catalog/category/banner_fullwidth.phtml" />
+        </reference>
+	<reference name="left">
+            <block type="cms/block" name="category" after="-">
+                <action method="setBlockId"><block_id>category-sidebar-block</block_id></action>
+            </block>
+        </reference>
+	<reference name="content">
+            <block type="cms/block" name="Category content block" after="-">
+                <action method="setBlockId"><block_id>category-content-block</block_id></action>
+            </block>
+        </reference>
+    </catalog_category_default>
+    
+    <catalog_category_layered>
+	<reference name="root">
+		<action method="setTemplate"><template>page/category.phtml</template></action>
+	</reference>
+	<reference name="root">
+	    <block type="catalog/category_view" name="cat.name" as="cat.name" template="catalog/category/catname.phtml"/>
+	</reference>
+	<reference name="root">
+            <block type="catalog/category_view" name="categorybanner_contentwidth" as="categorybanner_contentwidth" template="catalog/category/banner_contentwidth.phtml" />
+	    <block type="catalog/category_view" name="categorybanner_fullwidth" as="categorybanner_fullwidth" template="catalog/category/banner_fullwidth.phtml" />
+        </reference>
+	<reference name="left">
+            <block type="cms/block" name="category" after="-">
+                <action method="setBlockId"><block_id>category-sidebar-block</block_id></action>
+            </block>
+        </reference>
+	<reference name="content">
+            <block type="cms/block" name="Category content block" after="-">
+                <action method="setBlockId"><block_id>category-content-block</block_id></action>
+            </block>
+        </reference>
+    </catalog_category_layered>
+
+    <catalogsearch_result_index>
+	<reference name="root">
+            <action method="setTemplate"><template>page/category.phtml</template></action>
+        </reference>
+    </catalogsearch_result_index>
+    
+    <catalogsearch_advanced_result>
+	<reference name="root">
+            <action method="setTemplate"><template>page/category.phtml</template></action>
+        </reference>
+    </catalogsearch_advanced_result>
+    
+    <catalog_product_view>
+	<reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+	<reference name="head">
+	    <action method="addItem"><type>skin_js</type><script>swatch-zoom/lib/elevatezoom/jquery.elevateZoom-3.0.8.min.js</script></action>
+	</reference>
+	
+	<reference name="product.info">	    
+	    
+	    <block type="catalog/product_view_tabs" name="product.info.tabs" as="info_tabs" template="catalog/product/view/tabs.phtml" >
+		<action method="addTab" translate="title" module="catalog">
+			<alias>description</alias>
+			<title>Product Description</title>
+			<block>catalog/product_view_description</block>
+			<template>catalog/product/view/description.phtml</template>
+		</action>
+		<action method="addTab" translate="title" module="catalog">
+			<alias>additional</alias>
+			<title>Features</title>
+			<block>catalog/product_view_attributes</block>
+			<template>catalog/product/view/attributes.phtml</template>
+		</action>
+		<action method="addTab" translate="title" module="catalog">
+			<alias>tags</alias>
+			<title>Tags</title>
+			<block>tag/product_list</block>
+			<template>tag/list.phtml</template>
+		</action>
+		<action method="addTab" translate="title" module="catalog">
+			<alias>video</alias>
+			<title>Product Video</title>
+			<block>catalog/product_view</block>
+			<template>catalog/product/view/video.phtml</template>
+		</action>
+		<action method="addTab" translate="title" module="review">
+		    <alias>reviews</alias>
+		    <title>Reviews</title>
+		    <block>review/product_view_list</block>
+		    <template>review/product/view/list.phtml</template>
+	       </action>   
+		<action method="addTab" translate="title" module="review">
+		    <alias>addreviews</alias>
+		    <title>Add Review</title>  
+		    <block>review/form</block>
+		    <template>review/form.phtml</template>
+		</action>
+		<action method="addTab" translate="title" module="catalog">
+			<alias>customtext</alias>
+			<title>Custom Text</title>
+			<block>catalog/product_view</block>
+			<template>catalog/product/view/customtext.phtml</template>
+		</action>
+		<action method="addTab" translate="title" module="core">
+		    <alias>customtab1</alias>
+		    <title>Custom Tab1</title>  
+		    <block>core/text_list</block>
+		    <template>empty</template>
+		</action>
+		<action method="addTab" translate="title" module="core">
+		    <alias>customtab2</alias>
+		    <title>Custom Tab2</title>  
+		    <block>core/text_list</block>
+		    <template>empty</template>
+		</action>
+	    </block>
+	    <reference name="customtab1"> 
+		<block type="cms/block" name="block_product_tab1">
+			<action method="setBlockId"><block_id>block_product_tab1</block_id></action>
+		</block>
+	    </reference>
+	    <reference name="customtab2"> 
+		<block type="cms/block" name="block_product_tab2">
+			<action method="setBlockId"><block_id>block_product_tab2</block_id></action>
+		</block>
+	    </reference>
+	    
+	    <action method="insert">
+		    <block>catalog.product.related</block>
+	    </action>
+	    
+	    <reference name="product.info.upsell">
+		<action method="setColumnCount"><columns>4</columns></action>
+		<action method="setItemLimit"><type>upsell</type><limit>12</limit></action>
+	    </reference>
+	    
+	</reference>
+	
+	<reference name="right">
+            <action method="unsetChild"><name>catalog.product.related</name></action>
+        </reference>
+    </catalog_product_view>
+    
+    <checkout_cart_index>
+	<reference name="checkout.cart.crosssell">
+	    <action method="setColumnCount"><columns>4</columns></action>
+	    <action method="setItemLimit"><type>crosssell</type><limit>12</limit></action>
+	</reference>
+    </checkout_cart_index>
+    
+    <customer_account>
+	<reference name="left">
+	    <action method="unsetChild"><name>cart_sidebar</name></action>
+	</reference>
+    </customer_account>
+    
+    <contacts_index_index>
+	 <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+    </contacts_index_index>
+    
+    <checkout_onepage_index>
+	 <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+	 <reference name="right">
+	    <action method="unsetChild"><name>checkout.progress.wrapper</name></action>
+	 </reference>
+	 <reference name="content">
+	    <block type="page/html_wrapper" name="checkout.progress.wrapper" translate="label">
+                <label>Checkout Progress Wrapper</label>
+                <action method="setElementId"><value>checkout-progress-wrapper</value></action>
+                <block type="checkout/onepage_progress" name="checkout.progress" before="-" template="checkout/onepage/progress.phtml">
+                    <block type="checkout/onepage_progress" name="billing.progress" template="checkout/onepage/progress/billing.phtml"></block>
+                    <block type="checkout/onepage_progress" name="shipping.progress" template="checkout/onepage/progress/shipping.phtml"></block>
+                    <block type="checkout/onepage_progress" name="shippingmethod.progress" template="checkout/onepage/progress/shipping_method.phtml"></block>
+                    <block type="checkout/onepage_progress" name="payment.progress" template="checkout/onepage/progress/payment.phtml"></block>
+                </block>
+            </block>
+	 </reference>
+    </checkout_onepage_index>
+</layout>

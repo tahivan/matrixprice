@@ -1,0 +1,35 @@
+<?php if ($posts = $this->getRecent()): ?>
+   <div class="widget-latest">
+    <div class="section-line">
+	<h2><?php echo $this->__('Latest Blog') ?></h2>
+    </div>
+    <div id="blogslider" class="itemslider">
+        <?php foreach ($posts as $post): ?>
+        <div class="item">            
+            <div class="postContent peer-wrapper">
+	        <?php echo $post->getShortContent(); ?>
+                <h5 class="heading"><?php echo $post->getTitle(); ?></h5>
+                <p class="below-heading"><?php echo $post->getCreatedTime(); ?></p>
+                <a href="<?php echo $post->getAddress(); ?>" class="go"><?php echo $this->__('Read More') ?></a>
+            </div>
+        </div>
+        <?php endforeach; ?>
+    </div>
+   </div>
+<?php endif; ?>
+
+<script type="text/javascript">
+    j$(document).ready(function() {
+        
+         j$("#blogslider").owlCarousel({
+	  itemsCustom : [
+	     [0, 1],
+	     [767, 2]
+	     ],
+             navigation : true,
+             slideSpeed : 1000,        
+             autoHeight:true
+        });
+        
+       });
+</script>

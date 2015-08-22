@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <priceslider>
+                                        <title>Peerforest Priceslider</title>
+                                        <sort_order>105</sort_order>
+                                    </priceslider>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                 </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

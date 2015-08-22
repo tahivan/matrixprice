@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+
+<config>
+    <modules>
+        <Peerforest_Priceslider>
+            <version>1.0.0</version>
+        </Peerforest_Priceslider>        
+    </modules>
+    <frontend>
+        <routers>
+            <catalog>
+                <use>standard</use>
+                <args>
+                    <modules>
+                        <Peerforest_Priceslider before="Mage_Catalog_CategoryController">Peerforest_Priceslider</Peerforest_Priceslider>                        
+                    </modules>                    
+                </args>
+            </catalog>
+            <catalogsearch>
+                <use>standard</use>
+                <args>
+                    <modules>
+                        <Peerforest_Priceslider before="Mage_CatalogSearch_ResultController">Peerforest_Priceslider</Peerforest_Priceslider>                        
+                    </modules>                    
+                </args>
+            </catalogsearch>
+        </routers>
+        <layout>
+            <updates>
+                <priceslider module="priceslider">
+                    <file>peerforest/priceslider.xml</file>
+                </priceslider>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <helpers>
+            <priceslider>
+                <class>Peerforest_Priceslider_Helper</class>
+            </priceslider>
+        </helpers>
+        <models>
+            <priceslider>
+                <class>Peerforest_Priceslider_Model</class>
+            </priceslider>
+        </models>        
+    </global>
+    <default>
+        <priceslider>
+            <options>
+                <enabled>1</enabled>
+                <action>button</action>
+                <button_label>Filter</button_label>
+                <priceslider_ajax_on>1</priceslider_ajax_on>
+                <enable_priceslider_fullwidth>0</enable_priceslider_fullwidth>
+                <priceslider_layered_navigation_ajax_on>1</priceslider_layered_navigation_ajax_on>
+                <priceslider_toolbar_ajax_on>1</priceslider_toolbar_ajax_on>
+                <add_jquery_ui_min>1</add_jquery_ui_min>
+                <custom_css>0</custom_css>
+                <priceslider_title>Price</priceslider_title>
+                <input_type_editable>1</input_type_editable>
+            </options>
+        </priceslider>
+    </default>
+</config>

@@ -1,0 +1,72 @@
+<?php
+$enable = Mage::getStoreConfig('mygeneral/home/enable');
+$lazyload = Mage::getStoreConfig('mygeneral/product_slider/lazyload');
+?>
+<?php if($enable == '1'){?>
+<?php $page = Mage::app()->getLayout()->getBlock('root')->getTemplate();	    
+    if ($page == "page/1column.phtml") {
+	$page = 1;
+    }
+    elseif ($page == "page/2columns-left.phtml" || $page == "page/2columns-right.phtml") {
+	$page = 2;
+    }
+    elseif($page == "page/3columns.phtml") {
+	$page = 3;		
+    }
+    else {
+	$page = 0;
+    }		
+?>
+
+    <div id="brand" class="itemslider">
+	<?php foreach ($this->getAllManu() as $manufacturer): ?> 
+	    <div class="item">
+		<a href="<?php echo Mage::getBaseUrl() ?>catalogsearch/advanced/result/?manufacturer[]=<?php echo $manufacturer['value'] ?>">
+		    <?php $brandname = $manufacturer['label'] ?>
+		    <?php if($lazyload): ?>
+			<img class="lazyOwl" data-src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . "brandlogo/" .$brandname . ".png"; ?>" alt="<?php echo $brandname; ?>" />
+		    <?php else: ?>
+			<img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . "brandlogo/" .$brandname . ".png"; ?>" alt="<?php echo $brandname; ?>" />
+		    <?php endif; ?>
+		    <?php // echo $manufacturer['label'] ?>
+		</a>
+	    </div>
+	<?php endforeach; ?>
+    </div>
+    <script type="text/javascript">
+	//<![CDATA[
+	jQuery(function(j$) {
+	    j$("#brand").owlCarousel({
+		itemsCustom : [	    
+		    <?php if ($page == 1) : ?>
+			[0, 1],
+			[380, 2],
+			[751, 3],
+			[1265, 5],
+			[1360, 5],
+			[1440, 5],
+			[1680, 5]
+		    <?php elseif ($page == 2) : ?>
+			[0, 1],
+			[380, 2],
+			[943, 3],
+			[1265, 3],
+			[1360, 3],
+			[1440, 3],
+			[1680, 3]
+		    <?php elseif ($page == 3) : ?>
+			[0, 1],
+			[380, 2],
+			[751, 1],
+			[943, 2],
+			[1265, 2],
+			[1360, 2],
+			[1440, 2],
+			[1680, 2]
+		    <?php endif; ?>	    		    
+		]<?php echo Mage::helper("ExtraConfig")->sliderSetting(); ?>
+	    });
+	});
+	//]]>
+    </script>
+<?php } ?>

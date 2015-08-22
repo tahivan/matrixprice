@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <peermegamenu>
+                                        <title>Peerforest Mega-menu</title>
+                                        <sort_order>102</sort_order>
+                                    </peermegamenu>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                 </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
